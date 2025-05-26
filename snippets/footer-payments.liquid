@@ -1,0 +1,67 @@
+<div style="text-align:center;">
+  <a href="https://purensm.com/"><img class="lazyload" data-src="https://cdn.shopify.com/s/files/1/0573/9000/6443/files/ezgif.com-gif-maker_23.webp?v=1661900352" width="250px" alt="" loading="lazy"></a>
+</div>
+<!-- <div style="text-align:center;">
+<img src="https://cdn.shopify.com/s/files/1/0573/9000/6443/files/1.png?v=1622508222" alt="">
+</div> -->
+<div class="text-center">
+<img class="lazyload" data-src="https://cdn.shopify.com/s/files/1/0573/9000/6443/files/UL_and_VeriGMP.png?v=1716391936" width="220px" alt="" loading="lazy">
+</div>
+<div class="text-center">
+<img class="lazyload" data-src="https://cdn.shopify.com/s/files/1/0573/9000/6443/files/badge.png?v=1627952242" width="180px" alt="" loading="lazy">
+</div>
+
+<!-- Trust Guard Footer Seal - snippets/footer-payments.liquid -->
+<div class="text-center">
+<style type="text/css">@media (max-width: 500px) { .tgfloat img { width:145px; }}</style><div  class="tgbanner "><a href="https://app.trustguard.com/certificate/drclarkstore.com" target="_blank"><img alt="Trust Guard Security Scanned" class="tgfloat-inner" src="https://seal.trustguard.com/sites/drclarkstore.com/66ccd35bf6a0dc06076cccec.svg" style="border: 0; width: 175px; " oncontextmenu="var d = new Date(); alert('Copying Prohibited by Law - This image and all included logos are copyrighted by Trust Guard '+d.getFullYear()+'.'); return false;" /></a></div>
+</div>
+<!-- END Trust Guard Footer Seal - snippets/footer-payments.liquid -->
+
+{%- liquid
+  assign show_selectors = false
+  assign currency_selector = false
+  assign locale_selector = false
+
+  if block.settings.show_currency_selector and shop.enabled_currencies.size > 1
+    assign currency_selector = true
+  endif
+
+  if block.settings.show_locale_selector and shop.enabled_locales.size > 1
+    assign locale_selector = true
+  endif
+
+  if currency_selector or locale_selector
+    assign show_selectors = true
+  endif
+-%}
+
+<div class="footer__mobile-section">
+  <div class="footer__blocks--mobile">
+    {%- if block.settings.show_payment_icons -%}
+      {%- unless shop.enabled_payment_types == empty -%}
+        <div class="footer__block--mobile">
+          <div class="footer__title">
+            {{ 'layout.footer.accepted_payments' | t }}
+          </div>
+          <ul class="inline-list payment-icons">
+            {%- for type in shop.enabled_payment_types -%}
+              <li class="icon--payment">
+                {{ type | payment_type_svg_tag }}
+              </li>
+            {%- endfor -%}
+          </ul>
+        </div>
+      {%- endunless -%}
+    {%- endif -%}
+
+    {%- if show_selectors -%}
+      <div class="footer__block--mobile">
+        {%- render 'multi-selectors',
+          locale_selector: locale_selector,
+          currency_selector: currency_selector,
+          location: 'footer'
+        -%}
+      </div>
+    {%- endif -%}
+  </div>
+</div>

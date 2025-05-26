@@ -1,0 +1,51 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <body>
+
+    <style>
+  /* Botpress design start   */
+        /* Floating button styles */
+        .floating-text {
+            position: fixed;
+            bottom: 15px; /* Distance from the bottom of the viewport */
+            right: 85px;  /* Distance from the right of the viewport */
+            background-color: transparent antiquewhite; /* Button color */
+            color: rgb(28, 28, 31);
+            border-radius: 5%; /* Make it circular */
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+            cursor: pointer;
+            font-size: 11px;
+               
+        }
+        .bot-btn {
+            background-color: transparent aquamarine;  /* Button color */
+            color: rgb(40, 36, 36);
+            border-radius: 50%; /* Make it circular */          
+            cursor: pointer;
+                 
+        }
+
+        /* Hover effect */
+        .bot-btn:hover {
+            background-color: #42559b;
+            color: rgb(255, 255, 255);
+            }
+    </style>
+     <div class="floating-text">           
+        <button class="bot-btn" onclick="closeText(this)"> &times;</button>
+        <span>Ask me for information.</span>
+    </div>
+     <script>
+       function closeText(button) {
+            const textBlock = button.parentElement;
+            textBlock.remove();
+        }
+     </script>
+    
+    <script src="https://cdn.botpress.cloud/webchat/v2.2/inject.js"></script>
+<script src="https://files.bpcontent.cloud/2024/12/15/16/20241215165658-PH78VBHM.js"></script>
+      
+    
+</body>
+</html>
