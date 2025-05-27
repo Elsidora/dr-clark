@@ -852,27 +852,8 @@
       "161789469679fffe6b": {
         "type": "slideshow-split",
         "blocks": {
-          "slide_wgFeNE": {
-            "type": "slide",
-            "settings": {
-              "top_subheading": "Memorial Day Sale",
-              "title": "20% Off Select Items",
-              "title_size": 60,
-              "subheading": "Use code MDS25",
-              "link": "shopify://collections/memorial-day-sale",
-              "link_text": "Shop Sale Items",
-              "link_2": "",
-              "link_text_2": "",
-              "text_position": "left",
-              "image": "shopify://shop_images/Memorial_Day_Sale.jpg",
-              "indent_image": false,
-              "focal_point": "center center",
-              "color_scheme": "none"
-            }
-          },
           "slide_cgQarh": {
             "type": "slide",
-            "disabled": true,
             "settings": {
               "top_subheading": "",
               "title": "No \nStearates\nNo Carrageenan",
@@ -891,7 +872,6 @@
           },
           "slide_ERDMeK": {
             "type": "slide",
-            "disabled": true,
             "settings": {
               "top_subheading": "",
               "title": "Top Sellers",
@@ -910,7 +890,6 @@
           },
           "slide_dXiLgg": {
             "type": "slide",
-            "disabled": true,
             "settings": {
               "top_subheading": "",
               "title": "We're Triple GMP Certified",
@@ -929,7 +908,6 @@
           },
           "slide_8XyP4p": {
             "type": "slide",
-            "disabled": true,
             "settings": {
               "top_subheading": "",
               "title": "Purity,\nPotency,\nAuthenticity",
@@ -948,7 +926,6 @@
           }
         },
         "block_order": [
-          "slide_wgFeNE",
           "slide_cgQarh",
           "slide_ERDMeK",
           "slide_dXiLgg",
