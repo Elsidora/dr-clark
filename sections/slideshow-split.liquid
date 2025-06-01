@@ -41,7 +41,7 @@
         {%- endif -%}
 
         <div id="Slideshow-{{ section.id }}"
-          class="hero hero--{{ section.id }} loading loading--delayed"
+          class="hero hero--{{ section.id }} loading-no loading--delayed-no"
           data-autoplay="{{ section.settings.autoplay }}"
           data-speed="{{ section.settings.autoplay_speed | times: 1000 }}"
           {% if section.settings.style == 'arrows' %}
@@ -72,7 +72,7 @@
                 }
               {%- endstyle -%}
 
-              <div class="hero__sidebyside hero__sidebyside-text--{{ block.settings.text_position }} color-scheme-{{ block.settings.color_scheme }}">
+              <div class="hero__sidebyside hero__sidebyside-text--{{ block.settings.text_position }} color-scheme-{{ block.settings.color_scheme }}" style="opacity: 1 !important;">
                 {%- if block.settings.indent_image -%}
                   {%- if block.settings.color_scheme != 'none' -%}
                     {%- render 'color-scheme-texture', color_scheme: block.settings.color_scheme -%}
@@ -132,6 +132,22 @@
                       <a href="{{ block.settings.link }}" class="hero__sidebyside-image-link" aria-hidden="true">
                     {%- endif -%}
 
+                    {% if forloop.index0 == 0 %}
+                    <img fetchpriority="high" class="hero__image hero__image--{{ block.id }} lazyload-no"
+                      src="{{ block.settings.image | img_url: '600x' }}"
+                      srcset="{{ block.settings.image | img_url: '600x' }} 600w,
+                      {{ block.settings.image | img_url: '600x' }} 900w,
+                      {{ block.settings.image | img_url: '1300x' }} 1300w,
+                      {{ block.settings.image | img_url: '1500x' }} 1500w,
+                      {{ block.settings.image | img_url: '1920x' }} 1920w" 
+                      data-aspectratio="{{ block.settings.image.aspect_ratio }}"
+                      data-sizes="auto"
+                      alt="{{ block.settings.image.alt | escape }}"
+                      {% unless block.settings.indent_image %}
+                        style="object-position: {{ block.settings.focal_point }} ; opacity: 1 !important; transform: none !important;"
+                      {% endunless %}  
+                      >
+                    {% else %}
                     <img class="hero__image hero__image--{{ block.id }} lazyload"
                       src="{{ block.settings.image | img_url: '300x' }}"
                       data-src="{{ img_url }}"
@@ -141,6 +157,8 @@
                       {% unless block.settings.indent_image %}
                         style="object-position: {{ block.settings.focal_point }}"
                       {% endunless %} loading="lazy" >
+                    {% endif %}
+                    
                     <noscript>
                       <img class="hero__image hero__image--{{ block.id }}"
                         src="{{ block.settings.image | img_url: '1400x' }}"

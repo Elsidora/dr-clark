@@ -10309,3 +10309,17 @@ html[dir=rtl] .product-single__meta .rte{
 button.qsc2-basic.qsc2-stickybtn {
   display: none !important;
 }
+
+
+@media only screen and (min-width:999px){
+  @keyframes delayedShow {
+    to {
+      visibility: visible;
+    }
+  }
+
+  .site-header__element--sub {
+    visibility: hidden;
+    animation: 0s linear 0.7s forwards delayedShow;
+  }
+}

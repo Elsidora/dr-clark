@@ -106,6 +106,19 @@
           assign img_url = media | img_url: '1x1' | replace: '_1x1.', '_{width}x.'
         -%}
 
+        {% if loopIndex0 == 0 %}
+        <img fetchpriority="high" class="{% if settings.product_zoom_enable %}photoswipe__image{% endif %} lazyload-no"
+          style="opacity: 1 !important;"
+          data-photoswipe-src="{{ media.preview_image | img_url: product_zoom_size }}"
+          data-photoswipe-width="{{ media_width }}"
+          data-photoswipe-height="{{ media_height }}"
+          data-index="{{ loopIndex }}"
+          src="{{ media | img_url: '700x' }}"
+          data-widths="[360, 540, 720, 900, 1080]"
+          data-aspectratio="{{ media_aspect_ratio }}"
+          data-sizes="auto"
+          alt="{{ media.alt | escape | split: '#' | first }}">
+         {% else %}
         <img class="{% if settings.product_zoom_enable %}photoswipe__image{% endif %} lazyload"
           data-photoswipe-src="{{ media.preview_image | img_url: product_zoom_size }}"
           data-photoswipe-width="{{ media_width }}"
@@ -116,6 +129,8 @@
           data-aspectratio="{{ media_aspect_ratio }}"
           data-sizes="auto"
           alt="{{ media.alt | escape | split: '#' | first }}">
+         {% endif %}
+      
 
         <noscript>
           <noscript>
