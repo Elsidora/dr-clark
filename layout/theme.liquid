@@ -1,19 +1,21 @@
 <!doctype html>
-<html class="no-js" lang="{{ request.locale.iso_code }}" dir="{{ settings.text_direction }}">
+<html class="js" lang="{{ request.locale.iso_code }}" dir="{{ settings.text_direction }}">
   <!-- Twitter conversion tracking base code -->
    {% if template != "index" %}
 <script>
+document.addEventListener('StartAsyncLoading',function(event){  
 !function(e,t,n,s,u,a){e.twq||(s=e.twq=function(){s.exe?s.exe.apply(s,arguments):s.queue.push(arguments);
 },s.version='1.1',s.queue=[],u=t.createElement(n),u.async=!0,u.src='https://static.ads-twitter.com/uwt.js',
 a=t.getElementsByTagName(n)[0],a.parentNode.insertBefore(u,a))}(window,document,'script');
 twq('config','op3db');
+});    
 </script>
   {% endif %}
 <!-- End Twitter conversion tracking base code -->
   <head>
  {%- if content_for_header contains 'tapita-seo-script-tags' -%}{%- include 'tapita-seo-schema' -%}{%- endif -%} 
-<meta name="google-site-verification" content="1IKbmGHjqnitMKgnzNB3U34UmNn01jjTZOr9iBnTMBc" />
-    <!-- Hotjar Tracking Code for Site 6415011 (name missing) -->
+
+    <!-- Hotjar Tracking Code for https://drclarkstore.com/ -->
 <script>
     (function(h,o,t,j,a,r){
         h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
@@ -26,8 +28,7 @@ twq('config','op3db');
 </script>
 
     <!-- begin Convert Experiences code--><script type="text/javascript" src="//cdn-4.convertexperiments.com/v1/js/10016485-10016929.js?environment=production"></script><!-- end Convert Experiences code -->
-    
-
+ 
 	<!-- Added by AVADA SEO Suite -->
 	{% include 'avada-seo' %}
 	<!-- /Added by AVADA SEO Suite -->
@@ -40,24 +41,32 @@ twq('config','op3db');
         suffix: "{{ template.suffix }}"
     };
   </script>
-  <script type="module" blocking="render" fetchpriority="high" src="https://cdn.intelligems.io/esm/ccd9cfb9f51b/bundle.js" defer></script>
-{% render 'visually_io_sdk' %}
+  <script type="module" blocking="render" fetchpriority="high" data-mysrc="https://cdn.intelligems.io/esm/ccd9cfb9f51b/bundle.js" defer></script>
+    
+    {% render 'visually_io_sdk' %}
 
      <!-- Global Site Tag (gtag.js) - Google AdWords: 1072534059 -->
-      <script defer src="https://www.googletagmanager.com/gtag/js?id=AW-1072534059" ></script>
       <script>
+        document.addEventListener('StartAsyncLoading',function(event){  
+          var resource = document.createElement('script'); 
+          resource.async = "true";
+          resource.src = "https://www.googletagmanager.com/gtag/js?id=AW-1072534059";
+          var script = document.getElementsByTagName('script')[0];
+          script.parentNode.insertBefore(resource, script);
+        
          window.dataLayer = window.dataLayer || [];
          function gtag(){dataLayer.push(arguments);}
          gtag('js', new Date());
          gtag('config', 'AW-1072534059', {'send_page_view': false});
+         });   
       </script>
 
 <!-- Google Tag Manager -->
-<script defer>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+<script defer>document.addEventListener('StartAsyncLoading',function(event){(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
 new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
 j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-})(window,document,'script','dataLayer','GTM-N33LMD4');</script>
+})(window,document,'script','dataLayer','GTM-N33LMD4');});</script>
 <!-- End Google Tag Manager -->
     {% endif %}
      <!-- Start webmaster_asad_site-verification-code -->
@@ -77,8 +86,12 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
       <meta property="og:image:height" content="100" class="classyunicodedone">
      {% if template != "index" %}
       <link rel="canonical" href="{{ canonical_url }}">
+
+      {% comment %}
       <link rel="preload" as="style" href="{{ 'theme.css' | asset_url }}">
       <link rel="preload" as="script" href="{{ 'theme.min.js' | asset_url }}">
+      {% endcomment %}
+    
       <link rel="preconnect" href="https://cdn.shopify.com">
       <link rel="preconnect" href="https://fonts.shopifycdn.com">
       <link rel="dns-prefetch" href="https://productreviews.shopifycdn.com" defer>
@@ -94,6 +107,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
       <meta name="description" content="{{ page_description | escape }}">
       {%- endif -%}
       {%- render 'social-meta-tags' -%}
+      {%- render 'preload-assets' -%}
       {%- render 'font-face' -%}
       {{ 'theme.css' | asset_url | stylesheet_tag }}
       {%- render 'css-variables' -%}
@@ -110,7 +124,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
             endunless
       -%}
       <script>
-         document.documentElement.className = document.documentElement.className.replace('no-js', 'js');
+         //document.documentElement.className = document.documentElement.className.replace('no-js', 'js');
          
          window.theme = window.theme || {};
          theme.routes = {
@@ -160,15 +174,25 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
       <!-- UET tag -->
       <script>
         // write or paste code here
+             document.addEventListener('StartAsyncLoading',function(event){
              (function(w,d,t,r,u){ var f,n,i; w[u]=w[u]||[], f=function(){ var o={ti:"28000053", tm:"shpfy_ui"}; o.q=w[u],w[u]=new UET(o),w[u].push("pageLoad")},
              n=d.createElement(t),n.src=r,n.async=1,n.onload=n.onreadystatechange=function()
              { var s=this.readyState; s&&s!=="loaded"&&s!=="complete"||(f(),n.onload=n.onreadystatechange=null)},
              i=d.getElementsByTagName(t)[0],i.parentNode.insertBefore(n,i)})(window,document,"script","//bat.bing.com/bat.js","uetq");
-
+            });
       </script>
       <!-- UET tag -->
-      {{ content_for_header }}
-      <script src="{{ 'vendor-scripts-v0.js' | asset_url | split: '?' | first }}" defer></script>
+    
+      {% capture MyJsFunc %}load', function(){}{% endcapture %} {% capture MyJsFunc2%}document.addEventListener('StartAsyncLoading',function(event){asyncLoad();});if(window.attachEvent){%endcapture %} {% capture MyJsFunc3%}document.addEventListener('StartAsyncLoading',function(event){prefetchAssets();});{%endcapture %} {% if template contains "index" or template contains "product" or template contains "collection" or page.url contains "pages" or blog.url contains "blogs" %} {{ content_for_header | replace: "load', asyncLoad",MyJsFunc | replace: 'if(window.attachEvent)', MyJsFunc2 | replace: 'defer="defer" src="//', 'defer="defer" data-src="//' | replace: 'DOMContentLoaded', 'StartPreviewBarLoading' | replace: "addEventListener('load', prefetchAssets);", MyJsFunc3 | replace: 'src="/checkouts/internal/preloads.js', 'data-src="/checkouts/internal/preloads.js' | replace: 'src="https://shop.app/checkouts', 'data-src="https://shop.app/checkouts' | replace: "src='https://cdn.shopify.com/shopifycloud/preview-bar/preview-bar-modules.js'", "data-src='https://cdn.shopify.com/shopifycloud/preview-bar/preview-bar-modules.js'" }} {% else %} {{ content_for_header }} {% endif %}
+
+      <script>
+      window.lazySizesConfig = window.lazySizesConfig || {};
+      window.lazySizesConfig.loadMode = 1;
+      window.lazySizesConfig.expand = 100;
+      window.lazySizesConfig.loadHidden = false;
+      </script>
+    
+      <script src="{{ 'vendor-scripts-v0.js' | asset_url }}" defer></script>
       <script src="{{ 'theme.min.js' | asset_url }}" defer></script>
     {% if template != "index" %}
       {%- if request.page_type contains 'customers/' -%}
@@ -180,6 +204,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
       {% render 'loadify_loader' %}
       <!-- Meta Pixel Code -->
       <script defer>
+         document.addEventListener('StartAsyncLoading',function(event){
          !function(f,b,e,v,n,t,s)
          {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
          n.callMethod.apply(n,arguments):n.queue.push(arguments)};
@@ -190,6 +215,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
          'https://connect.facebook.net/en_US/fbevents.js');
          fbq('init', '523285838328010');
          fbq('track', 'PageView');
+         });
       </script>
     {% if template != "index" %}
       <noscript><img height="1" width="1" style="display:none"
@@ -285,8 +311,10 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       
      {% if template != "index" %}
       <script>
+         document.addEventListener('StartAsyncLoading',function(event){ setTimeout(function() { 
          gtag('event', 'page_view', 
          {'send_to': 'AW-1072534059', 'ecomm_prodid':window.google_tag_params.ecomm_prodid, 'ecomm_pagetype': window.google_tag_params.ecomm_pagetype, 'ecomm_totalvalue':window.google_tag_params.ecomm_totalvalue});
+         }, 2000); });
       </script>
       <!-- Google Tag Manager (noscript) -->
       <noscript><iframe loading="lazy" src="https://www.googletagmanager.com/ns.html?id=GTM-P9XJTB9F"
@@ -294,7 +322,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       <!-- End Google Tag Manager (noscript) -->
 {
      <!-- Shopper Approved - layout/theme.liquid -->
-     <script type="text/javascript"> function saLoadScript(src) { var js = window.document.createElement('script'); js.src = src; js.type = 'text/javascript'; document.getElementsByTagName("head")[0].appendChild(js); } saLoadScript("https://www.shopperapproved.com/widgets/group2.0/40407.js"); </script>
+     <script type="text/javascript">document.addEventListener('StartAsyncLoading',function(event){ function saLoadScript(src) { var js = window.document.createElement('script'); js.src = src; js.type = 'text/javascript'; document.getElementsByTagName("head")[0].appendChild(js); } saLoadScript("https://www.shopperapproved.com/widgets/group2.0/40407.js");  });</script>
     {% endif %}
        <style>
        .star_container .group-stars .ind_cnt {
@@ -342,7 +370,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
             color: rgb(255, 255, 255);
             }
     </style>
-     <div class="floating-text">           
+     <div id="floating-text" class="floating-text" style="display:none;">           
         <button class="bot-btn" onclick="closeText(this)"> &times;</button>
         <span>Hello! I'm here to help.</span>
     </div>
@@ -351,11 +379,32 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
             const textBlock = button.parentElement;
             textBlock.remove();
         }
+       document.addEventListener('StartAsyncLoading',function(event){ setTimeout(function() { document.getElementById("floating-text").style.display = "block"; }, 1500); });
+    
      </script>
     
-
-    <script src="https://cdn.botpress.cloud/webchat/v2.2/inject.js"  defer></script>
-<script src="https://files.bpcontent.cloud/2024/10/15/04/20241015042617-YHKG0K4K.js"  defer></script>
+     <script>
+      document.addEventListener('StartAsyncLoading',function(event){
+          var resource = document.createElement('script'); 
+          
+          resource.onload = () => {
+          setTimeout(function() {
+          var resource = document.createElement('script'); 
+          resource.async = "true";
+          resource.src = "https://files.bpcontent.cloud/2024/10/15/04/20241015042617-YHKG0K4K.js";
+          var script = document.getElementsByTagName('script')[0];
+          script.parentNode.insertBefore(resource, script);
+           }, 1000);
+           };
+          
+          resource.async = "false";
+          resource.src = "https://cdn.botpress.cloud/webchat/v2.2/inject.js";
+          var script = document.getElementsByTagName('script')[0];
+          script.parentNode.insertBefore(resource, script);  
+      });
+      </script>
+     
+     {% render 'custom-code' %}
   
    </body>
 </html>

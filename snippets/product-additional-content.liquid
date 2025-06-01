@@ -40,7 +40,7 @@
           {%- if product.empty? -%}
             {{ 'home_page.onboarding.product_description' | t }}
           {%- else -%}
-            {{ product.description }}
+            {{ product.description | replace: 'src="https://www.youtube.com/embed/', 'src="https://drclarkstore.com/cdn/shop/t/15/assets/1x1.gif?v=144693999316650335681748599193&?vid=youtube.com/embed" class="lazyload" data-src="https://www.youtube.com/embed/' }}
           {%- endif -%}
         </div>
       {%- endif -%}

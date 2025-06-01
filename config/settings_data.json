@@ -852,8 +852,27 @@
       "161789469679fffe6b": {
         "type": "slideshow-split",
         "blocks": {
+          "slide_wgFeNE": {
+            "type": "slide",
+            "settings": {
+              "top_subheading": "Potency and Purity",
+              "title": "Guaranteed",
+              "title_size": 47,
+              "subheading": "",
+              "link": "shopify://collections/dr-hulda-clark-parasite-cleanse",
+              "link_text": "Browse the Collection",
+              "link_2": "",
+              "link_text_2": "",
+              "text_position": "left",
+              "image": "shopify://shop_images/Memorial_Day_Sale.jpg",
+              "indent_image": false,
+              "focal_point": "center center",
+              "color_scheme": "none"
+            }
+          },
           "slide_cgQarh": {
             "type": "slide",
+            "disabled": true,
             "settings": {
               "top_subheading": "",
               "title": "No \nStearates\nNo Carrageenan",
@@ -872,6 +891,7 @@
           },
           "slide_ERDMeK": {
             "type": "slide",
+            "disabled": true,
             "settings": {
               "top_subheading": "",
               "title": "Top Sellers",
@@ -890,6 +910,7 @@
           },
           "slide_dXiLgg": {
             "type": "slide",
+            "disabled": true,
             "settings": {
               "top_subheading": "",
               "title": "We're Triple GMP Certified",
@@ -908,6 +929,7 @@
           },
           "slide_8XyP4p": {
             "type": "slide",
+            "disabled": true,
             "settings": {
               "top_subheading": "",
               "title": "Purity,\nPotency,\nAuthenticity",
@@ -926,6 +948,7 @@
           }
         },
         "block_order": [
+          "slide_wgFeNE",
           "slide_cgQarh",
           "slide_ERDMeK",
           "slide_dXiLgg",
@@ -955,11 +978,6 @@
         "disabled": false,
         "settings": {}
       },
-      "855628211100114053": {
-        "type": "shopify://apps/klaviyo-email-marketing-sms/blocks/klaviyo-onsite-embed/2632fe16-c075-4321-a88b-50b567f42507",
-        "disabled": false,
-        "settings": {}
-      },
       "5182184951224911228": {
         "type": "shopify://apps/rapid-search/blocks/script/bd827795-feaa-41a8-9219-2b83f238aa7d",
         "disabled": false,
@@ -985,9 +1003,9 @@
         "disabled": false,
         "settings": {}
       },
-      "3138269044488530766": {
-        "type": "shopify://apps/uppromote-affiliate/blocks/core-script/64c32457-930d-4cb9-9641-e24c0d9cf1f4",
-        "disabled": false,
+      "855628211100114053": {
+        "type": "shopify://apps/klaviyo-email-marketing-sms/blocks/klaviyo-onsite-embed/2632fe16-c075-4321-a88b-50b567f42507",
+        "disabled": true,
         "settings": {}
       }
     }
