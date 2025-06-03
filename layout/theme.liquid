@@ -13,6 +13,7 @@ twq('config','op3db');
   {% endif %}
 <!-- End Twitter conversion tracking base code -->
   <head>
+ {%- render 'ecom_header' -%}
  {%- if content_for_header contains 'tapita-seo-script-tags' -%}{%- include 'tapita-seo-schema' -%}{%- endif -%} 
 
     <!-- Hotjar Tracking Code for https://drclarkstore.com/ -->
@@ -412,5 +413,5 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
      
      {% render 'custom-code' %}
   
-   </body>
+   {%- render "ecom_footer"-%}</body>
 </html>
