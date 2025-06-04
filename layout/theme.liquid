@@ -409,7 +409,20 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
           script.parentNode.insertBefore(resource, script);  
       });
       </script>
-     
+     <script>
+      let lastScrollTop = 0;
+      const body = document.body;
+      window.addEventListener("scroll", () => {
+      const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+      if(scrollTop > lastScrollTop){
+        body.classList.remove("shownavbar");
+      }
+      else{
+        body.classList.add("shownavbar");
+      }
+        lastScrollTop = scrollTop;
+      });
+     </script>
      {% render 'custom-code' %}
   
    </body>
