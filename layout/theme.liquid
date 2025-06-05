@@ -70,10 +70,6 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 })(window,document,'script','dataLayer','GTM-N33LMD4');});</script>
 <!-- End Google Tag Manager -->
     {% endif %}
-    {% if request.query_string contains 'zCountry=' %}
-  <meta name="robots" content="noindex, follow">
-{% endif %}
-
      <!-- Start webmaster_asad_site-verification-code -->
       <meta name="google-site-verification" content="t-8-8PpDCfDCDM5YRqsfJRdH_1y_X5AXra7nv4o-E68" />
       <!-- End webmaster_asad_site-verification-code -->
@@ -111,13 +107,6 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
       <link rel="dns-prefetch" href="https://maps.gstatic.com" defer>
     
     {% endif %}
-    {% if canonical_url %}
-  <link rel="canonical" href="{{ canonical_url | split: '?' | first }}" />
-{% else %}
-  <link rel="canonical" href="{{ request.origin }}{{ request.path }}" />
-{% endif %}
-
-
     
       {%- if settings.favicon != blank -%}
       <link rel="shortcut icon" href="{{ settings.favicon | img_url: '32x32' }}" type="image/png" />
