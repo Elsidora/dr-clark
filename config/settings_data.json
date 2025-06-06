@@ -81,7 +81,7 @@
     "collection_color_swatches": false,
     "product_contact": false,
     "enable_product_reviews": true,
-    "cart_type": "dropdown",
+    "cart_type": "page",
     "cart_additional_buttons": false,
     "cart_notes_enable": true,
     "cart_terms_conditions_enable": false,
