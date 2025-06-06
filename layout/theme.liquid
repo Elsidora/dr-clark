@@ -425,7 +425,18 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       }
         lastScrollTop = scrollTop;
       });
+
+      
      </script>
+
+     <script>
+      const searchInput = document.querySelector('.site-header__search-input');
+      const searchBtnClear = document.querySelector('.site-header__search-btn--clear');
+      const searchInputClear = () => {  
+        searchInput.value = '';  
+      }
+      searchBtnClear.addEventListener('click', searchInputClear);
+    </script>  
      {% render 'custom-code' %}
   
    {%- render "ecom_footer"-%}</body>
