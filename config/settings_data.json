@@ -852,32 +852,13 @@
       "161789469679fffe6b": {
         "type": "slideshow-split",
         "blocks": {
-          "slide_wgFeNE": {
-            "type": "slide",
-            "settings": {
-              "top_subheading": "Potency and Purity",
-              "title": "Guaranteed",
-              "title_size": 47,
-              "subheading": "",
-              "link": "shopify://collections/dr-hulda-clark-parasite-cleanse",
-              "link_text": "Browse the Collection",
-              "link_2": "",
-              "link_text_2": "",
-              "text_position": "left",
-              "image": "shopify://shop_images/Memorial_Day_Sale.jpg",
-              "indent_image": false,
-              "focal_point": "center center",
-              "color_scheme": "none"
-            }
-          },
           "slide_cgQarh": {
             "type": "slide",
-            "disabled": true,
             "settings": {
               "top_subheading": "",
-              "title": "No \nStearates\nNo Carrageenan",
+              "title": "Next Level Purity",
               "title_size": 40,
-              "subheading": "",
+              "subheading": "GMO-Free;                                                                          \n         \nNo Artificial Ingredients;\nNo Harmful Additives;\nNo Stearates;\nNo Carrageenan",
               "link": "https://drclarkstore.com/collections/dr-hulda-clark-parasite-cleanse",
               "link_text": "Read More",
               "link_2": "",
@@ -948,7 +929,6 @@
           }
         },
         "block_order": [
-          "slide_wgFeNE",
           "slide_cgQarh",
           "slide_ERDMeK",
           "slide_dXiLgg",
