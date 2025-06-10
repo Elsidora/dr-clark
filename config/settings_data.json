@@ -1013,6 +1013,11 @@
         "type": "shopify://apps/convert-experiences/blocks/convert-tracking/2eacdd19-b384-4180-b32c-b323a6d9e27e",
         "disabled": false,
         "settings": {}
+      },
+      "11469883780125494513": {
+        "type": "shopify://apps/dropinblog/blocks/head/d07cf0d3-9e5c-4b7f-829c-19d888accd75",
+        "disabled": false,
+        "settings": {}
       }
     }
   },
