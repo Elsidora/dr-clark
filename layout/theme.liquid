@@ -13,6 +13,14 @@ twq('config','op3db');
   {% endif %}
 <!-- End Twitter conversion tracking base code -->
   <head>
+
+    <!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-N33LMD4');</script>
+<!-- End Google Tag Manager -->
  {%- render 'ecom_header' -%}
  {%- if content_for_header contains 'tapita-seo-script-tags' -%}{%- include 'tapita-seo-schema' -%}{%- endif -%} 
 
@@ -236,8 +244,8 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
    </head>
    <body class="template-{{ template | replace: '.', ' ' | truncatewords: 1, '' | handle }}{% if request.path == '/challenge' %} template-challange{% endif %}" data-button_style="{{ settings.button_style }}" data-edges="{{ settings.roundness }}" data-type_header_capitalize="{{ settings.type_header_capitalize }}" data-swatch_style="{{ settings.swatch_style }}" data-grid-style="{{ settings.product_grid_style }}">
       {% if template != "index" %}
-     <!-- Google Tag Manager (noscript) -->
-<noscript><iframe loading="lazy" src="https://www.googletagmanager.com/ns.html?id=GTM-N33LMD4"
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-N33LMD4"
 height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <!-- End Google Tag Manager (noscript) -->
      {% endif %}
