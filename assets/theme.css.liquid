@@ -10321,16 +10321,41 @@ body.shownavbar .page-container .header-section{
 }
 */
 
+.milestone-widget {
+  display: none;
+}
+.rotating-widget {
+  display: none;
+}
 @media only screen and (min-width: 768px) {
-  .header-layout[data-logo-align=center] .header-item--search {
-    order: 1;
-    flex: 1 1 100%;
-    justify-content: flex-end;
+  .header-layout .header-item--search {
+    margin-left: auto;
+     max-width: 650px;
   }
   .header-item.header-item--icons {
-    order: 2;
+    flex: none;
   }
-  [data-layout=center] .header-item--search form {
-    max-width: 450px;
+  .header-layout .header-item--search form {
+    margin-left: 20px;
+    margin-right: 20px;
+    max-width: 600px;
+  }
+
+  .milestone-widget {
+    display: none;
+    align-items: center;
+    max-width: 120px;
+  }
+}
+
+iframe.bpFab {
+  bottom: 80px;
+  right: 1rem;
+}
+@media only screen and (min-width: 768px) {
+  
+  iframe.bpFab {
+    bottom: 92px;
+    right: 1rem;
   }
 }

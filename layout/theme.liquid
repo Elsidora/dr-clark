@@ -438,13 +438,35 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
      </script>
 
      <script>
+      document.addEventListener('load', () => {
+        const blockAddToCart = document.querySelector('.qsc2-stickybar');
+        console.log('aaaaaaaaaaaaaa');
+        document.addEventListener('scroll', () => {
+          
+          const botChat = document.querySelector('iframe.bpFab');
+          console.log('bbbbbbbbbbbbbbbbb');
+          if (!blockAddToCart.classList.contains{'qsc2-stickybar--hidden'}) {
+            botChat.classList.add('chat-position');
+          } else {
+            if (botChat.classList.contains{'chat-position'}) {
+              botChat.classList.remove('chat-position');
+            }
+          }
+        })
+      })
+    </script>
+
+     <script>
       const searchInput = document.querySelector('.site-header__search-input');
       const searchBtnClear = document.querySelector('.site-header__search-btn--clear');
       const searchInputClear = () => {  
         searchInput.value = '';  
       }
       searchBtnClear.addEventListener('click', searchInputClear);
-    </script>  
+    </script> 
+    
+    
+    
      {% render 'custom-code' %}
   
    {%- render "ecom_footer"-%}</body>

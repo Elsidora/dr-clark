@@ -35,6 +35,14 @@
 
 {%- if section.settings.divider -%}</div>{%- endif -%}
 
+
+{% if template == "index" %}
+  <div class="rotating-widget">
+    {%- render 'rotating-widget' -%}
+  </div>
+
+{% endif %}
+
 {% schema %}
   {
     "name": "Collection list",

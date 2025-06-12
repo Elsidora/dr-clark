@@ -80,10 +80,17 @@
               <div class="header-item header-item--logo">
                 {%- render 'header-logo-block', section: section -%}
               </div>
+
+              
             {%- endif -%}
 
             {%- if nav_position == 'below' -%}
               <div class="header-item header-item--search small--hide">
+
+                <div class="milestone-widget">
+                  {%- render 'milestone-award-code' -%}
+                </div>
+
                 {%- if logo_alignment == 'center' -%}
                   <button type="button" class="site-nav__link site-nav__link--icon site-nav__compress-menu">
                     <svg aria-hidden="true" focusable="false" role="presentation" class="icon icon-hamburger" viewBox="0 0 64 64"><path class="cls-1" d="M7 15h51">.</path><path class="cls-1" d="M7 32h43">.</path><path class="cls-1" d="M7 49h51">.</path></svg>
