@@ -858,7 +858,7 @@
               "top_subheading": "",
               "title": "Our Highest Priority is Purity",
               "title_size": 40,
-              "subheading": "GMO-Free;                                                                          \n         \nNo Artificial Ingredients;\nNo Harmful Additives;\nNo Stearates;\nNo Carrageenan",
+              "subheading": "GMO-Free;                                                                          \nNo Artificial Ingredients;\nNo Harmful Additives;\nNo Stearates;\nNo Carrageenan",
               "link": "https://drclarkstore.com/collections/dr-hulda-clark-parasite-cleanse",
               "link_text": "Read More",
               "link_2": "",
@@ -1011,11 +1011,6 @@
       },
       "3999180998444345382": {
         "type": "shopify://apps/convert-experiences/blocks/convert-tracking/2eacdd19-b384-4180-b32c-b323a6d9e27e",
-        "disabled": false,
-        "settings": {}
-      },
-      "11469883780125494513": {
-        "type": "shopify://apps/dropinblog/blocks/head/d07cf0d3-9e5c-4b7f-829c-19d888accd75",
         "disabled": false,
         "settings": {}
       }
