@@ -21,7 +21,15 @@
 
     {{ checkout_stylesheets }}
     {{ checkout_scripts }}
-
+<script type="text/javascript">
+  // Insert Twitter Event ID
+  twq('event', 'tw-op3db-paxn3', {
+    value: null, // use this to pass the value of the conversion (e.g. 5.00)
+    conversion_id: null, // use this to pass a unique ID for the conversion event for deduplication (e.g. order id '1a2b3c')
+    email_address: null // use this to pass a user’s email address
+  });
+</script>
+<!-- End Twitter conversion tracking event code -->
   </head>
   <body>
     {{ skip_to_content_link }}
