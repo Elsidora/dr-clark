@@ -382,7 +382,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
        document.addEventListener('StartAsyncLoading',function(event){ setTimeout(function() { document.getElementById("floating-text").style.display = "block"; }, 1500); });
     
      </script>
-    
+    {% if template contains 'collection' or template contains 'product' %}
      <script>
       document.addEventListener('StartAsyncLoading',function(event){
           var resource = document.createElement('script'); 
@@ -403,7 +403,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
           script.parentNode.insertBefore(resource, script);  
       });
       </script>
-     
+     {% endif %}
      {% render 'custom-code' %}
   
    </body>
