@@ -1,10 +1,10 @@
 <style>
   .appstle_custom_select .appstle_select { 
     border-radius: 6px !important; 
-    padding: 8px 12px !important;
+    padding: 5px 12px !important;
   }
   .appstle_subscription_wrapper_option .appstle_subscribe_option { 
-    margin-bottom: 20px; 
+    margin-bottom: 10px; 
   }
   .WIDGET_TYPE_7 span.appstle-save-badge { 
     background-color: #fed83f; 
@@ -19,62 +19,37 @@
   }
   .feat-item {
     position: relative;
-    padding: 12px;
-    padding-top: 20px;
-    font-size: 12px;
-    text-align: center;
+    padding: 12px 4px;
+    padding-left: 20px;
+    font-size: 15px;
+    text-align: left;
   }
   .feat-item:before {
   position: absolute;
   content: "";
-  top: -8px;
-  left: calc(50% - 10px);;
-  width: 20px;
-  height: 20px;
+  top: calc(50% - 16px);
+  left: 0;
+  width: 16px;
+  height: 16px;
   background-size: cover;
   background-repeat: no-repeat;
+  background-image: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMiIgaGVpZ2h0PSIxMiIgdmlld0JveD0iMCAwIDY3NCA3MDciIGZpbGw9Im5vbmUiPgo8cGF0aCBkPSJNMjUwLjgyMiA3MDdDMjI4Ljg1MyA3MDcgMjA4LjA0NiA2OTYuNzQ4IDE5NC43MTMgNjc5LjA3MUwxNC4yNjcgNDQwLjYzOEM4LjY4ODEyIDQzMy4yNzUgNC42MTUxOSA0MjQuODg0IDIuMjgxMDQgNDE1Ljk0NUMtMC4wNTMxMTA0IDQwNy4wMDcgLTAuNjAyNzAzIDM5Ny42OTYgMC42NjM2NzQgMzg4LjU0NUMxLjkzMDA1IDM3OS4zOTMgNC45ODc1NiAzNzAuNTgyIDkuNjYxNDIgMzYyLjYxM0MxNC4zMzUzIDM1NC42NDQgMjAuNTMzOCAzNDcuNjc1IDI3LjkwMjcgMzQyLjEwM0MzNS4yNjkgMzM2LjUwOSA0My42NjY5IDMzMi40MjMgNTIuNjE1MSAzMzAuMDhDNjEuNTYzMyAzMjcuNzM3IDcwLjg4NiAzMjcuMTgzIDgwLjA0ODcgMzI4LjQ1Qzg5LjIxMTQgMzI5LjcxNiA5OC4wMzQxIDMzMi43NzkgMTA2LjAxMSAzMzcuNDYyQzExMy45ODggMzQyLjE0NSAxMjAuOTYyIDM0OC4zNTYgMTI2LjUzNCAzNTUuNzRMMjQ1LjI2NiA1MTIuNTA2TDU0My43ODggMzMuMTE1NkM1NTMuNjg4IDE3LjI4NzQgNTY5LjQ2MiA2LjAzMjMxIDU4Ny42NDkgMS44MTkwNkM2MDUuODM2IC0yLjM5NDIgNjI0Ljk1MiAwLjc3ODQ0MSA2NDAuODAzIDEwLjY0MUM2NzMuNzgyIDMxLjE0NiA2ODMuOTMzIDc0LjU4IDY2My4zMjggMTA3LjYxTDMxMC42MTcgNjczLjc2OEMzMDQuNTk2IDY4My40NzYgMjk2LjI5NyA2OTEuNTY4IDI4Ni40NCA2OTcuMzQxQzI3Ni41ODMgNzAzLjExNSAyNjUuNDY2IDcwNi4zOTYgMjU0LjA1NCA3MDYuODk5QzI1Mi45NDMgNzA3IDI1MS45MzMgNzA3IDI1MC44MjIgNzA3WiIgZmlsbD0iZ3JlZW4iLz4KPC9zdmc+');
   z-index: 2;
 }
-.feat-item.feat-item--save:before {
-  left: calc(50% - 10px);;
-  width: 20px;
-  height: 20px;
-  background-image: url('{{ 'dollar.png' | asset_url }}');
-}
-.feat-item.feat-item--comitment:before {
-  left: calc(50% - 10px);;
-  width: 20px;
-  height: 20px;
-  background-image: url('{{ 'close.png' | asset_url }}');
-}
+
 @media screen and (min-width: 991px) {
   .feat-list {
     justify-content: flex-start;
   }
   .feat-item {
     font-size: 16px;
-    padding-top: 12px;
-    padding-left: 44px;
+    padding-left: 32px;
     max-width: 220px;
-    text-align: left;
   }
   .feat-item:before {
-  left: 0;
   top: calc(50% - 18px);;
-  width: 36px;
-  height: 36px;
-}
-.feat-item.feat-item--save:before {
-  left: 0;
-  top: calc(50% - 18px);;
-  width: 36px;
-  height: 34px;
-}
-.feat-item.feat-item--comitment:before {
-  left: 0;
-  top: calc(50% - 18px);;
-  width: 36px;
-  height: 36px;
+  width: 24px;
+  height: 24px;
 }
 }
 </style>
@@ -421,7 +396,7 @@
   wrapFeat.innerHTML = `<ul class="feat-list"><li class="feat-item feat-item--save">Save 15% on every subscription</li><li class="feat-item feat-item--comitment">No commitment, cancel anytime</li></ul>`;
   optionDropdown.appendChild(wrapFeat);
   clearInterval(window.timerX);
-  
+
   }, 50);
 </script>
 <!--   <script type="text/javascript">
