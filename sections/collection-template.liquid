@@ -19,7 +19,7 @@
       </div>
     {%- endif -%}
   {%- endif -%} -->
-  
+{% comment %}
 {% if collection.description.size > 700 %}
   
   <div class="collection-description-short">
@@ -32,7 +32,7 @@
   {% else %}
     {{ collection.description }}
 {% endif %} 
-
+{% endcomment %}
   {%- if paginate.current_page == 1 and section.settings.subcollection_style == 'above' -%}
     {%- render 'subcollections' -%}
   {%- endif -%}

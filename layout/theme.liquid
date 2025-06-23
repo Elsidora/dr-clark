@@ -255,6 +255,21 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
          {%- section 'header' -%}
          <main class="main-content" id="MainContent">
             {{ content_for_layout }}
+            {% if template == "collection" %}
+              {% if collection.description.size > 700 %}
+  <div class="page-width">
+  <div class="collection-description-short">
+    {{ collection.description | truncate: 500, ". . . " }}<a class="readmore" href="#"><strong>Show More &#62;</strong></a>
+  </div>
+  <div class="collection-description-full" style="display:none;">
+  {{ collection.description }}
+    <br><a class="readless" href="#"><strong>&#60; Show Less</strong></a>
+  </div>
+  {% else %}
+    {{ collection.description }}
+    </div>
+            {% endif %} 
+          {% endif %}
          </main>
          {%- section 'footer-promotions' -%}
          {%- section 'footer' -%}
