@@ -157,7 +157,7 @@
       "collection-template": {
         "type": "collection-template",
         "settings": {
-          "description_position": "top",
+          "description_position": "bottom",
           "subcollection_style": "above",
           "grid_style": "small"
         }
