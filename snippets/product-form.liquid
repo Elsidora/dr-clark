@@ -48,23 +48,33 @@
   background-image: url('{{ 'close.png' | asset_url }}');
 }
 @media screen and (min-width: 991px) {
-   .feat-item {
+  .feat-list {
+    justify-content: flex-start;
+  }
+  .feat-item {
     font-size: 16px;
+    padding-top: 12px;
+    padding-left: 44px;
+    max-width: 220px;
+    text-align: left;
   }
   .feat-item:before {
-  left: calc(50% - 12px);;
-  width: 24px;
-  height: 24px;
+  left: 0;
+  top: calc(50% - 18px);;
+  width: 36px;
+  height: 36px;
 }
 .feat-item.feat-item--save:before {
-  left: calc(50% - 12px);;
-  width: 24px;
-  height: 24px;
+  left: 0;
+  top: calc(50% - 18px);;
+  width: 36px;
+  height: 34px;
 }
 .feat-item.feat-item--comitment:before {
-  left: calc(50% - 12px);;
-  width: 24px;
-  height: 24px;
+  left: 0;
+  top: calc(50% - 18px);;
+  width: 36px;
+  height: 36px;
 }
 }
 </style>
