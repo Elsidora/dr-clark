@@ -258,16 +258,19 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
             {% if template == "collection" %}
               <div class="page-width collection-width">
                 {% if collection.description.size > 700 %}
-  
-                  <div class="collection-description-short">
-                    {{ collection.description | truncate: 500, ". . . " }}<button class="readmore"><strong>Show More &#62;</strong></button>
-                  </div>
-                  <div class="collection-description-full" style="display:none;">
-                    {{ collection.description }}
-                    <br><button class="readless"><strong>&#60; Show Less</strong></button>
+                  <div class="collection-description-width">
+                    <div class="collection-description-short">
+                      {{ collection.description | truncate: 500, ". . . " }}<button class="readmore"><strong>Show More &#62;</strong></button>
+                    </div>
+                    <div class="collection-description-full" style="display:none;">
+                      {{ collection.description }}
+                      <br><button class="readless"><strong>&#60; Show Less</strong></button>
+                    </div>
                   </div>
                 {% else %}
-                  {{ collection.description }}
+                  <div class="collection-description-width">
+                    {{ collection.description }}
+                  </div>
                 {% endif %} 
               </div>
             {% endif %}
