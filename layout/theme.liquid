@@ -256,22 +256,25 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
          <main class="main-content" id="MainContent">
             {{ content_for_layout }}
             {% if template == "collection" %}
-              {% if collection.description.size > 700 %}
-  <div class="page-width">
-  <div class="collection-description-short">
-    {{ collection.description | truncate: 500, ". . . " }}<a class="readmore" href="#"><strong>Show More &#62;</strong></a>
-  </div>
-  <div class="collection-description-full" style="display:none;">
-  {{ collection.description }}
-    <br><a class="readless" href="#"><strong>&#60; Show Less</strong></a>
-  </div>
-  {% else %}
-    {{ collection.description }}
-    </div>
-            {% endif %} 
-          {% endif %}
+              <div class="page-width collection-width">
+                {% if collection.description.size > 700 %}
+  
+                  <div class="collection-description-short">
+                    {{ collection.description | truncate: 500, ". . . " }}<button class="readmore"><strong>Show More &#62;</strong></button>
+                  </div>
+                  <div class="collection-description-full" style="display:none;">
+                    {{ collection.description }}
+                    <br><button class="readless"><strong>&#60; Show Less</strong></button>
+                  </div>
+                {% else %}
+                  {{ collection.description }}
+                {% endif %} 
+              </div>
+            {% endif %}
          </main>
-         {%- section 'footer-promotions' -%}
+         {% if template != "collection" %}
+          {%- section 'footer-promotions' -%}
+         {% endif %}
          {%- section 'footer' -%}
       </div>
       {%- section 'newsletter-popup' -%}
