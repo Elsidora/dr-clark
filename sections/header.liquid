@@ -85,6 +85,7 @@
             {%- endif -%}
 
             {%- if nav_position == 'below' -%}
+              {% unless request.path contains 'rapid-search-results' %}
               <div class="header-item header-item--search small--hide">
 
                 <div class="milestone-widget">
@@ -100,6 +101,7 @@
 
                 {%- render 'header-search' -%}
               </div>
+              {% endunless %}
             {%- endif -%}
 
             {%- if nav_position == 'beside' -%}
@@ -114,7 +116,7 @@
               </div>
             {%- endif -%}
 
-            <div class="header-item header-item--icons">
+            <div class="header-item header-item--icons" {% if request.path contains 'rapid-search-results' %}style="margin-left: auto;"{% endif %}>
               {%- render 'header-icons', section: section, nav_position: nav_position -%}
             </div>
           </div>
