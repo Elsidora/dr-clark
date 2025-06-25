@@ -10361,3 +10361,15 @@ body.shownavbar .page-container .header-section{
   }
 }
 
+@media only screen and (max-width: 768px) {
+  .header-wrapper:not(.header-wrapper--compressed) [data-nav=below] .js-search-header {
+    display: flex;
+  }
+  .site-header__element.site-header__element--sub[data-type="search"],
+  .site-header__element.site-header__element--sub.is-transitioning[data-type="search"] {
+    display: none !important;
+    visibility: hidden !important;
+    transition: unset;
+  }
+}
+
