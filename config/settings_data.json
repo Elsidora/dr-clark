@@ -600,7 +600,6 @@
           },
           "cda76a9a-3311-43ea-9449-fc47c21e559f": {
             "type": "announcement",
-            "disabled": true,
             "settings": {
               "richtext": "<p><strong>🔥 </strong>Save 5% on all Kits: use code KIT <strong>🔥</strong></p>",
               "richtext_mobile": "<p><strong>🔥 </strong>Save 5% on all Kits: use code KIT <strong>🔥</strong> </p>"
