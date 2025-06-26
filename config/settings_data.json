@@ -602,7 +602,7 @@
             "type": "announcement",
             "disabled": true,
             "settings": {
-              "richtext": "<p> Save 5% on all Kits: use code KIT </p>",
+              "richtext": "<p>Save 5% on all Kits: use code KIT </p>",
               "richtext_mobile": "<p> Save 5% on all Kits: use code KIT </p>"
             }
           }
