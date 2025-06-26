@@ -602,8 +602,8 @@
             "type": "announcement",
             "disabled": true,
             "settings": {
-              "richtext": "<p><strong>CLOSED Friday, July 4th to observe Independence Day.</strong></p>",
-              "richtext_mobile": "<p><strong>CLOSED Friday, July 4th to observe Independence Day.</strong></p>"
+              "richtext": "<p> Save 5% on all Kits: use code KIT </p>",
+              "richtext_mobile": "<p> Save 5% on all Kits: use code KIT </p>"
             }
           }
         },
