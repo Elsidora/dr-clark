@@ -602,23 +602,14 @@
             "type": "announcement",
             "disabled": true,
             "settings": {
-              "richtext": "<p><strong>CLOSED Monday, February 17th to observe Presidents' Day.</strong></p>",
-              "richtext_mobile": "<p><strong>CLOSED Monday, February 17th to observe Presidents' Day.</strong></p>"
-            }
-          },
-          "825cb0d2-38c7-47c5-a559-6514d2bca09e": {
-            "type": "announcement",
-            "disabled": true,
-            "settings": {
-              "richtext": "<p><strong>CANADIAN CUSTOMERS: Due to the current strike by Canada Post, we cannot ship orders with USPS International. </strong></p>",
-              "richtext_mobile": "<p><strong>CANADIAN CUSTOMERS: Due to the current strike by Canada Post, we cannot ship orders with USPS International. </strong></p>"
+              "richtext": "<p><strong>CLOSED Friday, July 4th to observe Independence Day.</strong></p>",
+              "richtext_mobile": "<p><strong>CLOSED Friday, July 4th to observe Independence Day.</strong></p>"
             }
           }
         },
         "block_order": [
           "90f00bd0-94d1-44b6-b985-4fbeee199014",
-          "cda76a9a-3311-43ea-9449-fc47c21e559f",
-          "825cb0d2-38c7-47c5-a559-6514d2bca09e"
+          "cda76a9a-3311-43ea-9449-fc47c21e559f"
         ],
         "custom_css": [
           ".toolbar {background: #fb9ac9;}",
