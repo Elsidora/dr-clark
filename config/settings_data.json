@@ -601,8 +601,8 @@
           "cda76a9a-3311-43ea-9449-fc47c21e559f": {
             "type": "announcement",
             "settings": {
-              "richtext": "<p>🔥 Save 5% on all Kits: use code KIT 🔥</p>",
-              "richtext_mobile": "<p>🔥 Save 5% on all Kits: use code KIT 🔥</p>"
+              "richtext": "<p>🔥 Save 5% on all kits: use code KIT 🔥</p>",
+              "richtext_mobile": "<p>🔥 Save 5% on all kits: use code KIT 🔥</p>"
             }
           }
         },
