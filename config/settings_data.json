@@ -862,7 +862,6 @@
           },
           "slide_ERDMeK": {
             "type": "slide",
-            "disabled": true,
             "settings": {
               "top_subheading": "",
               "title": "Top Sellers",
@@ -874,7 +873,7 @@
               "link_text_2": "",
               "text_position": "left",
               "image": "shopify://shop_images/asasfasd.webp",
-              "indent_image": false,
+              "indent_image": true,
               "focal_point": "top center",
               "color_scheme": "none"
             }
