@@ -924,32 +924,13 @@
               "focal_point": "top center",
               "color_scheme": "none"
             }
-          },
-          "slide_wBkH6G": {
-            "type": "slide",
-            "settings": {
-              "top_subheading": "Summer Sale",
-              "title": "20% Off Select Items",
-              "title_size": 60,
-              "subheading": "Use code: SUN25",
-              "link": "shopify://collections/summer-sale",
-              "link_text": "Shop Sale Items",
-              "link_2": "",
-              "link_text_2": "",
-              "text_position": "left",
-              "image": "shopify://shop_images/Summer_Sale.jpg",
-              "indent_image": false,
-              "focal_point": "center center",
-              "color_scheme": "none"
-            }
           }
         },
         "block_order": [
           "slide_cgQarh",
           "slide_ERDMeK",
           "slide_dXiLgg",
-          "slide_8XyP4p",
-          "slide_wBkH6G"
+          "slide_8XyP4p"
         ],
         "settings": {
           "full_width": false,
