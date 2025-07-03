@@ -1015,6 +1015,11 @@
         "type": "shopify:\/\/apps\/convert-experiences\/blocks\/convert-tracking\/2eacdd19-b384-4180-b32c-b323a6d9e27e",
         "disabled": false,
         "settings": {}
+      },
+      "10641372206048101839": {
+        "type": "shopify://apps/rebuy-personalization-engine/blocks/rebuy-global-embed/a26ae9b9-933b-40bf-bbc6-bf1220bbc4dc",
+        "disabled": false,
+        "settings": {}
       }
     }
   },
