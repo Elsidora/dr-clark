@@ -1,12 +1,3 @@
-/*
- * ------------------------------------------------------------
- * IMPORTANT: The contents of this file are auto-generated.
- *
- * This file may be updated by the Shopify admin theme editor
- * or related systems. Please exercise caution as any changes
- * made to this file may be overwritten.
- * ------------------------------------------------------------
- */
 {
   "current": {
     "color_body_bg": "#ffffff",
@@ -86,21 +77,21 @@
     "cart_additional_buttons": false,
     "cart_notes_enable": true,
     "cart_terms_conditions_enable": false,
-    "cart_terms_conditions_link": "shopify://pages/shipping-policy",
-    "social_facebook_link": "https://www.facebook.com/profile.php?id=100085435417091#",
-    "social_twitter_link": "https://twitter.com/DrClarkStore",
-    "social_pinterest_link": "https://www.pinterest.com/drclarkstore/",
-    "social_instagram_link": "https://www.instagram.com/drclarkstore/",
-    "social_tiktok_link": "https://www.tiktok.com/discover/dr-clark-store",
-    "social_youtube_link": "https://www.youtube.com/@drclarkstore1",
+    "cart_terms_conditions_link": "shopify:\/\/pages\/shipping-policy",
+    "social_facebook_link": "https:\/\/www.facebook.com\/profile.php?id=100085435417091#",
+    "social_twitter_link": "https:\/\/twitter.com\/DrClarkStore",
+    "social_pinterest_link": "https:\/\/www.pinterest.com\/drclarkstore\/",
+    "social_instagram_link": "https:\/\/www.instagram.com\/drclarkstore\/",
+    "social_tiktok_link": "https:\/\/www.tiktok.com\/discover\/dr-clark-store",
+    "social_youtube_link": "https:\/\/www.youtube.com\/@drclarkstore1",
     "share_facebook": true,
     "share_twitter": true,
     "share_pinterest": true,
-    "favicon": "shopify://shop_images/DCS-Hand-Logo-Art-_2_ppp.png",
+    "favicon": "shopify:\/\/shop_images\/DCS-Hand-Logo-Art-_2_ppp.png",
     "search_type": "product,article,page,collection",
     "show_breadcrumbs": true,
     "show_breadcrumbs_collection_link": true,
-    "checkout_logo_image": "shopify://shop_images/Dr_Clark_LOGO_2.png",
+    "checkout_logo_image": "shopify:\/\/shop_images\/Dr_Clark_LOGO_2.png",
     "checkout_logo_position": "left",
     "checkout_logo_size": "small",
     "checkout_body_background_color": "#ffffff",
@@ -137,7 +128,7 @@
           "1524770014057": {
             "type": "logo",
             "settings": {
-              "logo": "shopify://shop_images/Dr_Clark_LOGO_2.png",
+              "logo": "shopify:\/\/shop_images\/Dr_Clark_LOGO_2.png",
               "desktop_logo_width": 260,
               "mobile_logo_width": 100
             }
@@ -374,7 +365,7 @@
             "settings": {
               "subtitle": "",
               "title": "Large image with text box",
-              "text": "<p>Pair large text with a full-width image to draw attention to an important detail of your brand or product line.</p>",
+              "text": "<p>Pair large text with a full-width image to draw attention to an important detail of your brand or product line.<\/p>",
               "button_label": "",
               "button_link": "",
               "alignment": "center",
@@ -396,13 +387,13 @@
           "d4e52cde-9a08-46ea-b931-05ca3cb509b8": {
             "type": "text-and-image",
             "settings": {
-              "image": "shopify://shop_images/Quercetin-Plus-ok.jpg",
+              "image": "shopify:\/\/shop_images\/Quercetin-Plus-ok.jpg",
               "image_width": 300,
               "subtitle": "",
               "title": "Immune System Heaven – Herbal Magic! With Quercetin",
-              "text": "<p><strong>Size: </strong>Bottled, 90ct Veggie<br/>Caps</p><p><strong>Item#:</strong> 55280</p><p><strong>Description: </strong></p><ul><li>Promotes a healthy immune system* </li><li>Features antioxidant-rich ingredients* </li><li>Vegan-friendly formula</li></ul><p></p>",
+              "text": "<p><strong>Size: <\/strong>Bottled, 90ct Veggie<br\/>Caps<\/p><p><strong>Item#:<\/strong> 55280<\/p><p><strong>Description: <\/strong><\/p><ul><li>Promotes a healthy immune system* <\/li><li>Features antioxidant-rich ingredients* <\/li><li>Vegan-friendly formula<\/li><\/ul><p><\/p>",
               "button_label": "More Details>>",
-              "button_link": "https://drclarkstore.com/collections/all-bernard-jensen-products/products/quercetin-plus-60-vegetarian-capsules",
+              "button_link": "https:\/\/drclarkstore.com\/collections\/all-bernard-jensen-products\/products\/quercetin-plus-60-vegetarian-capsules",
               "layout": "left",
               "color_scheme": "none"
             }
@@ -410,13 +401,13 @@
           "65517ce3-3a01-4f65-acbd-f6df911e40ef": {
             "type": "text-and-image",
             "settings": {
-              "image": "shopify://shop_images/Breathe-Now.jpg",
+              "image": "shopify:\/\/shop_images\/Breathe-Now.jpg",
               "image_width": 270,
               "subtitle": "",
               "title": "Sinus Heaven – Herbal Magic! With Quercetin",
-              "text": "<p><strong>Size: </strong>Bottled, 60ct Veggie<br/>Caps</p><p><strong>Item#:</strong> 55290</p><p><strong>Description: </strong></p><ul><li>Promotes sinus and lung health*</li><li>Anti-inflammatory properties</li><li>Vegan-friendly formula</li></ul><p></p>",
+              "text": "<p><strong>Size: <\/strong>Bottled, 60ct Veggie<br\/>Caps<\/p><p><strong>Item#:<\/strong> 55290<\/p><p><strong>Description: <\/strong><\/p><ul><li>Promotes sinus and lung health*<\/li><li>Anti-inflammatory properties<\/li><li>Vegan-friendly formula<\/li><\/ul><p><\/p>",
               "button_label": "More Details>>",
-              "button_link": "https://drclarkstore.com/products/breathe-60-vegetarian-capsules",
+              "button_link": "https:\/\/drclarkstore.com\/products\/breathe-60-vegetarian-capsules",
               "layout": "left",
               "color_scheme": "none"
             }
@@ -424,13 +415,13 @@
           "d6ee16b4-d0c5-414d-8806-801b172a7e86": {
             "type": "text-and-image",
             "settings": {
-              "image": "shopify://shop_images/Glucosamine.jpg",
+              "image": "shopify:\/\/shop_images\/Glucosamine.jpg",
               "image_width": 270,
               "subtitle": "",
               "title": "Joint Heaven – Herbal Magic! With Glucosamine",
-              "text": "<p><strong>Size: </strong>Bottled, 90ct Veggie<br/>Caps</p><p><strong>Item#:</strong> 55270</p><p><strong>Description: </strong></p><ul><li>Supports joint health* </li><li>Promotes joint flexibility</li><li>Nutrients to manage inflammation levels* </li><li>Features shellfish-free glucosamine</li></ul>",
+              "text": "<p><strong>Size: <\/strong>Bottled, 90ct Veggie<br\/>Caps<\/p><p><strong>Item#:<\/strong> 55270<\/p><p><strong>Description: <\/strong><\/p><ul><li>Supports joint health* <\/li><li>Promotes joint flexibility<\/li><li>Nutrients to manage inflammation levels* <\/li><li>Features shellfish-free glucosamine<\/li><\/ul>",
               "button_label": "More Details>>",
-              "button_link": "https://drclarkstore.com/products/glucosamine-chondroitin-plus-90-capsules",
+              "button_link": "https:\/\/drclarkstore.com\/products\/glucosamine-chondroitin-plus-90-capsules",
               "layout": "left",
               "color_scheme": "none"
             }
@@ -457,7 +448,7 @@
           "popup_seconds": 15,
           "popup_days": 15,
           "popup_title": "Sign Up and Save",
-          "popup_text": "<p>Join Dr. Clark and receive news and updates about her products, plus get 10% off your purchase.</p>",
+          "popup_text": "<p>Join Dr. Clark and receive news and updates about her products, plus get 10% off your purchase.<\/p>",
           "color_scheme": "2",
           "enable_newsletter": true,
           "button_label": "Optional button",
@@ -533,11 +524,11 @@
             "type": "promotion",
             "settings": {
               "enable_image": true,
-              "image": "shopify://shop_images/33500-KITFlatTummyKit.webp",
+              "image": "shopify:\/\/shop_images\/33500-KITFlatTummyKit.webp",
               "title": "Guide for Digestive Enzymes",
-              "text": "<p>This is a short explanation of the difference between different digestive supplements, from HCL to Pancreatin. </p><p></p>",
+              "text": "<p>This is a short explanation of the difference between different digestive supplements, from HCL to Pancreatin. <\/p><p><\/p>",
               "button_label": "Read",
-              "button_link": "shopify://pages/digestive-enzymes-guide",
+              "button_link": "shopify:\/\/pages\/digestive-enzymes-guide",
               "color_scheme": "none"
             }
           },
@@ -545,11 +536,11 @@
             "type": "promotion",
             "settings": {
               "enable_image": true,
-              "image": "shopify://shop_images/Qualitygelatincapsules_7f845658-4527-4b6a-b61f-45780942b389_1.webp",
+              "image": "shopify:\/\/shop_images\/Qualitygelatincapsules_7f845658-4527-4b6a-b61f-45780942b389_1.webp",
               "title": "Purity Guarantee",
-              "text": "<p>Dr. Clark sought the pinnacle of purity and quality in her supplements and our products are guaranteed free of harmful additives like carrageenan. </p>",
+              "text": "<p>Dr. Clark sought the pinnacle of purity and quality in her supplements and our products are guaranteed free of harmful additives like carrageenan. <\/p>",
               "button_label": "Read",
-              "button_link": "https://drclarkstore.com/pages/100-guarantee",
+              "button_link": "https:\/\/drclarkstore.com\/pages\/100-guarantee",
               "color_scheme": "none"
             }
           },
@@ -557,11 +548,11 @@
             "type": "promotion",
             "settings": {
               "enable_image": true,
-              "image": "shopify://shop_images/333162_Parasite_Cleanse_Plus__75866.1589917843.800.800.webp",
+              "image": "shopify:\/\/shop_images\/333162_Parasite_Cleanse_Plus__75866.1589917843.800.800.webp",
               "title": "Parasite Cleanses",
-              "text": "<p>See our collection of parasite cleanses, which come in variety packs for those preferring vegan or gelatin capsules, and/or tincture forms.</p>",
+              "text": "<p>See our collection of parasite cleanses, which come in variety packs for those preferring vegan or gelatin capsules, and\/or tincture forms.<\/p>",
               "button_label": "Shop",
-              "button_link": "https://drclarkstore.com/collections/dr-hulda-clark-parasite-cleanse",
+              "button_link": "https:\/\/drclarkstore.com\/collections\/dr-hulda-clark-parasite-cleanse",
               "color_scheme": "none"
             }
           }
@@ -595,15 +586,15 @@
           "90f00bd0-94d1-44b6-b985-4fbeee199014": {
             "type": "announcement",
             "settings": {
-              "richtext": "<p>🚚 Free domestic shipping on orders over $99 USD</p>",
-              "richtext_mobile": "<p>🚚 Free domestic shipping on orders over $99 USD</p>"
+              "richtext": "<p>🚚 Free domestic shipping on orders over $99 USD<\/p>",
+              "richtext_mobile": "<p>🚚 Free domestic shipping on orders over $99 USD<\/p>"
             }
           },
           "cda76a9a-3311-43ea-9449-fc47c21e559f": {
             "type": "announcement",
             "settings": {
-              "richtext": "<p>🔥 Save 5% on all kits: use code KIT 🔥</p>",
-              "richtext_mobile": "<p>🔥 Save 5% on all kits: use code KIT 🔥</p>"
+              "richtext": "<p>🔥 Save 5% on all kits: use code KIT 🔥<\/p>",
+              "richtext_mobile": "<p>🔥 Save 5% on all kits: use code KIT 🔥<\/p>"
             }
           }
         },
@@ -689,7 +680,7 @@
         ],
         "settings": {
           "show_newsletter": true,
-          "newsletter_richtext": "<p>Join the Dr. Clark Store newsletter for product news and discounts, plus get 10% off your purchase.</p>",
+          "newsletter_richtext": "<p>Join the Dr. Clark Store newsletter for product news and discounts, plus get 10% off your purchase.<\/p>",
           "show_copyright": true,
           "copyright_text": "All prices are in USD. Prices are subject to change without notice.",
           "policies_menu": ""
@@ -826,7 +817,7 @@
           "215364d7-970c-462c-92ea-5dc4ccde496f-166976387692dbd1ab-1": {
             "type": "html",
             "settings": {
-              "code": "<h2>Need help managing your product subscription?</h2><p>For assistance managing your product subscriptions (changing the frequency or cancelling), please contact our customer service department. Email service@drclarkstore.com or call 1-866-372-5275.</p>",
+              "code": "<h2>Need help managing your product subscription?<\/h2><p>For assistance managing your product subscriptions (changing the frequency or cancelling), please contact our customer service department. Email service@drclarkstore.com or call 1-866-372-5275.<\/p>",
               "width": "100%",
               "alignment": "center"
             }
@@ -850,12 +841,12 @@
               "title": "Our Highest Priority is Purity",
               "title_size": 40,
               "subheading": "GMO-Free;                                                                          \nNo Artificial Ingredients;\nNo Harmful Additives;\nNo Stearates;\nNo Carrageenan",
-              "link": "https://drclarkstore.com/collections/dr-hulda-clark-parasite-cleanse",
+              "link": "https:\/\/drclarkstore.com\/collections\/dr-hulda-clark-parasite-cleanse",
               "link_text": "Read More",
               "link_2": "",
               "link_text_2": "",
               "text_position": "left",
-              "image": "shopify://shop_images/carageenan1234.png",
+              "image": "shopify:\/\/shop_images\/carageenan1234.png",
               "indent_image": true,
               "focal_point": "center center",
               "color_scheme": "none"
@@ -869,12 +860,12 @@
               "title": "Top Sellers",
               "title_size": 43,
               "subheading": "",
-              "link": "https://drclarkstore.com/collections/dr-hulda-clark-parasite-cleanse",
+              "link": "https:\/\/drclarkstore.com\/collections\/dr-hulda-clark-parasite-cleanse",
               "link_text": "Shop Parasite Cleanses",
               "link_2": "",
               "link_text_2": "",
               "text_position": "left",
-              "image": "shopify://shop_images/asasfasd.webp",
+              "image": "shopify:\/\/shop_images\/asasfasd.webp",
               "indent_image": true,
               "focal_point": "top center",
               "color_scheme": "none"
@@ -888,12 +879,12 @@
               "title": "We're Triple GMP Certified",
               "title_size": 43,
               "subheading": "",
-              "link": "https://drclarkstore.com/collections/dr-hulda-clark-parasite-cleanse",
+              "link": "https:\/\/drclarkstore.com\/collections\/dr-hulda-clark-parasite-cleanse",
               "link_text": "Read More",
               "link_2": "",
               "link_text_2": "",
               "text_position": "left",
-              "image": "shopify://shop_images/asfwdwdwd.jpg",
+              "image": "shopify:\/\/shop_images\/asfwdwdwd.jpg",
               "indent_image": false,
               "focal_point": "top center",
               "color_scheme": "none"
@@ -907,12 +898,12 @@
               "title": "Purity,\nPotency,\nAuthenticity",
               "title_size": 43,
               "subheading": "",
-              "link": "https://drclarkstore.com/collections/dr-hulda-clark-parasite-cleanse",
+              "link": "https:\/\/drclarkstore.com\/collections\/dr-hulda-clark-parasite-cleanse",
               "link_text": "Read More",
               "link_2": "",
               "link_text_2": "",
               "text_position": "left",
-              "image": "shopify://shop_images/as3131151.png",
+              "image": "shopify:\/\/shop_images\/as3131151.png",
               "indent_image": false,
               "focal_point": "top center",
               "color_scheme": "none"
@@ -926,12 +917,12 @@
               "title": "20% Off Select Items",
               "title_size": 60,
               "subheading": "Use code: SUN25",
-              "link": "shopify://collections/summer-sale",
+              "link": "shopify:\/\/collections\/summer-sale",
               "link_text": "Shop Sale Items",
               "link_2": "",
               "link_text_2": "",
               "text_position": "left",
-              "image": "shopify://shop_images/Summer_Sale.jpg",
+              "image": "shopify:\/\/shop_images\/Summer_Sale.jpg",
               "indent_image": false,
               "focal_point": "center center",
               "color_scheme": "none"
@@ -965,37 +956,37 @@
     ],
     "blocks": {
       "163276642488fb99f0": {
-        "type": "shopify://apps/appstle-subscriptions/blocks/appstle-subscription-helper/fe257d39-6f88-4f35-ab08-bd437e3aa94e",
+        "type": "shopify:\/\/apps\/appstle-subscriptions\/blocks\/appstle-subscription-helper\/fe257d39-6f88-4f35-ab08-bd437e3aa94e",
         "disabled": false,
         "settings": {}
       },
       "5182184951224911228": {
-        "type": "shopify://apps/rapid-search/blocks/script/bd827795-feaa-41a8-9219-2b83f238aa7d",
+        "type": "shopify:\/\/apps\/rapid-search\/blocks\/script\/bd827795-feaa-41a8-9219-2b83f238aa7d",
         "disabled": false,
         "settings": {}
       },
       "pagefly-page-builder": {
-        "type": "shopify://apps/pagefly-page-builder/blocks/app-embed/83e179f7-59a0-4589-8c66-c0dddf959200",
+        "type": "shopify:\/\/apps\/pagefly-page-builder\/blocks\/app-embed\/83e179f7-59a0-4589-8c66-c0dddf959200",
         "disabled": false,
         "settings": {}
       },
       "13672250894428551832": {
-        "type": "shopify://apps/qikify-slide-cart/blocks/app-embed/39da5d6e-3e04-4687-bc69-e23fafb93294",
+        "type": "shopify:\/\/apps\/qikify-slide-cart\/blocks\/app-embed\/39da5d6e-3e04-4687-bc69-e23fafb93294",
         "disabled": false,
         "settings": {}
       },
       "13951170544780599758": {
-        "type": "shopify://apps/tapita-seo-speed/blocks/app-embed/cd37ca7a-40ad-4fdc-afd3-768701482209",
+        "type": "shopify:\/\/apps\/tapita-seo-speed\/blocks\/app-embed\/cd37ca7a-40ad-4fdc-afd3-768701482209",
         "disabled": false,
         "settings": {}
       },
       "7924418359578431505": {
-        "type": "shopify://apps/seoant-ai-seo/blocks/seoant-core/8e57283b-dcb0-4f7b-a947-fb5c57a0d59d",
+        "type": "shopify:\/\/apps\/seoant-ai-seo\/blocks\/seoant-core\/8e57283b-dcb0-4f7b-a947-fb5c57a0d59d",
         "disabled": false,
         "settings": {}
       },
       "15516442047899035060": {
-        "type": "shopify://apps/live-shopping-by-livemeup/blocks/live-widget/82ccf4ed-67f8-4725-9167-e54475d4748e",
+        "type": "shopify:\/\/apps\/live-shopping-by-livemeup\/blocks\/live-widget\/82ccf4ed-67f8-4725-9167-e54475d4748e",
         "disabled": false,
         "settings": {
           "horizontal_position": "left",
@@ -1011,17 +1002,17 @@
         }
       },
       "21474836472147483647": {
-        "type": "shopify://apps/ecomposer-landing-page-builder/blocks/app-embed/a0fc26e1-7741-4773-8b27-39389b4fb4a0",
+        "type": "shopify:\/\/apps\/ecomposer-landing-page-builder\/blocks\/app-embed\/a0fc26e1-7741-4773-8b27-39389b4fb4a0",
         "disabled": false,
         "settings": {}
       },
       "855628211100114053": {
-        "type": "shopify://apps/klaviyo-email-marketing-sms/blocks/klaviyo-onsite-embed/2632fe16-c075-4321-a88b-50b567f42507",
+        "type": "shopify:\/\/apps\/klaviyo-email-marketing-sms\/blocks\/klaviyo-onsite-embed\/2632fe16-c075-4321-a88b-50b567f42507",
         "disabled": false,
         "settings": {}
       },
       "3999180998444345382": {
-        "type": "shopify://apps/convert-experiences/blocks/convert-tracking/2eacdd19-b384-4180-b32c-b323a6d9e27e",
+        "type": "shopify:\/\/apps\/convert-experiences\/blocks\/convert-tracking\/2eacdd19-b384-4180-b32c-b323a6d9e27e",
         "disabled": false,
         "settings": {}
       },
@@ -1347,21 +1338,21 @@
                 "enable_image_1": true,
                 "image_width_1": 650,
                 "title_1": "New York",
-                "text_1": "<p>4523 Broadway Ave<br/>Manhattan, New York</p><p>Mon - Fri, 8:30am - 10:30pm<br/>Saturday, 8:30am - 10:30pm<br/>Sunday, 8:30am - 10:30pm</p>",
+                "text_1": "<p>4523 Broadway Ave<br\/>Manhattan, New York<\/p><p>Mon - Fri, 8:30am - 10:30pm<br\/>Saturday, 8:30am - 10:30pm<br\/>Sunday, 8:30am - 10:30pm<\/p>",
                 "button_label_1": "View map",
-                "button_link_1": "https://www.google.ca/maps/place/Main+St,+Queens,+NY,+USA/@40.7359745,-73.8338499,15z/data=!4m5!3m4!1s0x89c260618039000d:0x4e4216fa03a650cf!8m2!3d40.7359744!4d-73.8250952",
+                "button_link_1": "https:\/\/www.google.ca\/maps\/place\/Main+St,+Queens,+NY,+USA\/@40.7359745,-73.8338499,15z\/data=!4m5!3m4!1s0x89c260618039000d:0x4e4216fa03a650cf!8m2!3d40.7359744!4d-73.8250952",
                 "enable_image_2": true,
                 "image_width_2": 650,
                 "title_2": "Brooklyn",
-                "text_2": "<p>301 Front St W<br/>Brooklyn, New York</p><p>Mon - Fri, 8:30am - 10:30pm<br/>Saturday, 8:30am - 10:30pm<br/>Sunday, 8:30am - 10:30pm</p>",
+                "text_2": "<p>301 Front St W<br\/>Brooklyn, New York<\/p><p>Mon - Fri, 8:30am - 10:30pm<br\/>Saturday, 8:30am - 10:30pm<br\/>Sunday, 8:30am - 10:30pm<\/p>",
                 "button_label_2": "View map",
-                "button_link_2": "https://www.google.ca/maps/place/Main+St,+Queens,+NY,+USA/@40.7359745,-73.8338499,15z/data=!4m5!3m4!1s0x89c260618039000d:0x4e4216fa03a650cf!8m2!3d40.7359744!4d-73.8250952",
+                "button_link_2": "https:\/\/www.google.ca\/maps\/place\/Main+St,+Queens,+NY,+USA\/@40.7359745,-73.8338499,15z\/data=!4m5!3m4!1s0x89c260618039000d:0x4e4216fa03a650cf!8m2!3d40.7359744!4d-73.8250952",
                 "enable_image_3": true,
                 "image_width_3": 650,
                 "title_3": "Queens",
-                "text_3": "<p>2381 Main St<br/>Queens, New York</p><p>Mon - Fri, 8:30am - 10:30pm<br/>Saturday, 8:30am - 10:30pm<br/>Sunday, 8:30am - 10:30pm</p>",
+                "text_3": "<p>2381 Main St<br\/>Queens, New York<\/p><p>Mon - Fri, 8:30am - 10:30pm<br\/>Saturday, 8:30am - 10:30pm<br\/>Sunday, 8:30am - 10:30pm<\/p>",
                 "button_label_3": "View map",
-                "button_link_3": "https://www.google.ca/maps/place/Main+St,+Queens,+NY,+USA/@40.7359745,-73.8338499,15z/data=!4m5!3m4!1s0x89c260618039000d:0x4e4216fa03a650cf!8m2!3d40.7359744!4d-73.8250952"
+                "button_link_3": "https:\/\/www.google.ca\/maps\/place\/Main+St,+Queens,+NY,+USA\/@40.7359745,-73.8338499,15z\/data=!4m5!3m4!1s0x89c260618039000d:0x4e4216fa03a650cf!8m2!3d40.7359744!4d-73.8250952"
               }
             },
             "page-background-image-text": {
@@ -2168,21 +2159,21 @@
                 "enable_image_1": true,
                 "image_width_1": 650,
                 "title_1": "New York",
-                "text_1": "<p>4523 Broadway Ave<br/>Manhattan, New York</p><p>Mon - Fri, 8:30am - 10:30pm<br/>Saturday, 8:30am - 10:30pm<br/>Sunday, 8:30am - 10:30pm</p>",
+                "text_1": "<p>4523 Broadway Ave<br\/>Manhattan, New York<\/p><p>Mon - Fri, 8:30am - 10:30pm<br\/>Saturday, 8:30am - 10:30pm<br\/>Sunday, 8:30am - 10:30pm<\/p>",
                 "button_label_1": "View map",
-                "button_link_1": "https://www.google.ca/maps/place/Main+St,+Queens,+NY,+USA/@40.7359745,-73.8338499,15z/data=!4m5!3m4!1s0x89c260618039000d:0x4e4216fa03a650cf!8m2!3d40.7359744!4d-73.8250952",
+                "button_link_1": "https:\/\/www.google.ca\/maps\/place\/Main+St,+Queens,+NY,+USA\/@40.7359745,-73.8338499,15z\/data=!4m5!3m4!1s0x89c260618039000d:0x4e4216fa03a650cf!8m2!3d40.7359744!4d-73.8250952",
                 "enable_image_2": true,
                 "image_width_2": 650,
                 "title_2": "Brooklyn",
-                "text_2": "<p>301 Front St W<br/>Brooklyn, New York</p><p>Mon - Fri, 8:30am - 10:30pm<br/>Saturday, 8:30am - 10:30pm<br/>Sunday, 8:30am - 10:30pm</p>",
+                "text_2": "<p>301 Front St W<br\/>Brooklyn, New York<\/p><p>Mon - Fri, 8:30am - 10:30pm<br\/>Saturday, 8:30am - 10:30pm<br\/>Sunday, 8:30am - 10:30pm<\/p>",
                 "button_label_2": "View map",
-                "button_link_2": "https://www.google.ca/maps/place/Main+St,+Queens,+NY,+USA/@40.7359745,-73.8338499,15z/data=!4m5!3m4!1s0x89c260618039000d:0x4e4216fa03a650cf!8m2!3d40.7359744!4d-73.8250952",
+                "button_link_2": "https:\/\/www.google.ca\/maps\/place\/Main+St,+Queens,+NY,+USA\/@40.7359745,-73.8338499,15z\/data=!4m5!3m4!1s0x89c260618039000d:0x4e4216fa03a650cf!8m2!3d40.7359744!4d-73.8250952",
                 "enable_image_3": true,
                 "image_width_3": 650,
                 "title_3": "Queens",
-                "text_3": "<p>2381 Main St<br/>Queens, New York</p><p>Mon - Fri, 8:30am - 10:30pm<br/>Saturday, 8:30am - 10:30pm<br/>Sunday, 8:30am - 10:30pm</p>",
+                "text_3": "<p>2381 Main St<br\/>Queens, New York<\/p><p>Mon - Fri, 8:30am - 10:30pm<br\/>Saturday, 8:30am - 10:30pm<br\/>Sunday, 8:30am - 10:30pm<\/p>",
                 "button_label_3": "View map",
-                "button_link_3": "https://www.google.ca/maps/place/Main+St,+Queens,+NY,+USA/@40.7359745,-73.8338499,15z/data=!4m5!3m4!1s0x89c260618039000d:0x4e4216fa03a650cf!8m2!3d40.7359744!4d-73.8250952"
+                "button_link_3": "https:\/\/www.google.ca\/maps\/place\/Main+St,+Queens,+NY,+USA\/@40.7359745,-73.8338499,15z\/data=!4m5!3m4!1s0x89c260618039000d:0x4e4216fa03a650cf!8m2!3d40.7359744!4d-73.8250952"
               }
             },
             "page-background-image-text": {

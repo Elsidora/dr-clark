@@ -11,6 +11,92 @@
         </div>
         <div class="grid__item medium-up--four-fifths grid__item--content">
           <div class="collection-grid__wrapper">
+            {% if request.path contains 'summer-sale-early-access' %}
+            <style>
+.coll-widget {
+  position: relative;
+  background-image: url('{{ 'cap-mob.png' | asset_url }}');
+  background-size: auto;
+  background-position: bottom right;
+  background-repeat: no-repeat;
+  background-color:  #31364E;
+  color: #fff;
+  min-height: 250px;
+  padding: 37px 17px;
+
+  border-radius: 16px;
+  
+}
+.coll-widget__title {
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 100%;
+}
+.coll-widget__header {
+   margin-bottom: 12px;
+}
+.coll-widget__discount {
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 100%;
+}
+.coll-widget__middle {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 16px;
+}
+.coll-widget .coll-widget__paragraph {
+  font-size: 12px;
+  margin: unset;
+}
+@media screen and (min-width: 769px) {
+  .coll-widget {
+  position: relative;
+  background-image: url('{{ 'cap-desk.png' | asset_url }}');
+  min-height: 134px;
+  padding: 32px 17px;
+  border-radius: 16px;
+  margin-right: 0;
+  margin-left: auto;
+  }
+  
+  .coll-widget__header {
+    display: flex;
+    margin-bottom: unset;
+  }
+  .coll-widget__discount {
+  margin-left: 20px;
+  }
+  .coll-widget__title,
+  .coll-widget__discount {
+    line-height: 20px;
+    margin-bottom: 12px;
+  }
+  .coll-widget__title {
+    
+    margin-bottom: 12px;
+  }
+  .coll-widget__middle {
+    flex-direction: row;
+    justify-content: flex-start;
+    margin-bottom: unset;
+  }
+  
+}
+
+</style>
+        <div class="coll-widget">
+        <div class="coll-widget__header">
+          <h2 class="coll-widget__title">Save 20% with coupon code</h2>
+          <span class="coll-widget__discount">JULY20</span>
+          </div>
+          <div class="coll-widget__middle">
+            <p class="coll-widget__paragraph">Code valid:</p>
+            <p class="coll-widget__paragraph">Code valid: 07.02.2025 (12:00 AM) - 07.06.2025 (11:59 PM)</p>
+          </div>
+          <p class="coll-widget__paragraph">One coupon code per order. Not applicable on product subscriptions or wholesale orders</p>
+        </div>
+      {% endif %}
             {% section 'collection-template' %}
           </div>
         </div>
