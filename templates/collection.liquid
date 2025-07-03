@@ -33,6 +33,8 @@
   line-height: 100%;
 }
 .coll-widget__header {
+  display: flex;
+  flex-direction: column;
    margin-bottom: 12px;
 }
 .coll-widget__discount {
@@ -61,11 +63,11 @@
   }
   
   .coll-widget__header {
-    display: flex;
+    flex-direction: row;
     margin-bottom: unset;
   }
   .coll-widget__discount {
-  margin-left: 20px;
+  margin-left: 8px;
   }
   .coll-widget__title,
   .coll-widget__discount {
@@ -87,12 +89,12 @@
 </style>
         <div class="coll-widget">
         <div class="coll-widget__header">
-          <h2 class="coll-widget__title">Save 20% with coupon code</h2>
+          <h2 class="coll-widget__title">Save 20% with coupon code:</h2>
           <span class="coll-widget__discount">JULY20</span>
           </div>
           <div class="coll-widget__middle">
             <p class="coll-widget__paragraph">Code valid:</p>
-            <p class="coll-widget__paragraph">Code valid: 07.02.2025 (12:00 AM) - 07.06.2025 (11:59 PM)</p>
+            <p class="coll-widget__paragraph">07.02.2025 (12:00 AM) - 07.06.2025 (11:59 PM)</p>
           </div>
           <p class="coll-widget__paragraph">One coupon code per order. Not applicable on product subscriptions or wholesale orders</p>
         </div>
