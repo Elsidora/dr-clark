@@ -24,12 +24,17 @@
     "prod-recently": {
       "type": "recently-viewed",
       "settings": {}
+    },
+    "prod-shopper-approved": {
+      "type": "custom--shopper-approved-product",
+      "settings": {}
     }
   },
   "order": [
     "prod-template",
     "prod-recommendations",
     "prod-vendor",
-    "prod-recently"
+    "prod-recently",
+    "prod-shopper-approved"
   ]
 }
