@@ -1,3 +1,27 @@
+{% if request.path contains 'product' %}
+<style>
+
+iframe.bpFab {
+  bottom: 98px;
+  right: 1rem;
+}
+#floating-text.floating-text {
+  bottom: 80px;
+  right: 12px;
+}
+@media only screen and (min-width: 768px) {
+  
+  iframe.bpFab {
+    bottom: 124px;
+    right: 8px;
+  }
+  #floating-text.floating-text {
+    bottom: 92px;
+    right: 12px;
+  }
+}
+</style>
+{% endif %}
 {%- liquid
   assign isModal = false
   if template == 'product.modal'
