@@ -24,10 +24,6 @@
         "social_enable": true
       }
     },
-    "prod-shopper-approved": {
-      "type": "custom--shopper-approved-product",
-      "settings": {}
-    },
     "1751637867659147c5": {
       "type": "apps",
       "blocks": {
@@ -44,6 +40,10 @@
       "block_order": [
         "rebuy_personalization_engine_rebuy_widget_zGJprb"
       ],
+      "settings": {}
+    },
+    "prod-shopper-approved": {
+      "type": "custom--shopper-approved-product",
       "settings": {}
     },
     "prod-recommendations": {
@@ -72,8 +72,8 @@
   },
   "order": [
     "prod-template",
-    "prod-shopper-approved",
     "1751637867659147c5",
+    "prod-shopper-approved",
     "prod-recommendations",
     "prod-vendor",
     "prod-recently",
