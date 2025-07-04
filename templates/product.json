@@ -24,6 +24,10 @@
         "social_enable": true
       }
     },
+    "prod-shopper-approved": {
+      "type": "custom--shopper-approved-product",
+      "settings": {}
+    },
     "1751637867659147c5": {
       "type": "apps",
       "blocks": {
@@ -61,10 +65,6 @@
         "show_section": true
       }
     },
-    "prod-shopper-approved": {
-      "type": "custom--shopper-approved-product",
-      "settings": {}
-    },
     "175163786518daba71": {
       "type": "apps",
       "settings": {}
@@ -72,11 +72,11 @@
   },
   "order": [
     "prod-template",
+    "prod-shopper-approved",
     "1751637867659147c5",
     "prod-recommendations",
     "prod-vendor",
     "prod-recently",
-    "prod-shopper-approved",
     "175163786518daba71"
   ]
 }
