@@ -11,22 +11,58 @@
   "sections": {
     "prod-template": {
       "type": "product-template",
-      "settings": {}
+      "settings": {
+        "image_position": "left",
+        "image_container_size": "medium",
+        "product_image_size": "square",
+        "thumbnail_position": "beside",
+        "thumbnail_arrows": false,
+        "mobile_layout": "partial",
+        "enable_video_looping": true,
+        "product_video_style": "muted",
+        "description_style": "expandable",
+        "social_enable": true
+      }
     },
     "prod-recommendations": {
       "type": "product-recommendations",
-      "settings": {}
+      "settings": {
+        "show_product_recommendations": true,
+        "product_recommendations_heading": "You may also like"
+      }
     },
     "prod-vendor": {
       "type": "vendor-products",
-      "settings": {}
+      "settings": {
+        "show_section": true
+      }
     },
     "prod-recently": {
       "type": "recently-viewed",
-      "settings": {}
+      "settings": {
+        "show_section": true
+      }
     },
     "prod-shopper-approved": {
       "type": "custom--shopper-approved-product",
+      "settings": {}
+    },
+    "175163786518daba71": {
+      "type": "apps",
+      "blocks": {
+        "rebuy_personalization_engine_rebuy_widget_tG79X3": {
+          "type": "shopify://apps/rebuy-personalization-engine/blocks/rebuy-widget/a26ae9b9-933b-40bf-bbc6-bf1220bbc4dc",
+          "settings": {
+            "enabled": true,
+            "id": "224487",
+            "product_id_enabled": true,
+            "collection_id_enabled": false
+          }
+        }
+      },
+      "block_order": [
+        "rebuy_personalization_engine_rebuy_widget_tG79X3"
+      ],
       "settings": {}
     }
   },
@@ -35,6 +71,7 @@
     "prod-recommendations",
     "prod-vendor",
     "prod-recently",
-    "prod-shopper-approved"
+    "prod-shopper-approved",
+    "175163786518daba71"
   ]
 }
