@@ -360,13 +360,13 @@
         {{ button_text }}
       </span>
     </button>
-
+    {% comment %}
     <!-- Trust Guard Secure Transaction Seal - snippets/product-form.liquid -->
     <div style="text-align: center;">
       <link rel="stylesheet" no-href="https://fonts.googleapis.com/css?family=Roboto"><link rel="stylesheet" rel="preload" href="https://tgscript.s3.amazonaws.com/cert-style-v1.024.css" integrity="sha384-PzfduepNOPTKNfShxcius5IlrRQUUwINOCc14DrQlKzVnKWHX2OvyT01RRPVD43C" crossorigin="anonymous"> <div  class="tgfloat tgStackSeal tgBleft tg_1-bleft "><table class="tgBlockText" cellspacing="0" cellpadding="0" style="display:none;"><tr><td class="tgBlockImg"><img alt="Trust Guard Security Scanned" id="tgfloat-img" class="tgfloat-inner" src="https://seal.trustguard.com/sites/drclarkstore.com/66ccd35bf6a0dc06076cccee.svg" style="border: 0; max-width: 16px; vertical-align: -2px;" oncontextmenu="var d = new Date(); alert('Copying Prohibited by Law - This image and all included logos are copyrighted by Trust Guard '+d.getFullYear()+'.'); return false;" /></td><td class="tgBlockSecure" style="font-family: roboto; font-size:16px; color:#0066C0">Secure Transaction </td></tr/></table></div> <div id="tgSlideContainer"></div><script src="https://tgscript.s3.amazonaws.com/tgscript-v1.040.js" integrity="sha384-Z/SJxrJ7cstYvara7zoyrkqZJU6kiy1pi8AAYK9BfGAax7Im7eELF8mtyi94/UTV" crossorigin="anonymous"></script><script>var tg_div = document.createElement("div");tg_div.innerHTML = tg_script_bottom_left;document.body.appendChild(tg_div);tg_load_animations("66ccd35bf6a0dc06076ccce3", "bottom_left");tgCheckSealLeft();</script>
     </div>
     <!-- END Trust Guard Secure Transaction Seal - snippets/product-form.liquid -->
-
+    {% endcomment %}
 <!--    {%- if enable_dynamic_buttons -%}
       {{ form | payment_button }}
     {%- endif -%}  -->
