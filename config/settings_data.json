@@ -93,9 +93,9 @@
     "social_instagram_link": "https://www.instagram.com/drclarkstore/",
     "social_tiktok_link": "https://www.tiktok.com/discover/dr-clark-store",
     "social_youtube_link": "https://www.youtube.com/@drclarkstore1",
-    "share_facebook": true,
-    "share_twitter": true,
-    "share_pinterest": true,
+    "share_facebook": false,
+    "share_twitter": false,
+    "share_pinterest": false,
     "favicon": "shopify://shop_images/DCS-Hand-Logo-Art-_2_ppp.png",
     "search_type": "product,article,page,collection",
     "show_breadcrumbs": true,
@@ -531,6 +531,7 @@
         "blocks": {
           "promotion_mALeKQ": {
             "type": "promotion",
+            "disabled": true,
             "settings": {
               "enable_image": true,
               "image": "shopify://shop_images/33500-KITFlatTummyKit.webp",
@@ -543,6 +544,7 @@
           },
           "promotion_TGrGFD": {
             "type": "promotion",
+            "disabled": true,
             "settings": {
               "enable_image": true,
               "image": "shopify://shop_images/Qualitygelatincapsules_7f845658-4527-4b6a-b61f-45780942b389_1.webp",
@@ -555,6 +557,7 @@
           },
           "promotion_xqAmxz": {
             "type": "promotion",
+            "disabled": true,
             "settings": {
               "enable_image": true,
               "image": "shopify://shop_images/333162_Parasite_Cleanse_Plus__75866.1589917843.800.800.webp",
