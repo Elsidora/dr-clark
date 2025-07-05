@@ -937,7 +937,7 @@
               "image": "shopify://shop_images/Summer_Sale.jpg",
               "indent_image": false,
               "focal_point": "center center",
-              "color_scheme": "none"
+              "color_scheme": "1"
             }
           }
         },
