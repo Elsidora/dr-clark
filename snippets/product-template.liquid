@@ -121,8 +121,8 @@
 
       <div class="product-grid__container grid{% unless image_position == 'left' %} grid--product-images-right{% endunless %}{% if mobile_layout == 'partial' %} grid--product-images--partial{% endif %}">
         {%- if settings.show_breadcrumbs and isModal != true -%}
-      {%- render 'breadcrumbs' -%}
-    {%- endif -%}
+          {%- render 'breadcrumbs' -%}
+        {%- endif -%}
         {%- if image_position == 'left' -%}
           <div class="grid__item {{ product_image_width }} product-single__sticky">
             {%- render 'product-images',
@@ -228,6 +228,9 @@
             {%- if social -%}
               {%- render 'social-sharing', share_title: product.title, share_permalink: product.url, share_image: product -%}
             {%- endif -%}
+            <div class="page-width--flush-small">
+             {%- render 'product-additional-content', product: product, section_id: section_id, description_style: description_style -%}
+            </div>
           </div>
         </div>
 
@@ -248,10 +251,9 @@
           </div>
         {%- endunless -%}
       </div>
+      
     </div>
 
-    <div class="page-width page-width--flush-small">
-      {%- render 'product-additional-content', product: product, section_id: section_id, description_style: description_style -%}
-    </div>
+    
   </div>
 </div>
