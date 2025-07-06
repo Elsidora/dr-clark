@@ -113,6 +113,11 @@
   
 
   <div class="page-content page-content--product">
+      {%- if settings.show_breadcrumbs and isModal != true -%}
+        <div class='page-width breadcrumb-product'>
+          {%- render 'breadcrumbs' -%}
+        </div>
+      {%- endif -%}
     <div class="page-width">
 
       <div class="product-single__header--mobile medium-up--hide">
@@ -120,9 +125,7 @@
       </div>
 
       <div class="product-grid__container grid{% unless image_position == 'left' %} grid--product-images-right{% endunless %}{% if mobile_layout == 'partial' %} grid--product-images--partial{% endif %}">
-        {%- if settings.show_breadcrumbs and isModal != true -%}
-          {%- render 'breadcrumbs' -%}
-        {%- endif -%}
+        
         {%- if image_position == 'left' -%}
           <div class="grid__item {{ product_image_width }} product-single__sticky">
             {%- render 'product-images',
