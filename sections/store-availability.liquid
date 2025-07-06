@@ -1,3 +1,12 @@
+<style>
+.availability-list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+</style>
+
 <div
   data-section-id="{{ section.id }}"
   data-section-type="store-availability">
@@ -15,9 +24,7 @@
           <div>
             {{ 'store_availability.general.pick_up_available_at_html' | t: location_name: closest_location.location.name }}
           </div>
-          <p class="store-availability__small">
-            {{ closest_location.pick_up_time }}
-          </p>
+          <div class="availability-list">
           <p class="store-availability__small store-availability__small--link">
             <a href="#StoreAvailabilityModal" class="js-modal-open-availability" aria-controls="StoreAvailabilityModal">
               {%- if pick_up_availabilities.size == 1 -%}
@@ -27,6 +34,10 @@
               {%- endif -%}
             </a>
           </p>
+          <p class="store-availability__small">
+            {{ closest_location.pick_up_time }}
+          </p>
+          </div>
         {%- else -%}
           <p>
             {{ 'store_availability.general.pick_up_unavailable_at_html' | t: location_name: closest_location.location.name }}
