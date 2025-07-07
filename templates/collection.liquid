@@ -11,6 +11,7 @@
         </div>
         <div class="grid__item medium-up--four-fifths grid__item--content">
           <div class="collection-grid__wrapper">
+            {% comment %}
             {% if request.path contains 'summer-sale-early-access' %}
             <style>
 .coll-widget {
@@ -99,6 +100,7 @@
           <p class="coll-widget__paragraph">One coupon code per order. Not applicable on product subscriptions or wholesale orders</p>
         </div>
       {% endif %}
+      {% endcomment %}
             {% section 'collection-template' %}
           </div>
         </div>
