@@ -1,12 +1,14 @@
 <script>
-  document.addEventListener('DOMContentLoaded', () => {
-  let parent = document.querySelector('#rebuy-widget-224487 .rebuy-bundle__actions-buttons');  
-  if (parent) {
-    let p = document.createElement('p');  
-    p.textContent = 'Want to have a smooth parasite cleanse? Ornithine helps detoxify the excess ammonia that parasites release, improving sleep and supporting overall recovery during a parasite cleanse';  
-    parent.prepend(p)  
-  }
-  })
+  if (window.timerX) clearInterval(window.timerX);
+  window.timerX = setInterval(function () {
+    let parent = document.querySelector('#rebuy-widget-224487 .rebuy-bundle__actions-buttons');  
+    if (parent) {
+      let p = document.createElement('p');  
+      p.textContent = 'Want to have a smooth parasite cleanse? Ornithine helps detoxify the excess ammonia that parasites release, improving sleep and supporting overall recovery during a parasite cleanse';  
+      parent.prepend(p);
+      clearInterval(window.timerX);
+    }
+  }, 50)
 </script>
 
 
