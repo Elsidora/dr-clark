@@ -20,7 +20,7 @@
         "mobile_layout": "partial",
         "enable_video_looping": true,
         "product_video_style": "muted",
-        "description_style": "expandable",
+        "description_style": "visible",
         "social_enable": false
       }
     },
