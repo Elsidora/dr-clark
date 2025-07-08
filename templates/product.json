@@ -68,6 +68,10 @@
     "175163786518daba71": {
       "type": "apps",
       "settings": {}
+    },
+    "prod-scripts": {
+      "type": "product-scripts",
+      "settings": {}
     }
   },
   "order": [
@@ -77,6 +81,7 @@
     "prod-recommendations",
     "prod-vendor",
     "prod-recently",
-    "175163786518daba71"
+    "175163786518daba71",
+    "prod-scripts"
   ]
 }
