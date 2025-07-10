@@ -1,4 +1,5 @@
 <!-- Shopper Approved Product Page Code - templates/product.liquid -->
+<div id="saAbElm"><div id="product_just_stars" class="reg aside"></div><div id="abcta"></div></div>
 <div id="SA_review_wrapper"></div>
 <script type="text/javascript">
   var sa_product = 'Shopify_US_{{ product.id }}'; var sa_interval = 5000;
@@ -6,18 +7,22 @@
   function updateProductStars(w) {
       if(w<=768){
           //console.log("mobile");
-          document.querySelector(".product-single__header--mobile h1.product-single__title").appendChild(document.getElementById("product_just_stars"));            
+          //document.querySelector(".product-single__header--mobile h1.product-single__title").after(document.getElementById("saAbElm"));    
+          //document.querySelector(".product-single__header--mobile h1.product-single__title").appendChild(document.getElementById("saAbElm"));
+          moveAfter(document.getElementById("saAbElm"), document.querySelector(".product-single__header--mobile h1.product-single__title"));
       } else{
           //console.log("desktop");
-          document.querySelector(".product-grid__container h1.product-single__title").appendChild(document.getElementById("product_just_stars"));              
+          //document.querySelector(".product-grid__container h1.product-single__title").after(document.getElementById("saAbElm"));    
+          //document.querySelector(".product-grid__container h1.product-single__title").appendChild(document.getElementById("saAbElm"));
+          moveAfter(document.getElementById("saAbElm"), document.querySelector(".product-grid__container h1.product-single__title"));
       }
   }
   window.addEventListener('DOMContentLoaded', function() {
     setTimeout(function() {
-      document.querySelector('.product-grid__container h1.product-single__title').insertAdjacentHTML('afterend','<div id="product_just_stars" class="reg aside"></div>');
+      //document.querySelector('.product-grid__container h1.product-single__title').insertAdjacentHTML('afterend','<div id="saAbElm"><div id="product_just_stars" class="reg aside"></div><div id="abcta"></div></div>');
       if (typeof(shopper_first) == 'undefined') saLoadScript('//www.shopperapproved.com/widgets/40407/product/'+sa_product+'/product-widget/15a36ct01Ly7.js');
 
-      if( !!document.getElementById("product_just_stars") )  {
+      if( !!document.getElementById("saAbElm") )  {
         updateProductStars(window.innerWidth);
         setTimeout(function(){
           window.addEventListener('resize', function(event) {
@@ -26,15 +31,26 @@
         }, 500);
         //console.log("satest");
       }
+      
     },3000);
   });
+
+  function moveAfter(element, target) {
+    target.parentNode.insertBefore(element, target.nextSibling);
+  }
 </script>
 <style>
+  #product_just_stars{
+    display:inline-block;
+  }
   #product_just_stars .SA__review_widget_item .SA__total_reviews a {
-    font-size: 12px;
-    vertical-align: 5px;
+    font-size: 15px;
+    vertical-align: 2px;
     text-decoration: underline;
     color: #000;
+    border-right: 1px solid #000;
+  padding-right: 10px;
+  margin-right: 10px;
   }
   #SA_review_wrapper .SA__review_widget .SA__review_widget_item .SA__review_content .SA__review_bar {
     margin-bottom: 0;
@@ -45,7 +61,52 @@
   #SA_review_wrapper .SA__review_widget .SA__review_widget_item .SA__review_content .SA__review_num_ratings span:last-child {
     vertical-align: -1px;
   }
+
+  #SA_review_wrapper .SA__review_container{
+    max-width: none !important;
+    padding: 20px 0px !important;
+  }
+
+  #ab-tiny-widget{
+  display: inline-block !important;
+  font-size: 15px !important;
+  vertical-align: 5px !important;
+}
+#ab-tiny-widget a{
+  text-decoration: underline;
+}
+#ab-tiny-widget a:hover{
+  text-decoration: none;
+}
+#ab-tiny-widget a ~ span {
+    display: none !important;
+}
+#ab-tiny-widget > a:nth-child(3) {
+    display: none !important;
+}
+.answerbase-widget h5, .answerbase-widget a{
+    font-weight: bold;
+}
+#abcta{
+  display:none;
+}
+
+@media screen and (max-width: 1120px) {
+		#product_just_stars{
+			display: block;
+		}
+		#product_just_stars .SA__review_widget_item .SA__total_reviews a{
+			border-right: 0px solid #000;
+			padding-right: 0px;
+			margin-right: 0px;
+		}
+		#ab-tiny-widget{
+			display: block;
+		}
+	}
 </style>
+  <div id="abqa"></div>
+</div>
 <!-- END Shopper Approved Product Page Code - templates/product.liquid -->
 
 {% if collection %}
