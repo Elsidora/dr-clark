@@ -46,6 +46,27 @@
       "type": "custom--shopper-approved-product",
       "settings": {}
     },
+    "advanced_content_7NQdcW": {
+      "type": "advanced-content",
+      "blocks": {
+        "html_z4rMw3": {
+          "type": "html",
+          "settings": {
+            "code": "<div id=\"abqa\"></div>\n<br><br>",
+            "width": "100%",
+            "alignment": "top-middle"
+          }
+        }
+      },
+      "block_order": [
+        "html_z4rMw3"
+      ],
+      "name": "Custom content",
+      "settings": {
+        "full_width": false,
+        "space_around": true
+      }
+    },
     "prod-recommendations": {
       "type": "product-recommendations",
       "settings": {
@@ -78,6 +99,7 @@
     "prod-template",
     "1751637867659147c5",
     "prod-shopper-approved",
+    "advanced_content_7NQdcW",
     "prod-recommendations",
     "prod-vendor",
     "prod-recently",
