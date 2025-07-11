@@ -28,6 +28,8 @@
         setTimeout(function(){
           window.addEventListener('resize', function(event) {
             updateProductStars(window.innerWidth);
+            // then force reflow
+            document.body.offsetHeight;
           }, true);
         }, 500);
         //console.log("satest");
