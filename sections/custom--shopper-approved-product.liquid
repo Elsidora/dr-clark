@@ -32,12 +32,24 @@
         }, 500);
         //console.log("satest");
       }
+
+      loadCTAonMouseEvent();
       
     },500);
   });
 
   function moveAfter(element, target) {
     target.parentNode.insertBefore(element, target.nextSibling);
+  }
+
+  function loadCTAonMouseEvent() {
+    var mouseMoveEvent = new MouseEvent("mousemove", {
+      bubbles: true,
+      cancelable: true,
+      clientX: 100,  // X position
+      clientY: 200   // Y position
+    });
+    document.dispatchEvent(mouseMoveEvent);
   }
 </script>
 <style>
