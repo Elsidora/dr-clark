@@ -4,6 +4,11 @@
     let parent = document.querySelector('#rebuy-widget-224487 .rebuy-bundle__actions-buttons');  
     if (parent) {
       let p = document.createElement('p');  
+
+      {% if product.url contains 'bernard-jensen-liquid-chlorophyll' %}
+        p.textContent = 'While chlorophyllin alone soothes inflammation, shields against UV and environmental stressors, and strengthens your skin’s natural barrier, pairing it with zinc amplifies these actions—and zinc supports collagen synthesis and immune-mediated wound healing for firmer, more elastic skin and faster recovery.';
+      {% endif %}
+      
       p.textContent = 'Want to have a smooth parasite cleanse? Ornithine helps detoxify the excess ammonia that parasites release, improving sleep and supporting overall recovery during a parasite cleanse';  
       parent.prepend(p);
       clearInterval(window.timerX);
