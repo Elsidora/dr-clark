@@ -39,8 +39,21 @@
     }
   </style>
 {% endif %}
-
 <script>
+  const body = document.querySelector('body');
+  {% if product.url contains 'bernard-jensen-liquid-chlorophyll' %}
+    if (!body.classList.contains('chlorophill')) {
+      body.classList.add('chlorophill')
+    }
+  {% endif %}
+  {% if product.url contains 'dr-clark-lugols-iodine-stomach-saver-1-fl-oz-30-cc' %}
+    if (!body.classList.contains('lugols')) {
+      body.classList.add('lugols')
+    }  
+  {% endif %}
+</script>
+<script>
+  
   if (window.timerX) clearInterval(window.timerX);
   window.timerX = setInterval(function () {
     let parent = document.querySelector('#rebuy-widget-224487 .rebuy-bundle__actions-buttons');  
@@ -48,6 +61,9 @@
       let p = document.createElement('p');  
 
       {% if product.url contains 'bernard-jensen-liquid-chlorophyll' %}
+        if (!body.classList.contains('chlorophill')) {
+          body.classList.add('chlorophill')
+        }
         p.textContent = 'While chlorophyllin alone soothes inflammation, shields against UV and environmental stressors, and strengthens your skin’s natural barrier, pairing it with zinc amplifies these actions—and zinc supports collagen synthesis and immune-mediated wound healing for firmer, more elastic skin and faster recovery.';
       {% endif %}
       {% if product.url contains 'dr-clark-lugols-iodine-stomach-saver-1-fl-oz-30-cc' %}
