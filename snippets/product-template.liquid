@@ -147,12 +147,13 @@
 
           <div class="product-single__meta">
             <div class="product-single__header small--hide">
-              {% comment %}
+              
               {{ product_header }}
-              {% endcomment %}
+              {% comment %}
               <h2 class="h2 product-single__title">
                 {{ product.title }}
               </h2>
+              {% endcomment %}
             </div>
 
             {%- if settings.inventory_enable or settings.inventory_transfers_enable -%}
