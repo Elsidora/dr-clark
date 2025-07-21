@@ -977,22 +977,6 @@
         "disabled": false,
         "settings": {}
       },
-      "15516442047899035060": {
-        "type": "shopify://apps/live-shopping-by-livemeup/blocks/live-widget/82ccf4ed-67f8-4725-9167-e54475d4748e",
-        "disabled": false,
-        "settings": {
-          "horizontal_position": "left",
-          "horizontal_distance": 10,
-          "vertical_distance": 10,
-          "show_desktop": true,
-          "show_mobile": true,
-          "thumbnail_desktop_width": 200,
-          "thumbnail_mobile_width": 150,
-          "thumbnail_corner_radius": 10,
-          "border_color": "",
-          "border_thickness": 1
-        }
-      },
       "21474836472147483647": {
         "type": "shopify://apps/ecomposer-landing-page-builder/blocks/app-embed/a0fc26e1-7741-4773-8b27-39389b4fb4a0",
         "disabled": false,
@@ -1010,6 +994,11 @@
       },
       "10641372206048101839": {
         "type": "shopify://apps/rebuy-personalization-engine/blocks/rebuy-global-embed/a26ae9b9-933b-40bf-bbc6-bf1220bbc4dc",
+        "disabled": false,
+        "settings": {}
+      },
+      "2102808784413787648": {
+        "type": "shopify://apps/kbite-back-in-stock-notify-me/blocks/main-app-embed/147a6f7f-6771-4f9b-8dc6-c14e6b24f32c",
         "disabled": false,
         "settings": {}
       }
