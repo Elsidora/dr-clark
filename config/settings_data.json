@@ -1001,6 +1001,11 @@
         "type": "shopify://apps/kbite-back-in-stock-notify-me/blocks/main-app-embed/147a6f7f-6771-4f9b-8dc6-c14e6b24f32c",
         "disabled": false,
         "settings": {}
+      },
+      "8660026769530893754": {
+        "type": "shopify://apps/synctrack-edd/blocks/omega-estimated-shipping-embed-app/054646a4-d5ab-4b85-b028-f3b169802e74",
+        "disabled": false,
+        "settings": {}
       }
     }
   },
