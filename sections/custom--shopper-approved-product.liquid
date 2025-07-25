@@ -1,4 +1,4 @@
-<!-- Shopper Approved Product Page Code - templates/product.liquid -->
+<!-- Shopper Approved Product Page Code - sections/custom--shopper-approved-product.liquid -->
 <div class="page-width">
 <div id="saAbElm"><div id="product_just_stars" class="reg aside"></div><div id="abcta"></div></div>
 <div id="SA_review_wrapper"></div>
@@ -10,12 +10,12 @@
           //console.log("mobile");
           //document.querySelector(".product-single__header--mobile h1.product-single__title").after(document.getElementById("saAbElm"));    
           //document.querySelector(".product-single__header--mobile h1.product-single__title").appendChild(document.getElementById("saAbElm"));
-          moveAfter(document.getElementById("saAbElm"), document.querySelector(".product-single__header--mobile h1.product-single__title"));
+          moveAfter(document.getElementById("saAbElm"), document.querySelector(".product-single__header--mobile .product-single__title"));
       } else{
           //console.log("desktop");
           //document.querySelector(".product-grid__container h1.product-single__title").after(document.getElementById("saAbElm"));    
           //document.querySelector(".product-grid__container h1.product-single__title").appendChild(document.getElementById("saAbElm"));
-          moveAfter(document.getElementById("saAbElm"), document.querySelector(".product-grid__container h1.product-single__title"));
+          moveAfter(document.getElementById("saAbElm"), document.querySelector(".product-grid__container .product-single__title"));
       }
   }
   window.addEventListener('DOMContentLoaded', function() {
@@ -121,7 +121,7 @@
 <div id="abqa"></div>
 <br /><br />
 </div>
-<!-- END Shopper Approved Product Page Code - templates/product.liquid -->
+<!-- END Shopper Approved Product Page Code - sections/custom--shopper-approved-product.liquid -->
 
 {% if collection %}
   <div class="text-center page-content page-content--bottom">
