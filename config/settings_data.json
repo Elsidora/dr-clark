@@ -846,6 +846,24 @@
       "161789469679fffe6b": {
         "type": "slideshow-split",
         "blocks": {
+          "slide_eQBg6r": {
+            "type": "slide",
+            "settings": {
+              "top_subheading": "",
+              "title": "The Original SynchroZap",
+              "title_size": 40,
+              "subheading": "",
+              "link": "",
+              "link_text": "Learn More",
+              "link_2": "",
+              "link_text_2": "",
+              "text_position": "left",
+              "image": "shopify://shop_images/Zapper_banner_1_1.png",
+              "indent_image": true,
+              "focal_point": "top center",
+              "color_scheme": "none"
+            }
+          },
           "slide_cgQarh": {
             "type": "slide",
             "settings": {
@@ -923,6 +941,7 @@
           }
         },
         "block_order": [
+          "slide_eQBg6r",
           "slide_cgQarh",
           "slide_ERDMeK",
           "slide_dXiLgg",
