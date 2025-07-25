@@ -922,6 +922,7 @@
           },
           "slide_8XyP4p": {
             "type": "slide",
+            "disabled": true,
             "settings": {
               "top_subheading": "",
               "title": "Purity,\nPotency,\nAuthenticity",
