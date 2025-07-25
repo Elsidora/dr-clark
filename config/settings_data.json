@@ -866,6 +866,7 @@
           },
           "slide_cgQarh": {
             "type": "slide",
+            "disabled": true,
             "settings": {
               "top_subheading": "",
               "title": "Our Highest Priority is Purity",
@@ -922,7 +923,6 @@
           },
           "slide_8XyP4p": {
             "type": "slide",
-            "disabled": true,
             "settings": {
               "top_subheading": "",
               "title": "Purity,\nPotency,\nAuthenticity",
@@ -934,8 +934,8 @@
               "link_text_2": "",
               "text_position": "left",
               "image": "shopify://shop_images/as3131151.png",
-              "indent_image": false,
-              "focal_point": "top center",
+              "indent_image": true,
+              "focal_point": "center center",
               "color_scheme": "none"
             }
           }
