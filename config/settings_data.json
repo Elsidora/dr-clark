@@ -915,7 +915,7 @@
               "link_text_2": "",
               "text_position": "left",
               "image": "shopify://shop_images/asfwdwdwd.jpg",
-              "indent_image": false,
+              "indent_image": true,
               "focal_point": "top center",
               "color_scheme": "none"
             }
