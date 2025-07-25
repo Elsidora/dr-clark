@@ -860,7 +860,7 @@
               "text_position": "left",
               "image": "shopify://shop_images/Zapper_banner_1_1.png",
               "indent_image": true,
-              "focal_point": "top center",
+              "focal_point": "center center",
               "color_scheme": "none"
             }
           },
@@ -904,7 +904,6 @@
           },
           "slide_dXiLgg": {
             "type": "slide",
-            "disabled": true,
             "settings": {
               "top_subheading": "",
               "title": "We're Triple GMP Certified",
