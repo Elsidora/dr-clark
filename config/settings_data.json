@@ -239,9 +239,17 @@
           },
           "1499789718857-3": {
             "type": "collection",
+            "disabled": true,
             "settings": {
               "collection": "household",
               "title": ""
+            }
+          },
+          "collection_9LnDWm": {
+            "type": "collection",
+            "settings": {
+              "collection": "on-sale",
+              "title": "On Sale"
             }
           }
         },
@@ -251,7 +259,8 @@
           "1499789718857-1",
           "1499789718857-2",
           "e2697eb6-4ee1-4531-8beb-f000e64b262c",
-          "1499789718857-3"
+          "1499789718857-3",
+          "collection_9LnDWm"
         ],
         "settings": {
           "title": "Categories",
