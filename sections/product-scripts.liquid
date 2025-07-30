@@ -58,6 +58,11 @@
       body.classList.add('parasite-cleanse')
     }  
   {% endif %}
+  {% if product.url contains 'green-black-walnut-hull-tincture-extra-strength-2-oz' %}
+    if (!body.classList.contains('walnut-tincture')) {
+      body.classList.add('walnut-tincture')
+    }     
+  {% endif %}
 </script>
 <script>
   
