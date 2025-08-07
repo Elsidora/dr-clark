@@ -147,7 +147,18 @@
 
           <div class="product-single__meta">
             <div class="product-single__header small--hide">
-              {{ product_header }}
+              {% comment %}
+                {{ product_header }}
+              {% endcomment %}
+              {%- if isModal -%}
+                <p class="h2 product-single__title">
+                  {{ product.title }}
+                </p>
+              {%- else -%}
+                <h2 class="h2 product-single__title">
+                  {{ product.title }}
+                </h2>
+              {% endif %}
             </div>
 
             {%- if settings.inventory_enable or settings.inventory_transfers_enable -%}
