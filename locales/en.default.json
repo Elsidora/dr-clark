@@ -423,11 +423,8 @@
   },
   "shopify": {
     "checkout": {
-      "thank_you": {
+      "shipping": {
         "shipping_method_title": "Shipping lead times may indeed vary and aren’t guaranteed, as they are more of a rough estimation rather than an absolute certainty. The only services considered truly \"guaranteed\" are FedEx/UPS 2nd Day Air, 2Day, and Overnight. Lead times start from the moment the package is picked up by the carriers, not when the order is placed. For further details and a comprehensive understanding of shipping processes, we kindly advise referring to our Shipping Policy."
-      },
-      "general": {
-        "choose_shipping_method": "Shipping lead times may indeed vary and aren’t guaranteed, as they are more of a rough estimation rather than an absolute certainty. The only services considered truly \"guaranteed\" are FedEx/UPS 2nd Day Air, 2Day, and Overnight. Lead times start from the moment the package is picked up by the carriers, not when the order is placed. For further details and a comprehensive understanding of shipping processes, we kindly advise referring to our Shipping Policy."
       }
     }
   }
