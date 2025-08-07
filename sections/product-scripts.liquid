@@ -1,15 +1,122 @@
+{% if product.url contains 'dr-clark-lugols-iodine-stomach-saver-1-fl-oz-30-cc' or product.url contains 'bernard-jensen-liquid-chlorophyll' or product.url contains 'parasite-cleanse-by-dr-hulda-clark' or product.url contains 'green-black-walnut-hull-tincture-extra-strength-2-oz' %}
+
+{% if product.url contains 'dr-clark-lugols-iodine-stomach-saver-1-fl-oz-30-cc' or product.url contains 'bernard-jensen-liquid-chlorophyll' %}
+  <style>
+    .rebuy-widget.widget-type-dynamic-bundle .rebuy-bundle__image .rebuy-bundle__image-item {
+      width: 100%;
+    } 
+    .rebuy-widget.widget-type-dynamic-bundle .rebuy-bundle__image .rebuy-bundle__image-divider {
+      width: 0px;
+    }
+    .rebuy-widget.widget-type-dynamic-bundle .rebuy-bundle__items{
+      margin-top: 8px;
+    }
+    #rebuy-widget-224487.rebuy-widget.widget-type-dynamic-bundle .primary-title {
+      margin-bottom: 12px;
+    }
+    #rebuy-widget-224487.rebuy-widget.widget-type-dynamic-bundle .rebuy-bundle__image .far.fa-plus::before {
+      left: calc(50% - 11px);
+    }
+    .rebuy-widget.widget-type-dynamic-bundle .rebuy-bundle .rebuy-product-block .rebuy-product-info {
+      justify-content: center;
+    }
+    @media screen and (min-width: 769px) {
+      #rebuy-widget-224487.rebuy-widget.widget-type-dynamic-bundle .rebuy-bundle__items {
+        margin-top: -24px;
+      }
+    }
+  </style>
+{% endif %}
+{% if product.url contains 'bernard-jensen-liquid-chlorophyll' %}
+  <style>
+    .rebuy-widget.widget-type-dynamic-bundle .rebuy-bundle__image.bernard-jensen-liquid-chlorophyll-16-fl-oz img {
+      width: 88%;
+      margin: 0 auto;
+    }
+    
+    @media screen and (min-width: 769px) {
+      #rebuy-widget-224487.rebuy-widget.widget-type-dynamic-bundle .rebuy-bundle__items {
+        margin-top: -40px;
+      }
+    }
+  </style>
+{% endif %}
+{% if product.url contains 'green-black-walnut-hull-tincture-extra-strength-2-oz' %}
+   <style>
+    #rebuy-widget-224487.rebuy-widget {
+      max-width: 1200px;
+    }
+    #rebuy-widget-224487.rebuy-widget.widget-type-dynamic-bundle .rebuy-bundle__images{
+      grid-template-columns: repeat(3, 1fr);
+    }
+    #rebuy-widget-224487.rebuy-widget.widget-type-dynamic-bundle .rebuy-bundle__items{
+      grid-template-columns: repeat(3, 1fr);
+    }
+    @media screen and (max-width: 768px) {
+      
+      #rebuy-widget-224487.rebuy-widget.widget-type-dynamic-bundle .rebuy-bundle .rebuy-product-block {
+        margin-top: 0px;
+      }
+    }
+   </style>
+{% endif %}
 <script>
+  const body = document.querySelector('body');
+  {% if product.url contains 'bernard-jensen-liquid-chlorophyll' %}
+    if (!body.classList.contains('chlorophyll')) {
+      body.classList.add('chlorophyll')
+    }
+  {% endif %}
+  {% if product.url contains 'dr-clark-lugols-iodine-stomach-saver-1-fl-oz-30-cc' %}
+    if (!body.classList.contains('lugols')) {
+      body.classList.add('lugols')
+    }  
+  {% endif %}
+  {% if product.url contains 'parasite-cleanse-by-dr-hulda-clark' %}
+    if (!body.classList.contains('parasite-cleanse')) {
+      body.classList.add('parasite-cleanse')
+    }  
+  {% endif %}
+  {% if product.url contains 'green-black-walnut-hull-tincture-extra-strength-2-oz' %}
+    if (!body.classList.contains('walnut-tincture')) {
+      body.classList.add('walnut-tincture')
+    }     
+  {% endif %}
+</script>
+<script>
+  
   if (window.timerX) clearInterval(window.timerX);
   window.timerX = setInterval(function () {
     let parent = document.querySelector('#rebuy-widget-224487 .rebuy-bundle__actions-buttons');  
     if (parent) {
+      const parentBtn = parent.querySelector('.rebuy-button');
+      if (parentBtn) {
+        parentBtn.classList.add('widget-btn');
+      }
       let p = document.createElement('p');  
-      p.textContent = 'Want to have a smooth parasite cleanse? Ornithine helps detoxify the excess ammonia that parasites release, improving sleep and supporting overall recovery during a parasite cleanse';  
+
+      {% if product.url contains 'bernard-jensen-liquid-chlorophyll' %}
+        p.textContent = 'While chlorophyllin alone soothes inflammation, shields against UV and environmental stressors, and strengthens your skin’s natural barrier, pairing it with zinc amplifies these actions—and zinc supports collagen synthesis and immune-mediated wound healing for firmer, more elastic skin and faster recovery.';
+      {% endif %}
+      {% if product.url contains 'dr-clark-lugols-iodine-stomach-saver-1-fl-oz-30-cc' %}
+        p.textContent = 'While iodine alone supports thyroid hormone production and a healthy metabolism, pairing it with selenium amplifies these benefits—and selenium speeds up the conversion of T4 into active T3 and supports your thyroid from damage for balanced hormones and gland health.';
+      {% endif %}
+    
+      {% if product.url contains 'parasite-cleanse-by-dr-hulda-clark' %}
+        p.textContent = 'Want to have a smooth parasite cleanse? Ornithine helps detoxify the excess ammonia that parasites release, improving sleep and supporting overall recovery during a parasite cleanse';  
+      {% endif %}
+
+      {% if product.url contains 'green-black-walnut-hull-tincture-extra-strength-2-oz' %}
+        p.textContent = 'While black walnut tincture alone helps support a balanced intestinal environment, pairing it with cloves and wormwood enhances overall digestive support—and cloves contain eugenol to help maintain healthy microbial balance and act against harmful organisms. Wormwood helps disrupt the life cycle of harmful organisms and promote normal digestive function for comprehensive gut wellness.';
+      {% endif %}
+    
       parent.prepend(p);
       clearInterval(window.timerX);
     }
   }, 50)
 </script>
+
+{% endif %}
 
 
 {% schema %}

@@ -36,15 +36,15 @@ iframe.bpFab {
   function updateProductStars(w) {
       if(w<=768){
           //console.log("mobile");
-          document.querySelector(".product-single__header--mobile h1.product-single__title").appendChild(document.getElementById("product_just_stars"));            
+          document.querySelector(".product-single__header--mobile .product-single__title").appendChild(document.getElementById("product_just_stars"));            
       } else{
           //console.log("desktop");
-          document.querySelector(".product-grid__container h1.product-single__title").appendChild(document.getElementById("product_just_stars"));              
+          document.querySelector(".product-grid__container .product-single__title").appendChild(document.getElementById("product_just_stars"));              
       }
   }
   window.addEventListener('DOMContentLoaded', function() {
     setTimeout(function() {
-      document.querySelector('.product-grid__container h1.product-single__title').insertAdjacentHTML('afterend','<div id="product_just_stars" class="reg aside"></div>');
+      document.querySelector('.product-grid__container .product-single__title').insertAdjacentHTML('afterend','<div id="product_just_stars" class="reg aside"></div>');
       if (typeof(shopper_first) == 'undefined') saLoadScript('//www.shopperapproved.com/widgets/40407/product/'+sa_product+'/product-widget/15a36ct01Ly7.js');
 
       if( !!document.getElementById("product_just_stars") )  {

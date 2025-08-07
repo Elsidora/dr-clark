@@ -82,7 +82,7 @@
     "collection_color_swatches": false,
     "product_contact": false,
     "enable_product_reviews": true,
-    "cart_type": "dropdown",
+    "cart_type": "page",
     "cart_additional_buttons": false,
     "cart_notes_enable": true,
     "cart_terms_conditions_enable": false,
@@ -239,9 +239,17 @@
           },
           "1499789718857-3": {
             "type": "collection",
+            "disabled": true,
             "settings": {
               "collection": "household",
               "title": ""
+            }
+          },
+          "collection_9LnDWm": {
+            "type": "collection",
+            "settings": {
+              "collection": "on-sale",
+              "title": "On Sale"
             }
           }
         },
@@ -251,7 +259,8 @@
           "1499789718857-1",
           "1499789718857-2",
           "e2697eb6-4ee1-4531-8beb-f000e64b262c",
-          "1499789718857-3"
+          "1499789718857-3",
+          "collection_9LnDWm"
         ],
         "settings": {
           "title": "Categories",
@@ -846,8 +855,27 @@
       "161789469679fffe6b": {
         "type": "slideshow-split",
         "blocks": {
+          "slide_eQBg6r": {
+            "type": "slide",
+            "settings": {
+              "top_subheading": "",
+              "title": "The Original SynchroZap",
+              "title_size": 40,
+              "subheading": "",
+              "link": "https://drclarkstore.com/collections/zappers-accessories/products/dr-clark-zapper-syncrozap-with-copper-tubes-model-a11",
+              "link_text": "Learn More",
+              "link_2": "",
+              "link_text_2": "",
+              "text_position": "left",
+              "image": "shopify://shop_images/Zapper_banner_1_1.png",
+              "indent_image": true,
+              "focal_point": "center center",
+              "color_scheme": "none"
+            }
+          },
           "slide_cgQarh": {
             "type": "slide",
+            "disabled": true,
             "settings": {
               "top_subheading": "",
               "title": "Our Highest Priority is Purity",
@@ -885,19 +913,18 @@
           },
           "slide_dXiLgg": {
             "type": "slide",
-            "disabled": true,
             "settings": {
               "top_subheading": "",
               "title": "We're Triple GMP Certified",
               "title_size": 43,
               "subheading": "",
-              "link": "https://drclarkstore.com/collections/dr-hulda-clark-parasite-cleanse",
+              "link": "https://drclarkstore.com/pages/about-us",
               "link_text": "Read More",
               "link_2": "",
               "link_text_2": "",
               "text_position": "left",
               "image": "shopify://shop_images/asfwdwdwd.jpg",
-              "indent_image": false,
+              "indent_image": true,
               "focal_point": "top center",
               "color_scheme": "none"
             }
@@ -916,13 +943,14 @@
               "link_text_2": "",
               "text_position": "left",
               "image": "shopify://shop_images/as3131151.png",
-              "indent_image": false,
-              "focal_point": "top center",
+              "indent_image": true,
+              "focal_point": "center center",
               "color_scheme": "none"
             }
           }
         },
         "block_order": [
+          "slide_eQBg6r",
           "slide_cgQarh",
           "slide_ERDMeK",
           "slide_dXiLgg",
@@ -977,22 +1005,6 @@
         "disabled": false,
         "settings": {}
       },
-      "15516442047899035060": {
-        "type": "shopify://apps/live-shopping-by-livemeup/blocks/live-widget/82ccf4ed-67f8-4725-9167-e54475d4748e",
-        "disabled": false,
-        "settings": {
-          "horizontal_position": "left",
-          "horizontal_distance": 10,
-          "vertical_distance": 10,
-          "show_desktop": true,
-          "show_mobile": true,
-          "thumbnail_desktop_width": 200,
-          "thumbnail_mobile_width": 150,
-          "thumbnail_corner_radius": 10,
-          "border_color": "",
-          "border_thickness": 1
-        }
-      },
       "21474836472147483647": {
         "type": "shopify://apps/ecomposer-landing-page-builder/blocks/app-embed/a0fc26e1-7741-4773-8b27-39389b4fb4a0",
         "disabled": false,
@@ -1010,6 +1022,16 @@
       },
       "10641372206048101839": {
         "type": "shopify://apps/rebuy-personalization-engine/blocks/rebuy-global-embed/a26ae9b9-933b-40bf-bbc6-bf1220bbc4dc",
+        "disabled": false,
+        "settings": {}
+      },
+      "2102808784413787648": {
+        "type": "shopify://apps/kbite-back-in-stock-notify-me/blocks/main-app-embed/147a6f7f-6771-4f9b-8dc6-c14e6b24f32c",
+        "disabled": false,
+        "settings": {}
+      },
+      "8660026769530893754": {
+        "type": "shopify://apps/synctrack-edd/blocks/omega-estimated-shipping-embed-app/054646a4-d5ab-4b85-b028-f3b169802e74",
         "disabled": false,
         "settings": {}
       }
