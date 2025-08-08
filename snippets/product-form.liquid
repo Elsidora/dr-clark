@@ -386,22 +386,6 @@
   {%- endif -%}
 {%- endform -%}
 
-<script>
-  if (window.timerX) clearInterval(window.timerX);
-
-  window.timerX = setInterval(function () {
-
-  const optionDropdown = document.querySelector('.appstle_subscription_wrapper_option.appstle_include_dropdown');
-  console.log('aaaaaaaaaaaaaaaaaaaa');
-  if (optionDropdown) {
-  console.log('bbbbbbbbbbbbbbbbbbbbbb');
-  const wrapFeat = document.createElement('div');
-  wrapFeat.innerHTML = `<ul class="feat-list"><li class="feat-item feat-item--save">Save 10% on every subscription</li><li class="feat-item feat-item--comitment">No commitment, cancel anytime</li></ul>`;
-  optionDropdown.appendChild(wrapFeat);
-  clearInterval(window.timerX);
-  }
-  }, 50);
-</script>
 <!--   <script type="text/javascript">
 var _learnq = _learnq || [];
   var classname = document.getElementsByClassName("btn btn--full add-to-cart");
