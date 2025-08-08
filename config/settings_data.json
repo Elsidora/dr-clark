@@ -56,7 +56,7 @@
     "collection_grid_shape": "circle",
     "collection_grid_image": "collection",
     "collection_grid_image_margin": 13,
-    "vendor_enable": true,
+    "vendor_enable": false,
     "quick_shop_enable": true,
     "quick_add_enable": true,
     "product_grid_image_size": "natural",
