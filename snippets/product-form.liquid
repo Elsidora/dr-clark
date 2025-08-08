@@ -110,9 +110,11 @@
   </select>
 
   <div class="product-single__form-price">
+    {% comment %}
     <label class="variant__label" for="ProductPrice-{{ section_id }}">
       {{ 'cart.label.price' | t }}
     </label>
+    {% endcomment %}
 
     {%- assign hide_sale_price = true -%}
     {%- if product.compare_at_price_max > product.price -%}
@@ -174,7 +176,7 @@
   </div>
 
   <div class="shopify-payment-terms product__policies">{{ form | payment_terms }}</div>
-
+  {% comment %}
   {%- if shop.taxes_included or shop.shipping_policy.body != blank -%}
     <div class="product__policies rte">
       {%- if shop.taxes_included -%}
@@ -185,7 +187,7 @@
       {%- endif -%}
     </div>
   {%- endif -%}
-
+  {% endcomment %}
   {%- if settings.quantity_enable -%}
     <div class="product__quantity product__quantity--{{ settings.variant_type }}">
       <label for="Quantity-{{ section_id }}">{{ 'products.product.quantity' | t }}</label>
@@ -390,13 +392,14 @@
   window.timerX = setInterval(function () {
 
   const optionDropdown = document.querySelector('.appstle_subscription_wrapper_option.appstle_include_dropdown');
-  if (!optionDropdown) return;
+  console.log('aaaaaaaaaaaaaaaaaaaa');
+  if (optionDropdown) {
   console.log('bbbbbbbbbbbbbbbbbbbbbb');
   const wrapFeat = document.createElement('div');
   wrapFeat.innerHTML = `<ul class="feat-list"><li class="feat-item feat-item--save">Save 10% on every subscription</li><li class="feat-item feat-item--comitment">No commitment, cancel anytime</li></ul>`;
   optionDropdown.appendChild(wrapFeat);
   clearInterval(window.timerX);
-
+  }
   }, 50);
 </script>
 <!--   <script type="text/javascript">
