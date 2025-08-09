@@ -65,6 +65,21 @@
             </div>
           </div>
         {%- endif -%}
+        {% if product.metafields.custom.faq != blank %}
+          <button type="button" class="label collapsible-trigger collapsible-trigger-btn collapsible-trigger-btn--borders collapsible--auto-height">
+            <span class="collapsible-trigger__layout">
+              <span>
+                FAQ
+              </span>
+              
+            </span>
+          </button>
+          <div class="collapsible-content collapsible-content--all">
+            <div class="collapsible-content__inner rte">
+              {{ product.metafields.custom.faq }}
+            </div>
+          </div>
+        {%- endif -%}
       {%- endif -%}
     {%- endfor -%}
 
