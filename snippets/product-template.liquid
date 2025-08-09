@@ -77,6 +77,7 @@
 
     {%- if settings.vendor_enable or settings.sku_enable -%}
       <div class="product-single__vendor-sku">
+      
         {%- if settings.vendor_enable -%}
           <span class="product-single__vendor">
             {%- assign vendor_handle = product.vendor | handleize -%}
@@ -159,6 +160,35 @@
                   {{ product.title }}
                 </h2>
               {% endif %}
+
+              {%- if settings.vendor_enable or settings.sku_enable -%}
+      <div class="product-single__vendor-sku">
+      
+        {%- if settings.vendor_enable -%}
+          <span class="product-single__vendor">
+            {%- assign vendor_handle = product.vendor | handleize -%}
+            {%- if collections[vendor_handle] != empty -%}
+              <a href="{{ routes.collections_url }}/{{ collections[vendor_handle].handle }}">
+                {{ collections[vendor_handle].title }}
+              </a>
+            {%- else -%}
+              {{ product.vendor | link_to_vendor }}
+            {%- endif -%}
+          </span>
+        {%- endif -%}
+
+        {%- if settings.sku_enable -%}
+          <span data-sku id="Sku-{{ section_id }}" class="product-single__sku{% if current_variant.sku == blank %} hide{% endif %}">
+            SKU: <span data-sku-id>{{ current_variant.sku }}</span>
+          </span>
+        {%- endif -%}
+            
+    
+
+      </div>
+
+    {%- endif -%}
+              
             </div>
 
             {%- if settings.inventory_enable or settings.inventory_transfers_enable -%}
