@@ -66,15 +66,15 @@
           </div>
         {%- endif -%}
         {% if product.metafields.custom.faq != blank %}
-          <button type="button" class="label collapsible-trigger collapsible-trigger-btn collapsible-trigger-btn--borders collapsible--auto-height">
+          <button type="button" class="label collapsible-trigger collapsible-trigger-btn collapsible-trigger-btn--borders collapsible--auto-height" aria-controls="faq">
             <span class="collapsible-trigger__layout">
               <span>
                 FAQ
               </span>
-              
+              {%- render 'collapsible-icons' -%}
             </span>
           </button>
-          <div class="collapsible-content collapsible-content--all">
+          <div id="faq" class="collapsible-content collapsible-content--all">
             <div class="collapsible-content__inner rte">
               {{ product.metafields.custom.faq }}
             </div>
