@@ -1,0 +1,26 @@
+<ul class="custom-faq__list">
+  {% for item in list %}
+    {% if item == blank %}
+      {% continue %}
+    {% endif %}
+    
+    {% assign currentIndex = forloop.index0 %}
+    {% unless item contains "_" %}
+      <li class="custom-faq__item" data-index="{{currentIndex}}">
+        {% assign first = item | split: "?" | first %}
+        {% assign last = item | split: "?" | last %}
+                              
+        <h3 class="custom-faq__name">{{ first }}?</h3>
+                      
+        {% if last != blank and last != first %}
+          <p class="custom-faq__value">{{ last }}</p>
+        
+                            
+        {% endif %}
+                              
+      </li>
+    {% else %}
+      {% continue %}
+    {% endunless %}
+  {% endfor %}
+</ul>
