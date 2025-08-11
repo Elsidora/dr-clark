@@ -19,6 +19,7 @@
     {% endif %}
     
     {% assign currentIndex = forloop.index0 %}
+    {% if item contains "_" %}
       <li class="custom-faq__item" data-index="{{currentIndex}}">
         {% assign first = item | split: "?" | first %}
         {% assign last = item | split: "?" | last %}
@@ -32,6 +33,8 @@
         {% endif %}
                               
       </li>
-
+    {% else %}
+      {% continue %}
+    {% endif %}
   {% endfor %}
 </ul>
