@@ -10,7 +10,7 @@
         {% assign first = item | split: "?" | first %}
         {% assign last = item | split: "?" | last %}
                               
-        <h3 class="custom-faq__name">{{ first }}</h3>
+        <h3 class="custom-faq__name">{{ first }}?</h3>
                       
         {% if last != blank and last != first %}
           <p class="custom-faq__value">{{ last }}</p>
