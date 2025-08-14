@@ -107,7 +107,7 @@
       {% endif %}
 
       {% if product.url contains 'green-black-walnut-hull-tincture-extra-strength-2-oz' %}
-        p.textContent = 'While black walnut tincture alone helps support a balanced intestinal environment, pairing it with cloves and wormwood enhances overall digestive support—and cloves contain eugenol to help maintain healthy microbial balance and act against harmful organisms. Wormwood helps disrupt the life cycle of harmful organisms and promote normal digestive function for comprehensive gut wellness.';
+        p.innerHTML = `<span>Dr. Clark recommends:</span> Boost your gut health with the ultimate trio: black walnut, cloves, and wormwood. Together they support digestion, balance microbes, and fight harmful organisms for complete intestinal wellness.`;
       {% endif %}
     
       parent.prepend(p);
