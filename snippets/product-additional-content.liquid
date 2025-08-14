@@ -66,6 +66,7 @@
           </div>
         {%- endif -%}
         {% if product.metafields.custom.faq != blank %}
+          {% assign faq = product.metafields.custom.faq | newline_to_br | split: '<br />' %}
           <button type="button" class="label collapsible-trigger collapsible-trigger-btn collapsible-trigger-btn--borders collapsible--auto-height" aria-controls="faq">
             <span class="collapsible-trigger__layout">
               <span>
@@ -76,7 +77,7 @@
           </button>
           <div id="faq" class="collapsible-content collapsible-content--all">
             <div class="collapsible-content__inner rte">
-              {{ product.metafields.custom.faq }}
+              {% render 'custom--product-faq-metafield', metafield: faq, list: faq %}
             </div>
           </div>
         {%- endif -%}
