@@ -97,7 +97,7 @@
         p.textContent = 'While chlorophyllin alone soothes inflammation, shields against UV and environmental stressors, and strengthens your skin’s natural barrier, pairing it with zinc amplifies these actions—and zinc supports collagen synthesis and immune-mediated wound healing for firmer, more elastic skin and faster recovery.';
       {% endif %}
       {% if product.url contains 'dr-clark-lugols-iodine-stomach-saver-1-fl-oz-30-cc' %}
-        p.textContent = 'While iodine alone supports thyroid hormone production and a healthy metabolism, pairing it with selenium amplifies these benefits—and selenium speeds up the conversion of T4 into active T3 and supports your thyroid from damage for balanced hormones and gland health.';
+        p.innerHTML = `<span>Dr. Clark recommends:</span> Iodine supports thyroid hormone production and metabolism, while selenium boosts its effects—helping convert T4 to active T3 and protecting the thyroid for balanced hormones and optimal gland health.`;
       {% endif %}
     
       {% if product.url contains 'parasite-cleanse-by-dr-hulda-clark' %}
