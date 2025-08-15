@@ -94,7 +94,7 @@
       let p = document.createElement('p');  
 
       {% if product.url contains 'bernard-jensen-liquid-chlorophyll' %}
-        p.textContent = `<span>Dr. Clark recommends:</span> Chlorophyllin soothes skin, protects from stress, and strengthens its barrier—while zinc boosts collagen, supports healing, and promotes firmer, more elastic skin.`;
+        p.innerHTML = `<span>Dr. Clark recommends:</span> Chlorophyllin soothes skin, protects from stress, and strengthens its barrier—while zinc boosts collagen, supports healing, and promotes firmer, more elastic skin.`;
       {% endif %}
       {% if product.url contains 'dr-clark-lugols-iodine-stomach-saver-1-fl-oz-30-cc' %}
         p.innerHTML = `<span>Dr. Clark recommends:</span> Iodine supports thyroid hormone production and metabolism, while selenium boosts its effects—helping convert T4 to active T3 and protecting the thyroid for balanced hormones and optimal gland health.`;
