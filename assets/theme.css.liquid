@@ -10454,14 +10454,24 @@ iframe.bpFab {
 
 @media screen and (min-width: 1025px) {
   .template-product #appstle_subscription_widget0 [data-appstle-icon]:hover {
-    pointer-events: none;
+
   }
   .template-product #appstle_subscription_widget0 [data-appstle-icon]:hover+.appstle_tooltip {
-    opacity: unset !important;
-    visibility: unset !important;
-    transform: unset !important;
-    z-index: unset;
-    bottom: unset;
+    
+    backface-visibility: hidden;
+    box-shadow: 0 2px 4px rgb(0 0 0 / 15%);
+    background-color: #3a3a3a;
+    border-radius: 5px;
+    left: 0;
+    color: #fff;
+    transition: transform .2s cubic-bezier(.215,.61,.355,1);
+
+    transform: translateY(100%) scaleY(0);
+    transform-origin: center top;
+    opacity: 0;
+    position: absolute;
+    bottom: 1px;
+    min-width: 250px;
   }
   
 }
