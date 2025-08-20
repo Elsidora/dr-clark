@@ -625,7 +625,7 @@
         ],
         "custom_css": [
           ".toolbar {background: #fb9ac9;}",
-          ".small--hide {color: black; font-size: 14px; font-weight: normal;}"
+          ".small--hide {color: black; font-size: 16px; font-weight: normal;}"
         ],
         "settings": {
           "toolbar_social": false,
