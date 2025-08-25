@@ -1,4 +1,4 @@
-{% if product.url contains 'dr-clark-lugols-iodine-stomach-saver-1-fl-oz-30-cc' or product.url contains 'bernard-jensen-liquid-chlorophyll' or product.url contains 'parasite-cleanse-by-dr-hulda-clark' or product.url contains 'green-black-walnut-hull-tincture-extra-strength-2-oz' %}
+{% if product.url contains 'dr-clark-lugols-iodine-stomach-saver-1-fl-oz-30-cc' or product.url contains 'bernard-jensen-liquid-chlorophyll' or product.url contains 'parasite-cleanse-by-dr-hulda-clark' or product.url contains 'green-black-walnut-hull-tincture-extra-strength-2-oz' or product.url contains 'cloves-500-mg' %}
 
 {% if product.url contains 'dr-clark-lugols-iodine-stomach-saver-1-fl-oz-30-cc' or product.url contains 'bernard-jensen-liquid-chlorophyll' %}
   <style>
@@ -78,6 +78,11 @@
   {% if product.url contains 'green-black-walnut-hull-tincture-extra-strength-2-oz' %}
     if (!body.classList.contains('walnut-tincture')) {
       body.classList.add('walnut-tincture')
+    }     
+  {% endif %}
+  {% if product.url contains 'cloves-500-mg' %}
+    if (!body.classList.contains('cloves')) {
+      body.classList.add('cloves')
     }     
   {% endif %}
 </script>
