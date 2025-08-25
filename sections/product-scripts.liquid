@@ -58,6 +58,14 @@
     
    </style>
 {% endif %}
+{% if product.url contains 'cloves-500-mg' %}
+  <style>
+    .rebuy-widget.widget-type-dynamic-bundle .rebuy-bundle__image.wormwood-super-w-blend-330mg-100-capsules img {
+      width: 78%;
+      margin: 0 auto;
+    }
+  </style>
+{% endif %}
 <script>
   const body = document.querySelector('body');
   {% if product.url contains 'bernard-jensen-liquid-chlorophyll' %}
