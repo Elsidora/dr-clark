@@ -107,6 +107,9 @@
       {% if product.url contains 'green-black-walnut-hull-tincture-extra-strength-2-oz' %}
         p.innerHTML = `<span>Dr. Clark recommends:</span> Boost your gut health with the ultimate trio: black walnut, cloves, and wormwood. Together they support digestion, balance microbes, and fight harmful organisms for complete intestinal wellness.`;
       {% endif %}
+      {% if product.url contains 'cloves-500-mg' %}
+        p.innerHTML = `<span>Dr. Clark recommends:</span> Cloves and Wormwood work best when taken together, as they complement each other to support a balanced digestive environment and enhance natural cleansing. Pairing them maximizes their effectiveness for overall wellness.`;
+      {% endif %}
     
       parent.prepend(p);
       clearInterval(window.timerX);
