@@ -126,6 +126,9 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
       {%- render 'social-meta-tags' -%}
       {%- render 'preload-assets' -%}
       {%- render 'font-face' -%}
+      {% if template contains 'product' %}
+        <link rel="stylesheet" href="{{ 'easyzoom.css' | asset_url }}">
+      {% endif %}
       {{ 'theme.css' | asset_url | stylesheet_tag }}
       {%- render 'css-variables' -%}
       {%- liquid
