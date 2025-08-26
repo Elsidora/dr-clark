@@ -505,6 +505,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       <script src="{{ 'easyzoom.js' | asset_url }}" ></script>
       <script>
         var $easyzoom = $('.easyzoom').easyZoom();
+        var api = $easyzoom.data('easyZoom');
       </script>
     {% endif %}
 
