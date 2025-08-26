@@ -107,7 +107,7 @@
         -%}
       
         {% if loopIndex0 == 0 %}
-        <img fetchpriority="high" {% if product.title contains 'Enema Bucket Set' %} id="zoomed" {% endif %} class="{% if settings.product_zoom_enable %}photoswipe__image{% endif %} lazyload-no"
+        <img fetchpriority="high" {% if product.title contains 'Enema Bucket Set' %} id="zoomed" style="width:600px; height:auto;" {% endif %} class="{% if settings.product_zoom_enable %}photoswipe__image{% endif %} lazyload-no"
           style="opacity: 1 !important;"
           data-photoswipe-src="{{ media.preview_image | img_url: product_zoom_size }}"
           data-photoswipe-width="{{ media_width }}"
@@ -119,7 +119,7 @@
           data-sizes="auto"
           alt="{{ media.alt | escape | split: '#' | first }}">
          {% else %}
-        <img {% if product.title contains 'Enema Bucket Set' %} id="zoomed" {% endif %} class="{% if settings.product_zoom_enable %}photoswipe__image{% endif %} lazyload"
+        <img {% if product.title contains 'Enema Bucket Set' %} id="zoomed" style="width:600px; height:auto;" {% endif %} class="{% if settings.product_zoom_enable %}photoswipe__image{% endif %} lazyload"
           data-photoswipe-src="{{ media.preview_image | img_url: product_zoom_size }}"
           data-photoswipe-width="{{ media_width }}"
           data-photoswipe-height="{{ media_height }}"
