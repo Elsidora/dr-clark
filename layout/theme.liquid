@@ -498,5 +498,15 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     
      {% render 'custom-code' %}
   
-   {%- render "ecom_footer"-%}</body>
+   {%- render "ecom_footer"-%}
+  
+    {% if template contains 'product' %}
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> 
+      <script src="{{ 'easyzoom.js' | asset_url }}" ></script>
+      <script>
+        var $easyzoom = $('.easyzoom').easyZoom();
+      </script>
+    {% endif %}
+
+  </body>
 </html>
