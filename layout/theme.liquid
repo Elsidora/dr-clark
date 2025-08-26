@@ -502,11 +502,16 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   
     {% if template contains 'product' %}
       <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> 
-      <script src="{{ 'easyzoom.js' | asset_url }}" ></script>
+      <script src="{{ 'okzoom.min.js' | asset_url }}" ></script>
       <script>
-        var $easyzoom = $('.easyzoom').easyZoom();
-        var api = $easyzoom.data('easyZoom');
+        $(function(){
+$('#zoomed').okzoom({
+width: 200,
+height: 200
+});
+});
       </script>
+
     {% endif %}
 
   </body>
