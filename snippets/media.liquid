@@ -105,7 +105,7 @@
         {%- liquid
           assign img_url = media | img_url: '1x1' | replace: '_1x1.', '_{width}x.'
         -%}
-          <a href="{{ media | img_url: '700x' }}">
+      
         {% if loopIndex0 == 0 %}
         <img fetchpriority="high" {% if product.title contains 'Enema Bucket Set' %} id="zoomed" {% endif %} class="{% if settings.product_zoom_enable %}photoswipe__image{% endif %} lazyload-no"
           style="opacity: 1 !important;"
@@ -130,7 +130,7 @@
           data-sizes="auto"
           alt="{{ media.alt | escape | split: '#' | first }}">
          {% endif %}
-        </a>
+    
 
         <noscript>
           <noscript>
