@@ -101,13 +101,13 @@
           assign media_aspect_ratio = media.preview_image.aspect_ratio
         endif
       -%}
-      <div class="image-wrap {% if product.title contains 'Enema Bucket Set' %} easyzoom easyzoom--adjacent{% endif %} {% if has_video and video_modal == false %} hide{% endif %}" style="height: 0; padding-bottom: {{ 100 | divided_by: media_aspect_ratio }}%;">
+      <div class="image-wrap {% if has_video and video_modal == false %} hide{% endif %}" style="height: 0; padding-bottom: {{ 100 | divided_by: media_aspect_ratio }}%;">
         {%- liquid
           assign img_url = media | img_url: '1x1' | replace: '_1x1.', '_{width}x.'
         -%}
           <a href="{{ media | img_url: '700x' }}">
         {% if loopIndex0 == 0 %}
-        <img fetchpriority="high" class="{% if settings.product_zoom_enable %}photoswipe__image{% endif %} lazyload-no"
+        <img fetchpriority="high" {% if product.title contains 'Enema Bucket Set' %} id="zoomed" {% endif %} class="{% if settings.product_zoom_enable %}photoswipe__image{% endif %} lazyload-no"
           style="opacity: 1 !important;"
           data-photoswipe-src="{{ media.preview_image | img_url: product_zoom_size }}"
           data-photoswipe-width="{{ media_width }}"
@@ -119,7 +119,7 @@
           data-sizes="auto"
           alt="{{ media.alt | escape | split: '#' | first }}">
          {% else %}
-        <img class="{% if settings.product_zoom_enable %}photoswipe__image{% endif %} lazyload"
+        <img {% if product.title contains 'Enema Bucket Set' %} id="zoomed" {% endif %} class="{% if settings.product_zoom_enable %}photoswipe__image{% endif %} lazyload"
           data-photoswipe-src="{{ media.preview_image | img_url: product_zoom_size }}"
           data-photoswipe-width="{{ media_width }}"
           data-photoswipe-height="{{ media_height }}"
