@@ -894,7 +894,6 @@
           },
           "slide_ERDMeK": {
             "type": "slide",
-            "disabled": true,
             "settings": {
               "top_subheading": "",
               "title": "Top Sellers",
@@ -931,7 +930,6 @@
           },
           "slide_8XyP4p": {
             "type": "slide",
-            "disabled": true,
             "settings": {
               "top_subheading": "",
               "title": "Purity,\nPotency,\nAuthenticity",
@@ -942,7 +940,7 @@
               "link_2": "",
               "link_text_2": "",
               "text_position": "left",
-              "image": "shopify://shop_images/as3131151.png",
+              "image": "shopify://shop_images/20f43e5198ed095fcaac3c6c90a4dba2.w3000.h1500._CR9_0_2925_1481_SX840.jpg",
               "indent_image": true,
               "focal_point": "center center",
               "color_scheme": "none"
