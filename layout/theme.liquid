@@ -126,9 +126,6 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
       {%- render 'social-meta-tags' -%}
       {%- render 'preload-assets' -%}
       {%- render 'font-face' -%}
-      {% if template contains 'product' %}
-        <link rel="stylesheet" href="{{ 'easyzoom.css' | asset_url }}">
-      {% endif %}
       {{ 'theme.css' | asset_url | stylesheet_tag }}
       {%- render 'css-variables' -%}
       {%- liquid
@@ -417,7 +414,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     {% if template contains 'collection' or template contains 'product' %}
      <div id="floating-text" class="floating-text" style="display:none;">           
         <button class="bot-btn" onclick="closeText(this)"> &times;</button>
-        <span>Hello! I'm here to help.</span>
+        <span>Hello, I am Virtual Hulda Clark!</span>
     </div>
      <script>
        function closeText(button) {
@@ -495,15 +492,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     </script> 
     
     
-    
      {% render 'custom-code' %}
   
-   {%- render "ecom_footer"-%}
-  
-    {% if template contains 'product' %}
-      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> 
-
-    {% endif %}
-
-  </body>
+   {%- render "ecom_footer"-%}</body>
 </html>
