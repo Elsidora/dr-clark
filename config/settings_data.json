@@ -624,7 +624,7 @@
           "cda76a9a-3311-43ea-9449-fc47c21e559f"
         ],
         "custom_css": [
-          ".toolbar {background: #fb9ac9;}",
+          ".toolbar {background: #cbedad;}",
           ".small--hide {color: black; font-size: 16px; font-weight: normal;}"
         ],
         "settings": {
