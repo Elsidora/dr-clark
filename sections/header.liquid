@@ -88,9 +88,11 @@
               {% unless request.path contains 'rapid-search-results' %}
               <div class="header-item header-item--search small--hide">
 
-                <div class="milestone-widget">
+                {% comment %} 
+                 <div class="milestone-widget">
                   {%- render 'milestone-award-code' -%}
-                </div>
+                </div> 
+                {% endcomment %}
 
                 {%- if logo_alignment == 'center' -%}
                   <button type="button" class="site-nav__link site-nav__link--icon site-nav__compress-menu">
