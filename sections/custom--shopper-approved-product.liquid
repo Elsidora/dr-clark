@@ -63,9 +63,11 @@ function openTab(evt, tabName) {
   for (i = 0; i < tabcontent.length; i++) {
     tabcontent[i].style.display = "none";
   }
+   div.innerHTML = "DCS";
+  
   tablinks = document.getElementsByClassName("tablinks");
 
-  div.innerHTML = "DCS";
+ 
 
   for (i = 0; i < tablinks.length; i++) {
     tablinks[i].className = tablinks[i].className.replace(" active", "");
