@@ -64,6 +64,9 @@ function openTab(evt, tabName) {
     tabcontent[i].style.display = "none";
   }
   tablinks = document.getElementsByClassName("tablinks");
+
+  div.innerHTML = "DCS";
+
   for (i = 0; i < tablinks.length; i++) {
     tablinks[i].className = tablinks[i].className.replace(" active", "");
   }
@@ -71,7 +74,7 @@ function openTab(evt, tabName) {
   evt.currentTarget.className += " active";
 }
 </script>
-<div>DCS</div>
+
 <script>
   var jumHtml='';
   var saJump = setInterval(function(){ //interval that fires until the element exists
