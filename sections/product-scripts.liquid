@@ -111,6 +111,16 @@
       body.classList.add('wormwood-super')
     }
   {% endif %}
+  {% if product.url contains 'bug-buster-anti-candida-formula' %}
+    if (!body.classList.contains('bug-buster')) {
+      body.classList.add('bug-buster')
+    }
+  {% endif %}
+  {% if product.url contains 'bernard-jensen-liquid-chlorophyll' %}
+    if (!body.classList.contains('chlorophyll')) {
+      body.classList.add('chlorophyll')
+    }
+  {% endif %}
 </script>
 <script>
   
