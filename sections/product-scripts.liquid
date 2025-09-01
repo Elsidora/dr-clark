@@ -154,6 +154,12 @@
       {% if product.url contains 'wormwood-super-w-blend' %}
         p.innerHTML = `<span>Dr. Clark recommends:</span> Cloves and Wormwood work best when taken together, as they complement each other to support a balanced digestive environment and enhance natural cleansing. Pairing them maximizes their effectiveness for overall wellness.`;
       {% endif %}
+      {% if product.url contains 'bug-buster-anti-candida-formula' %}
+        p.innerHTML = `<span>Dr. Clark recommends:</span> `;
+      {% endif %}
+      {% if product.url contains 'fungal-fighter-120' %}
+        p.innerHTML = `<span>Dr. Clark recommends:</span> `;
+      {% endif %}
     
       parent.prepend(p);
       clearInterval(window.timerX);
