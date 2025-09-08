@@ -58,7 +58,29 @@
         {%- else -%}
           <label
             for="ProductSelect-{{ section_id }}-option-{{ option.name | handleize }}-{{ value | url_encode }}"
-            class="variant__button-label{% unless product_available %} disabled{% endunless %}">{{ value | escape }}</label>
+            class="variant__button-label{% unless product_available %} disabled{% endunless %}">{{ value | escape }}
+            {%- for variant in product.variants -%}
+
+              {%- assign format_price = variant.price | money -%}
+{%- unless shop.money_format contains 'money' or shop.money_format contains '.' -%}
+  {%- if settings.superscript_decimals -%}
+    {%- if shop.money_format contains '{{amount}}' or shop.money_format contains '{{ amount }}' -%}
+      {% capture format_price %}{{ format_price | replace: '.','<sup>' }}</sup>{% endcapture %}
+    {%- elsif shop.money_format contains '{{amount_with_comma_separator}}' or shop.money_format contains '{{ amount_with_comma_separator }}' -%}
+      {% capture format_price %}{{ format_price | replace: ',','<sup>' }}</sup>{% endcapture %}
+    {%- endif -%}
+  {%- endif -%}
+{%- endunless -%}
+
+            {%- if variant.available and variant.title == value-%}
+              <p {% if variant == product.selected_or_first_available_variant %}
+              selected="selected"{% endif %}
+              value="{{ variant.id }}" data-price="{{ variant.price }}" class="variant__button_price">
+                {{ format_price }}
+              </p>
+            {%- endif -%}
+          {%- endfor -%}
+          </label>
         {%- endif -%}
       </div>
     {%- endfor -%}
