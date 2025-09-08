@@ -163,6 +163,11 @@
                 <h2 class="h2 product-single__title">
                   {{ product.title }}
                 </h2>
+                {% if product.url contains 'digestive-enzymes-700-mg-50-capsules' %}
+        <h2 class="h2 product-single__title test">
+          Digestive Enzymes, 700 mg
+        </h2>
+                {% endif %}
               {% endif %}
 
               {%- if settings.vendor_enable or settings.sku_enable -%}
