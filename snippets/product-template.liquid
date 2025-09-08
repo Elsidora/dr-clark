@@ -54,7 +54,7 @@
         {{ product.title }}
       </p>
     {%- else -%}
-      <h1 class="h2 product-single__title">
+      <h1 class="h2 product-single__title {% if product.url contains 'digestive-enzymes-700-mg-50-capsules' %}digestive{% endif %}">
         {{ product.title }}
       </h1>
       {% if product.url contains 'digestive-enzymes-700-mg-50-capsules' %}
