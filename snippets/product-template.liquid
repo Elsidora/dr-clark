@@ -57,7 +57,11 @@
       <h1 class="h2 product-single__title">
         {{ product.title }}
       </h1>
-  
+      {% if product.url contains 'digestive-enzymes-700-mg-50-capsules' %}
+        <h1 class="h2 product-single__title test">
+          Digestive Enzymes, 700 mg
+        </h1>
+      {% endif %}
 {% comment %}  
   <div class="yotpo bottomLine"
     data-appkey="ArbZxoYDCBtng6HJ515TVKnXabAKRbuqk6Piq2yK"
