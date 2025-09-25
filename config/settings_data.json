@@ -540,7 +540,6 @@
         "blocks": {
           "promotion_mALeKQ": {
             "type": "promotion",
-            "disabled": true,
             "settings": {
               "enable_image": true,
               "image": "shopify://shop_images/33500-KITFlatTummyKit.webp",
@@ -553,12 +552,11 @@
           },
           "promotion_TGrGFD": {
             "type": "promotion",
-            "disabled": true,
             "settings": {
               "enable_image": true,
               "image": "shopify://shop_images/Qualitygelatincapsules_7f845658-4527-4b6a-b61f-45780942b389_1.webp",
               "title": "Purity Guarantee",
-              "text": "<p>Dr. Clark sought the pinnacle of purity and quality in her supplements and our products are guaranteed free of harmful additives like carrageenan. </p>",
+              "text": "<p>Dr. Clark sought the pinnacle of purity and quality in her supplements and our products are guaranteed free of harmful additives like carrageenan and stearates. </p>",
               "button_label": "Read",
               "button_link": "https://drclarkstore.com/pages/100-guarantee",
               "color_scheme": "none"
@@ -566,7 +564,6 @@
           },
           "promotion_xqAmxz": {
             "type": "promotion",
-            "disabled": true,
             "settings": {
               "enable_image": true,
               "image": "shopify://shop_images/333162_Parasite_Cleanse_Plus__75866.1589917843.800.800.webp",
