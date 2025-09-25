@@ -540,6 +540,7 @@
         "blocks": {
           "promotion_mALeKQ": {
             "type": "promotion",
+            "disabled": true,
             "settings": {
               "enable_image": true,
               "image": "shopify://shop_images/33500-KITFlatTummyKit.webp",
@@ -552,6 +553,7 @@
           },
           "promotion_TGrGFD": {
             "type": "promotion",
+            "disabled": true,
             "settings": {
               "enable_image": true,
               "image": "shopify://shop_images/Qualitygelatincapsules_7f845658-4527-4b6a-b61f-45780942b389_1.webp",
@@ -564,6 +566,7 @@
           },
           "promotion_xqAmxz": {
             "type": "promotion",
+            "disabled": true,
             "settings": {
               "enable_image": true,
               "image": "shopify://shop_images/herbal-vitamin.jpg",
