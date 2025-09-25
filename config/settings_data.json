@@ -566,11 +566,11 @@
             "type": "promotion",
             "settings": {
               "enable_image": true,
-              "image": "shopify://shop_images/333162_Parasite_Cleanse_Plus__75866.1589917843.800.800.webp",
-              "title": "Parasite Cleanses",
-              "text": "<p>See our collection of parasite cleanses, which come in variety packs for those preferring vegan or gelatin capsules, and/or tincture forms.</p>",
-              "button_label": "Shop",
-              "button_link": "https://drclarkstore.com/collections/dr-hulda-clark-parasite-cleanse",
+              "image": "shopify://shop_images/herbal-vitamin.jpg",
+              "title": "Immune Boosting Protocol",
+              "text": "<p>This guide provides dosage information for basic immune boosting. </p>",
+              "button_label": "Read",
+              "button_link": "https://drclarkstore.com/pages/immune-boosting-protocol/",
               "color_scheme": "none"
             }
           }
