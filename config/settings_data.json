@@ -855,6 +855,24 @@
       "161789469679fffe6b": {
         "type": "slideshow-split",
         "blocks": {
+          "slide_ERDMeK": {
+            "type": "slide",
+            "settings": {
+              "top_subheading": "",
+              "title": "Loved by thousands!",
+              "title_size": 43,
+              "subheading": "",
+              "link": "https://drclarkstore.com/collections/dr-hulda-clark-parasite-cleanse",
+              "link_text": "",
+              "link_2": "",
+              "link_text_2": "",
+              "text_position": "left",
+              "image": "shopify://shop_images/shopper_asf.jpg",
+              "indent_image": true,
+              "focal_point": "top center",
+              "color_scheme": "none"
+            }
+          },
           "slide_eQBg6r": {
             "type": "slide",
             "settings": {
@@ -888,24 +906,6 @@
               "image": "shopify://shop_images/carageenan1234.png",
               "indent_image": true,
               "focal_point": "center center",
-              "color_scheme": "none"
-            }
-          },
-          "slide_ERDMeK": {
-            "type": "slide",
-            "settings": {
-              "top_subheading": "",
-              "title": "Loved by thousands!",
-              "title_size": 43,
-              "subheading": "",
-              "link": "https://drclarkstore.com/collections/dr-hulda-clark-parasite-cleanse",
-              "link_text": "",
-              "link_2": "",
-              "link_text_2": "",
-              "text_position": "left",
-              "image": "shopify://shop_images/shopper_asf.jpg",
-              "indent_image": true,
-              "focal_point": "top center",
               "color_scheme": "none"
             }
           },
@@ -947,9 +947,9 @@
           }
         },
         "block_order": [
+          "slide_ERDMeK",
           "slide_eQBg6r",
           "slide_cgQarh",
-          "slide_ERDMeK",
           "slide_dXiLgg",
           "slide_8XyP4p"
         ],
