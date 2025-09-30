@@ -869,24 +869,6 @@
               "text_position": "left",
               "image": "shopify://shop_images/shopper_asf.jpg",
               "indent_image": true,
-              "focal_point": "top center",
-              "color_scheme": "none"
-            }
-          },
-          "slide_eQBg6r": {
-            "type": "slide",
-            "settings": {
-              "top_subheading": "",
-              "title": "The Original SynchroZap",
-              "title_size": 40,
-              "subheading": "",
-              "link": "https://drclarkstore.com/collections/zappers-accessories/products/dr-clark-zapper-syncrozap-with-copper-tubes-model-a11",
-              "link_text": "Learn More",
-              "link_2": "",
-              "link_text_2": "",
-              "text_position": "left",
-              "image": "shopify://shop_images/Zapper_banner_1_1.png",
-              "indent_image": true,
               "focal_point": "center center",
               "color_scheme": "none"
             }
@@ -904,6 +886,24 @@
               "link_text_2": "",
               "text_position": "left",
               "image": "shopify://shop_images/carageenan1234.png",
+              "indent_image": true,
+              "focal_point": "center center",
+              "color_scheme": "none"
+            }
+          },
+          "slide_eQBg6r": {
+            "type": "slide",
+            "settings": {
+              "top_subheading": "",
+              "title": "The Original SynchroZap",
+              "title_size": 40,
+              "subheading": "",
+              "link": "https://drclarkstore.com/collections/zappers-accessories/products/dr-clark-zapper-syncrozap-with-copper-tubes-model-a11",
+              "link_text": "Learn More",
+              "link_2": "",
+              "link_text_2": "",
+              "text_position": "left",
+              "image": "shopify://shop_images/Zapper_banner_1_1.png",
               "indent_image": true,
               "focal_point": "center center",
               "color_scheme": "none"
@@ -948,8 +948,8 @@
         },
         "block_order": [
           "slide_ERDMeK",
-          "slide_eQBg6r",
           "slide_cgQarh",
+          "slide_eQBg6r",
           "slide_dXiLgg",
           "slide_8XyP4p"
         ],
