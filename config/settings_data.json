@@ -895,16 +895,16 @@
             "type": "slide",
             "settings": {
               "top_subheading": "",
-              "title": "Top Sellers",
+              "title": "Loved by thousands!",
               "title_size": 43,
               "subheading": "",
               "link": "https://drclarkstore.com/collections/dr-hulda-clark-parasite-cleanse",
-              "link_text": "Shop Parasite Cleanses",
+              "link_text": "",
               "link_2": "",
               "link_text_2": "",
               "text_position": "left",
-              "image": "shopify://shop_images/asasfasd.webp",
-              "indent_image": false,
+              "image": "shopify://shop_images/shopper_asf.jpg",
+              "indent_image": true,
               "focal_point": "top center",
               "color_scheme": "none"
             }
