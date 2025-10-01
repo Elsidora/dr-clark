@@ -867,7 +867,7 @@
               "link_2": "",
               "link_text_2": "",
               "text_position": "left",
-              "image": "shopify://shop_images/shopper_asf.jpg",
+              "image": "shopify://shop_images/Shopper_Approved.jpg",
               "indent_image": true,
               "focal_point": "center center",
               "color_scheme": "none"
@@ -877,11 +877,11 @@
             "type": "slide",
             "settings": {
               "top_subheading": "",
-              "title": "Our Highest Priority is Purity",
+              "title": "Top Sellers",
               "title_size": 40,
-              "subheading": "GMO-Free;                                                                          \nNo Artificial Ingredients;\nNo Harmful Additives;\nNo Stearates;\nNo Carrageenan",
+              "subheading": "",
               "link": "https://drclarkstore.com/collections/dr-hulda-clark-parasite-cleanse",
-              "link_text": "Read More",
+              "link_text": "Shop Parasite Cleanses",
               "link_2": "",
               "link_text_2": "",
               "text_position": "left",
