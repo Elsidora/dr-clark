@@ -891,24 +891,6 @@
               "color_scheme": "none"
             }
           },
-          "slide_eQBg6r": {
-            "type": "slide",
-            "settings": {
-              "top_subheading": "",
-              "title": "The Original SynchroZap",
-              "title_size": 40,
-              "subheading": "",
-              "link": "https://drclarkstore.com/collections/zappers-accessories/products/dr-clark-zapper-syncrozap-with-copper-tubes-model-a11",
-              "link_text": "Learn More",
-              "link_2": "",
-              "link_text_2": "",
-              "text_position": "left",
-              "image": "shopify://shop_images/Zapper_banner_1_1.png",
-              "indent_image": true,
-              "focal_point": "center center",
-              "color_scheme": "none"
-            }
-          },
           "slide_dXiLgg": {
             "type": "slide",
             "settings": {
@@ -931,15 +913,33 @@
             "type": "slide",
             "settings": {
               "top_subheading": "",
-              "title": "Purity,\nPotency,\nAuthenticity",
+              "title": "Our Own Factory Since 1993",
               "title_size": 43,
               "subheading": "",
-              "link": "https://drclarkstore.com/collections/dr-hulda-clark-parasite-cleanse",
-              "link_text": "Read More",
+              "link": "https://purensm.com",
+              "link_text": "See Details..",
               "link_2": "",
               "link_text_2": "",
               "text_position": "left",
-              "image": "shopify://shop_images/20f43e5198ed095fcaac3c6c90a4dba2.w3000.h1500._CR9_0_2925_1481_SX840.jpg",
+              "image": "shopify://shop_images/We-don-t_outsource_to_the_lowest_bidder.jpg",
+              "indent_image": true,
+              "focal_point": "center center",
+              "color_scheme": "none"
+            }
+          },
+          "slide_eQBg6r": {
+            "type": "slide",
+            "settings": {
+              "top_subheading": "",
+              "title": "The Original SynchroZap",
+              "title_size": 40,
+              "subheading": "",
+              "link": "https://drclarkstore.com/collections/zappers-accessories/products/dr-clark-zapper-syncrozap-with-copper-tubes-model-a11",
+              "link_text": "Learn More",
+              "link_2": "",
+              "link_text_2": "",
+              "text_position": "left",
+              "image": "shopify://shop_images/Zapper_banner_1_1.png",
               "indent_image": true,
               "focal_point": "center center",
               "color_scheme": "none"
@@ -949,9 +949,9 @@
         "block_order": [
           "slide_ERDMeK",
           "slide_cgQarh",
-          "slide_eQBg6r",
           "slide_dXiLgg",
-          "slide_8XyP4p"
+          "slide_8XyP4p",
+          "slide_eQBg6r"
         ],
         "settings": {
           "full_width": false,
