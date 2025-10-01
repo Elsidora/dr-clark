@@ -2705,7 +2705,8 @@
   "platform_customizations": {
     "custom_css": [
       ".w3-border tr td {border: 1px solid #ccc !important; border-collapse: collapse;}",
-      ".grid-product__price--current {display: inline-block; font-weight: 400; -right: 5px; font-size: calc(var(--typeBaseSize) + 2px);}"
+      ".grid-product__price--current {display: inline-block; font-weight: 400; /* -right: 5px; */ font-size: calc(var(--typeBaseSize) + 2px);}",
+      "@media only screen and (min-width: 769px) {.hero__sidebyside-image--indented .hero__image {padding: 40px 90px 40px 80px; object-position: center right;}}"
     ]
   }
 }
