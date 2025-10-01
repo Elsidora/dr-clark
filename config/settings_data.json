@@ -903,10 +903,10 @@
               "link_2": "",
               "link_text_2": "",
               "text_position": "left",
-              "image": "shopify://shop_images/Dr-Clark-Store-Difference.jpg",
+              "image": "shopify://shop_images/Dr-Clark-Store-Difference.png",
               "indent_image": true,
               "focal_point": "top center",
-              "color_scheme": "none"
+              "color_scheme": "3"
             }
           },
           "slide_8XyP4p": {
@@ -2706,7 +2706,7 @@
     "custom_css": [
       ".w3-border tr td {border: 1px solid #ccc !important; border-collapse: collapse;}",
       ".grid-product__price--current {display: inline-block; font-weight: 400; /* -right: 5px; */ font-size: calc(var(--typeBaseSize) + 2px);}",
-      "@media only screen and (min-width: 769px) {.hero__sidebyside-image--indented .hero__image {padding: 40px 90px 40px 80px; object-position: center right;}}"
+      "@media only screen and (min-width: 769px) {.hero__sidebyside-image--indented .hero__image {padding: 40px 90px 40px 80px; object-position: center right; }}"
     ]
   }
 }
