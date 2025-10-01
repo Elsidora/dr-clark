@@ -955,7 +955,7 @@
         ],
         "custom_css": [],
         "settings": {
-          "full_width": false,
+          "full_width": true,
           "height": 500,
           "height_mobile": 400,
           "style": "arrows",
