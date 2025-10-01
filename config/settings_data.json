@@ -942,7 +942,7 @@
               "image": "shopify://shop_images/SyncroZap.jpg",
               "indent_image": true,
               "focal_point": "center center",
-              "color_scheme": "none"
+              "color_scheme": "3"
             }
           }
         },
