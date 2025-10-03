@@ -870,7 +870,7 @@
               "image": "shopify://shop_images/Shopper_Approved.jpg",
               "indent_image": true,
               "focal_point": "center center",
-              "color_scheme": "3"
+              "color_scheme": "none"
             }
           },
           "slide_cgQarh": {
@@ -888,7 +888,7 @@
               "image": "shopify://shop_images/Parasite_cleanse_565e8948-7bb2-4682-a4ff-fef29cf45910.jpg",
               "indent_image": true,
               "focal_point": "center center",
-              "color_scheme": "3"
+              "color_scheme": "none"
             }
           },
           "slide_dXiLgg": {
@@ -906,7 +906,7 @@
               "image": "shopify://shop_images/Dr-Clark-Store-Difference.png",
               "indent_image": true,
               "focal_point": "top center",
-              "color_scheme": "3"
+              "color_scheme": "none"
             }
           },
           "slide_8XyP4p": {
@@ -924,7 +924,7 @@
               "image": "shopify://shop_images/We-don-t_outsource_to_the_lowest_bidder.jpg",
               "indent_image": true,
               "focal_point": "center center",
-              "color_scheme": "3"
+              "color_scheme": "none"
             }
           },
           "slide_eQBg6r": {
@@ -942,7 +942,7 @@
               "image": "shopify://shop_images/SyncroZap.jpg",
               "indent_image": true,
               "focal_point": "center center",
-              "color_scheme": "3"
+              "color_scheme": "none"
             }
           }
         },
