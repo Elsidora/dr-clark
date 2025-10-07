@@ -2706,7 +2706,14 @@
     "custom_css": [
       ".w3-border tr td {border: 1px solid #ccc !important; border-collapse: collapse;}",
       ".grid-product__price--current {display: inline-block; font-weight: 400; /* -right: 5px; */ font-size: calc(var(--typeBaseSize) + 2px);}",
-      "@media only screen and (min-width: 769px) {.hero__sidebyside-image--indented .hero__image {padding: 40px 90px 40px 80px; object-position: center right; }}"
+      ".wholesale-container {max-width: 800px; margin: 40px auto; padding: 30px 25px; background-color: #fdfdfd; border: 1px solid #ddd; border-radius: 8px; font-family: Arial, sans-serif; color: #333; line-height: 1.6;}",
+      ".wholesale-container h2 {font-size: 24px; margin-top: 0; color: #222;}",
+      ".wholesale-container p {margin-bottom: 1em;}",
+      ".wholesale-container strong {display: inline-block; margin-top: 20px; font-size: 18px; color: #000;}",
+      ".wholesale-container a {color: #0074cc; text-decoration: none;}",
+      ".wholesale-container a:hover {text-decoration: underline;}",
+      "@media only screen and (min-width: 769px) {.hero__sidebyside-image--indented .hero__image {padding: 40px 90px 40px 80px; object-position: center right; }}",
+      "@media (max-width: 768px) {.wholesale-container {padding: 20px 15px; } }"
     ]
   }
 }
