@@ -955,7 +955,7 @@
         ],
         "custom_css": [],
         "settings": {
-          "full_width": true,
+          "full_width": false,
           "height": 500,
           "height_mobile": 400,
           "style": "arrows",
@@ -2713,7 +2713,7 @@
       ".wholesale-container a {color: #0074cc; text-decoration: none;}",
       ".wholesale-container a:hover {text-decoration: underline;}",
       "@media only screen and (min-width: 769px) {.hero__sidebyside-image--indented .hero__image {padding: 40px 90px 40px 80px; object-position: center right; }}",
-      "@media (max-width: 768px) {.wholesale-container {padding: 20px 15px; } }"
+      "@media (max-width: 768px) {.wholesale-container {padding: 20px 15px; }}"
     ]
   }
 }
