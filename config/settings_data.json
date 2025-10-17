@@ -909,24 +909,6 @@
               "color_scheme": "none"
             }
           },
-          "slide_8XyP4p": {
-            "type": "slide",
-            "settings": {
-              "top_subheading": "",
-              "title": "Our Own Factory Since 1993",
-              "title_size": 43,
-              "subheading": "",
-              "link": "https://purensm.com",
-              "link_text": "See Details..",
-              "link_2": "",
-              "link_text_2": "",
-              "text_position": "left",
-              "image": "shopify://shop_images/UL-NSF-VeriGMP.jpg",
-              "indent_image": true,
-              "focal_point": "center center",
-              "color_scheme": "none"
-            }
-          },
           "slide_eQBg6r": {
             "type": "slide",
             "settings": {
@@ -944,14 +926,33 @@
               "focal_point": "center center",
               "color_scheme": "none"
             }
+          },
+          "slide_ECyfiW": {
+            "type": "slide",
+            "disabled": true,
+            "settings": {
+              "top_subheading": "Today Only!",
+              "title": "20% Off Storewide",
+              "title_size": 60,
+              "subheading": "Use Code: DRCLARK",
+              "link": "",
+              "link_text": "",
+              "link_2": "",
+              "link_text_2": "",
+              "text_position": "left",
+              "image": "shopify://shop_images/Dr._C_Bday_Sale_DCS.png",
+              "indent_image": false,
+              "focal_point": "center center",
+              "color_scheme": "none"
+            }
           }
         },
         "block_order": [
           "slide_ERDMeK",
           "slide_cgQarh",
           "slide_dXiLgg",
-          "slide_8XyP4p",
-          "slide_eQBg6r"
+          "slide_eQBg6r",
+          "slide_ECyfiW"
         ],
         "custom_css": [],
         "settings": {
