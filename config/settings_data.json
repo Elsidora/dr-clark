@@ -857,6 +857,7 @@
         "blocks": {
           "slide_ERDMeK": {
             "type": "slide",
+            "disabled": true,
             "settings": {
               "top_subheading": "",
               "title": "Loved by thousands!",
@@ -875,6 +876,7 @@
           },
           "slide_cgQarh": {
             "type": "slide",
+            "disabled": true,
             "settings": {
               "top_subheading": "",
               "title": "Top Sellers",
@@ -893,6 +895,7 @@
           },
           "slide_dXiLgg": {
             "type": "slide",
+            "disabled": true,
             "settings": {
               "top_subheading": "",
               "title": "Quick Video",
@@ -911,6 +914,7 @@
           },
           "slide_eQBg6r": {
             "type": "slide",
+            "disabled": true,
             "settings": {
               "top_subheading": "",
               "title": "The Original SynchroZap",
@@ -929,7 +933,6 @@
           },
           "slide_ECyfiW": {
             "type": "slide",
-            "disabled": true,
             "settings": {
               "top_subheading": "Today Only!",
               "title": "20% Off Storewide",
