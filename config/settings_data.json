@@ -857,7 +857,6 @@
         "blocks": {
           "slide_ERDMeK": {
             "type": "slide",
-            "disabled": true,
             "settings": {
               "top_subheading": "",
               "title": "Loved by thousands!",
@@ -876,7 +875,6 @@
           },
           "slide_cgQarh": {
             "type": "slide",
-            "disabled": true,
             "settings": {
               "top_subheading": "",
               "title": "Top Sellers",
@@ -895,7 +893,6 @@
           },
           "slide_dXiLgg": {
             "type": "slide",
-            "disabled": true,
             "settings": {
               "top_subheading": "",
               "title": "Quick Video",
@@ -914,7 +911,6 @@
           },
           "slide_eQBg6r": {
             "type": "slide",
-            "disabled": true,
             "settings": {
               "top_subheading": "",
               "title": "The Original SynchroZap",
@@ -930,32 +926,13 @@
               "focal_point": "center center",
               "color_scheme": "none"
             }
-          },
-          "slide_ECyfiW": {
-            "type": "slide",
-            "settings": {
-              "top_subheading": "Today Only!",
-              "title": "20% Off Storewide",
-              "title_size": 60,
-              "subheading": "Use Code: DRCLARK",
-              "link": "",
-              "link_text": "",
-              "link_2": "",
-              "link_text_2": "",
-              "text_position": "left",
-              "image": "shopify://shop_images/Dr._C_Bday_Sale_DCS.png",
-              "indent_image": false,
-              "focal_point": "center center",
-              "color_scheme": "none"
-            }
           }
         },
         "block_order": [
           "slide_ERDMeK",
           "slide_cgQarh",
           "slide_dXiLgg",
-          "slide_eQBg6r",
-          "slide_ECyfiW"
+          "slide_eQBg6r"
         ],
         "custom_css": [],
         "settings": {
