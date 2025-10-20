@@ -617,11 +617,19 @@
               "richtext": "<p>🔥 Save 5% on all kits: use code KIT 🔥</p>",
               "richtext_mobile": "<p>🔥 Save 5% on all kits: use code KIT 🔥</p>"
             }
+          },
+          "announcement_TLBjYd": {
+            "type": "announcement",
+            "settings": {
+              "richtext": "Due to temporary outage affecting shipping services, we are not able to ship orders until service has been restored. We will resume shipping once service has been restored.",
+              "richtext_mobile": "Due to temporary outage affecting shipping services, we are not able to ship orders until service has been restored. We will resume shipping once service has been restored."
+            }
           }
         },
         "block_order": [
           "90f00bd0-94d1-44b6-b985-4fbeee199014",
-          "cda76a9a-3311-43ea-9449-fc47c21e559f"
+          "cda76a9a-3311-43ea-9449-fc47c21e559f",
+          "announcement_TLBjYd"
         ],
         "custom_css": [
           ".toolbar {background: #cbedad;}",
