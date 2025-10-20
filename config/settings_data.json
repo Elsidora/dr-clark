@@ -623,7 +623,7 @@
           "announcement_TLBjYd": {
             "type": "announcement",
             "settings": {
-              "richtext": "Due to temporary outage affecting shipping services, we are not able to ship orders until service has been restored. We will resume shipping once service has been restored.",
+              "richtext": "Due to temporary outage affecting global shipping services, we are not able to ship orders until service has been restored. We will resume shipping once service has been restored.",
               "richtext_mobile": "Due to temporary outage affecting shipping services, we are not able to ship orders until service has been restored. We will resume shipping once service has been restored."
             }
           }
