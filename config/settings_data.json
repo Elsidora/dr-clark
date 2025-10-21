@@ -606,7 +606,6 @@
         "blocks": {
           "90f00bd0-94d1-44b6-b985-4fbeee199014": {
             "type": "announcement",
-            "disabled": true,
             "settings": {
               "richtext": "<p>🚚 Free domestic shipping on orders over $99 USD</p>",
               "richtext_mobile": "<p>🚚 Free domestic shipping on orders over $99 USD</p>"
@@ -614,24 +613,15 @@
           },
           "cda76a9a-3311-43ea-9449-fc47c21e559f": {
             "type": "announcement",
-            "disabled": true,
             "settings": {
               "richtext": "<p>🔥 Save 5% on all kits: use code KIT 🔥</p>",
               "richtext_mobile": "<p>🔥 Save 5% on all kits: use code KIT 🔥</p>"
-            }
-          },
-          "announcement_TLBjYd": {
-            "type": "announcement",
-            "settings": {
-              "richtext": "Due to temporary outage affecting global shipping services, we are not able to ship orders until service has been restored. We apologize for the inconvenience.",
-              "richtext_mobile": "Due to temporary outage affecting global shipping services, we are not able to ship orders until service has been restored. We apologize for the inconvenience."
             }
           }
         },
         "block_order": [
           "90f00bd0-94d1-44b6-b985-4fbeee199014",
-          "cda76a9a-3311-43ea-9449-fc47c21e559f",
-          "announcement_TLBjYd"
+          "cda76a9a-3311-43ea-9449-fc47c21e559f"
         ],
         "custom_css": [
           ".toolbar {background: #cbedad;}",
