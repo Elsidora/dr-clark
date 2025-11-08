@@ -1,259 +1,301 @@
 <!-- Shopper Approved Product Page Code - sections/custom--shopper-approved-product.liquid -->
 <div class="page-width">
-<div id="saAbElm"><div id="product_just_stars" class="reg aside"></div><div id="abcta"></div></div>
+  <div id="saAbElm">
+    <div id="product_just_stars" class="reg aside"></div>
+    <div id="abcta"></div>
+  </div>
 
-<div class="tab">
-    <button id="sa_review_widget_tab" class="tablinks active" onclick="openTab(event, 'sa_review_widget')">Reviews</button>
+  <div class="tab">
+    <button id="sa_review_widget_tab" class="tablinks active" onclick="openTab(event, 'sa_review_widget')">
+      Reviews
+    </button>
     <button id="abqa-widget-tab" class="tablinks" onclick="openTab(event, 'sa_qa_widget')">Questions & Answers</button>
-</div>
-
-<div id="sa_review_widget" class="tabcontent" style="display: block;">
-  <div class="milestone-widget">
-                  {%- render 'milestone-award-code' -%}
   </div>
-  <div id="SA_review_wrapper">
+
+  <div id="sa_review_widget" class="tabcontent" style="display: block;">
+    <div class="milestone-widget">
+      {%- render 'milestone-award-code' -%}
+    </div>
+    <div id="SA_review_wrapper"></div>
   </div>
-</div>
 
-<div id="sa_qa_widget" class="tabcontent" style="display: none;">
-  <div id="abqa"></div>
-</div>
+  <div id="sa_qa_widget" class="tabcontent" style="display: none;">
+    <div id="abqa"></div>
+  </div>
 
-<style>
-.tab {
-  overflow: hidden;
-  background-color: rgba(0,0,0,0);
-  justify-content: flex-start;
-  display: flex;
-  padding-bottom: 20px;
-}
-.tab button { 
-  background-color: inherit;
-  float: left;
-  border: none;
-  outline: none;
-  cursor: pointer;
-  padding: 5px 16px;
-  transition: 0.3s;
-  font-size: 17px;
-  font-weight: bold;
-}
-.tab button:hover {
-  background-color: #fff;
-}
-.tab button.active {
-  border-bottom: solid 2px;
-}
-.tabcontent {
-  display: none;
-  padding: 6px 12px;
-}
+  <style>
+    .tab {
+      overflow: hidden;
+      background-color: rgba(0,0,0,0);
+      justify-content: flex-start;
+      display: flex;
+      padding-bottom: 20px;
+    }
+    .tab button {
+      background-color: inherit;
+      float: left;
+      border: none;
+      outline: none;
+      cursor: pointer;
+      padding: 5px 16px;
+      transition: 0.3s;
+      font-size: 17px;
+      font-weight: bold;
+    }
+    .tab button:hover {
+      background-color: #fff;
+    }
+    .tab button.active {
+      border-bottom: solid 2px;
+    }
+    .tabcontent {
+      display: none;
+      padding: 6px 12px;
+    }
 
-@media screen and (max-width: 576px) {
- .tab {
-   flex-direction: column;
- }
- .tab button.active {
-   border: 0;
-   background-color: #eee;
- }
-}
-</style>
-                                  
-<script>
-function openTab(evt, tabName) {
-  var i, tabcontent, tablinks;
-  tabcontent = document.getElementsByClassName("tabcontent");
-  for (i = 0; i < tabcontent.length; i++) {
-    tabcontent[i].style.display = "none";
-  }
-  
-  tablinks = document.getElementsByClassName("tablinks");
+    @media screen and (max-width: 576px) {
+     .tab {
+       flex-direction: column;
+     }
+     .tab button.active {
+       border: 0;
+       background-color: #eee;
+     }
+    }
+  </style>
 
- 
-
-  for (i = 0; i < tablinks.length; i++) {
-    tablinks[i].className = tablinks[i].className.replace(" active", "");
-  }
-  document.getElementById(tabName).style.display = "block";
-  evt.currentTarget.className += " active";
-}
-</script>
-
-<script>
-  var jumHtml='';
-  var saJump = setInterval(function(){ //interval that fires until the element exists
-      if(document.querySelectorAll('.sa_jump_to_reviews')!=undefined  &&  document.querySelectorAll('.sa_jump_to_reviews')!=null  &&  document.querySelectorAll('.sa_jump_to_reviews').length > 0){
-          jumHtml = document.querySelectorAll('.SA__total_reviews .sa_jump_to_reviews')[0].innerHTML; //Grab the contents of the current element
-          document.querySelectorAll('#product_just_stars .SA__total_reviews')[0].innerHTML=('<span class="saReviewsJump" style="cursor:pointer;">'+jumHtml+'</span>'); //create a new element that does not have the default functionality
-          
-          let saRJ = document.querySelectorAll('.saReviewsJump')[0];
-          saRJ.onclick = function() {
-              //console.log("sa test");
-              document.querySelectorAll('#sa_review_widget_tab')[0].click();
-              var saReviewsTab = document.querySelectorAll("#sa_review_widget")[0];
-              saReviewsTab.scrollIntoView({behavior: 'smooth'});
-          }
-          
-          clearInterval(saJump); //clear the interval so that it does not continue to fire
-      }
-  },500);
-</script>
-
-<script>
-  var checkAB = setInterval(function(){ //interval that fires until the element exists
-    if(document.querySelectorAll("#ab-tiny-widget")!=undefined  &&  document.querySelectorAll("#ab-tiny-widget")!=null  &&  document.querySelectorAll("#ab-tiny-widget").length > 0){
-            /* Have a product question? Ask us */
-            let abCTA = document.querySelectorAll("#ab-tiny-widget")[0];
-            abCTA.onclick = function(event) {
-              document.querySelectorAll("#abqa-widget-tab")[0].click();
-              var qaTab = document.querySelectorAll("#sa_qa_widget")[0];
-              qaTab.scrollIntoView({behavior: 'smooth'});
-            }
-            
-            clearInterval(checkAB); //clear the interval so that it does not continue to fire
-          }
-  },1000);
-</script>
-
-<script type="text/javascript">
-  var sa_product = 'Shopify_US_{{ product.id }}'; var sa_interval = 5000;
-  function saLoadScript(src) { var js = window.document.createElement('script'); js.src = src; js.type = 'text/javascript'; document.getElementsByTagName("head")[0].appendChild(js); }
-  function updateProductStars(w) {
-      if(w<=768){
-          //console.log("mobile");
-          //document.querySelector(".product-single__header--mobile h1.product-single__title").after(document.getElementById("saAbElm"));    
-          //document.querySelector(".product-single__header--mobile h1.product-single__title").appendChild(document.getElementById("saAbElm"));
-          moveAfter(document.getElementById("saAbElm"), document.querySelector(".product-single__header--mobile .product-single__title"));
-      } else{
-          //console.log("desktop");
-          //document.querySelector(".product-grid__container h1.product-single__title").after(document.getElementById("saAbElm"));    
-          //document.querySelector(".product-grid__container h1.product-single__title").appendChild(document.getElementById("saAbElm"));
-          moveAfter(document.getElementById("saAbElm"), document.querySelector(".product-grid__container .product-single__title"));
-      }
-  }
-  window.addEventListener('DOMContentLoaded', function() {
-    setTimeout(function() {
-      //document.querySelector('.product-grid__container h1.product-single__title').insertAdjacentHTML('afterend','<div id="saAbElm"><div id="product_just_stars" class="reg aside"></div><div id="abcta"></div></div>');
-      if (typeof(shopper_first) == 'undefined') saLoadScript('//www.shopperapproved.com/widgets/40407/product/'+sa_product+'/product-widget/15a36ct01Ly7.js');
-
-      if( !!document.getElementById("saAbElm") )  {
-        updateProductStars(window.innerWidth);
-        setTimeout(function(){
-          window.addEventListener('resize', function(event) {
-            updateProductStars(window.innerWidth);
-          }, true);
-        }, 500);
-        //console.log("satest");
+  <script>
+    function openTab(evt, tabName) {
+      var i, tabcontent, tablinks;
+      tabcontent = document.getElementsByClassName('tabcontent');
+      for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = 'none';
       }
 
-      loadCTAonMouseEvent();
-      
-    },500);
-  });
+      tablinks = document.getElementsByClassName('tablinks');
 
-  function moveAfter(element, target) {
-    target.parentNode.insertBefore(element, target.nextSibling);
-  }
+      for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].className = tablinks[i].className.replace(' active', '');
+      }
+      document.getElementById(tabName).style.display = 'block';
+      evt.currentTarget.className += ' active';
+    }
+  </script>
 
-  function loadCTAonMouseEvent() {
-    var mouseMoveEvent = new MouseEvent("mousemove", {
-      bubbles: true,
-      cancelable: true,
-      clientX: 100,  // X position
-      clientY: 200   // Y position
+  <script>
+    var jumHtml = '';
+    var saJump = setInterval(function () {
+      //interval that fires until the element exists
+      if (
+        document.querySelectorAll('.sa_jump_to_reviews') != undefined &&
+        document.querySelectorAll('.sa_jump_to_reviews') != null &&
+        document.querySelectorAll('.sa_jump_to_reviews').length > 0
+      ) {
+        jumHtml = document.querySelectorAll('.SA__total_reviews .sa_jump_to_reviews')[0].innerHTML; //Grab the contents of the current element
+        document.querySelectorAll('#product_just_stars .SA__total_reviews')[0].innerHTML =
+          '<span class="saReviewsJump" style="cursor:pointer;">' + jumHtml + '</span>'; //create a new element that does not have the default functionality
+
+        let saRJ = document.querySelectorAll('.saReviewsJump')[0];
+        saRJ.onclick = function () {
+          //console.log("sa test");
+          document.querySelectorAll('#sa_review_widget_tab')[0].click();
+          var saReviewsTab = document.querySelectorAll('#sa_review_widget')[0];
+          saReviewsTab.scrollIntoView({ behavior: 'smooth' });
+        };
+
+        clearInterval(saJump); //clear the interval so that it does not continue to fire
+      }
+    }, 500);
+  </script>
+
+  <script>
+    var checkAB = setInterval(function () {
+      //interval that fires until the element exists
+      if (
+        document.querySelectorAll('#ab-tiny-widget') != undefined &&
+        document.querySelectorAll('#ab-tiny-widget') != null &&
+        document.querySelectorAll('#ab-tiny-widget').length > 0
+      ) {
+        /* Have a product question? Ask us */
+        let abCTA = document.querySelectorAll('#ab-tiny-widget')[0];
+        abCTA.onclick = function (event) {
+          document.querySelectorAll('#abqa-widget-tab')[0].click();
+          var qaTab = document.querySelectorAll('#sa_qa_widget')[0];
+          qaTab.scrollIntoView({ behavior: 'smooth' });
+        };
+
+        clearInterval(checkAB); //clear the interval so that it does not continue to fire
+      }
+    }, 1000);
+  </script>
+
+  <script type="text/javascript">
+    var sa_product = 'Shopify_US_{{ product.id }}';
+    var sa_interval = 5000;
+    function saLoadScript(src) {
+      var js = window.document.createElement('script');
+      js.src = src;
+      js.type = 'text/javascript';
+      document.getElementsByTagName('head')[0].appendChild(js);
+    }
+    function updateProductStars(w) {
+      if (w <= 768) {
+        //console.log("mobile");
+        //document.querySelector(".product-single__header--mobile h1.product-single__title").after(document.getElementById("saAbElm"));
+        //document.querySelector(".product-single__header--mobile h1.product-single__title").appendChild(document.getElementById("saAbElm"));
+        moveAfter(
+          document.getElementById('saAbElm'),
+          document.querySelector('.product-single__header--mobile .product-single__title')
+        );
+      } else {
+        //console.log("desktop");
+        //document.querySelector(".product-grid__container h1.product-single__title").after(document.getElementById("saAbElm"));
+        //document.querySelector(".product-grid__container h1.product-single__title").appendChild(document.getElementById("saAbElm"));
+        moveAfter(
+          document.getElementById('saAbElm'),
+          document.querySelector('.product-grid__container .product-single__title')
+        );
+      }
+    }
+    window.addEventListener('DOMContentLoaded', function () {
+      setTimeout(function () {
+        //document.querySelector('.product-grid__container h1.product-single__title').insertAdjacentHTML('afterend','<div id="saAbElm"><div id="product_just_stars" class="reg aside"></div><div id="abcta"></div></div>');
+        if (typeof shopper_first == 'undefined')
+          saLoadScript(
+            '//www.shopperapproved.com/widgets/40407/product/' + sa_product + '/product-widget/15a36ct01Ly7.js'
+          );
+
+        if (!!document.getElementById('saAbElm')) {
+          updateProductStars(window.innerWidth);
+          setTimeout(function () {
+            window.addEventListener(
+              'resize',
+              function (event) {
+                updateProductStars(window.innerWidth);
+              },
+              true
+            );
+          }, 500);
+          //console.log("satest");
+        }
+
+        loadCTAonMouseEvent();
+      }, 500);
     });
-    document.dispatchEvent(mouseMoveEvent);
-  }
-</script>
-<style>
-  #product_just_stars{
-    display:inline-block;
-  }
-  #product_just_stars .SA__review_widget_item .SA__total_reviews .saReviewsJump {
-    font-size: 15px;
-    vertical-align: 2px;
-    text-decoration: underline;
-    color: #000;
-    border-right: 1px solid #000;
-  padding-right: 10px;
-  margin-right: 10px;
-  }
-  #SA_review_wrapper .SA__review_widget .SA__review_widget_item .SA__review_content .SA__review_bar {
-    margin-bottom: 0;
-  }
-  #SA_review_wrapper .SA__review_widget .SA__review_widget_item .SA__review_content .SA__review_num_ratings span {
-    vertical-align: 0px;
-  }
-  #SA_review_wrapper .SA__review_widget .SA__review_widget_item .SA__review_content .SA__review_num_ratings span:last-child {
-    vertical-align: 0px;
-  }
 
-  #SA_review_wrapper .SA__review_container{
-    max-width: none !important;
-    padding: 20px 0px !important;
-  }
+    function moveAfter(element, target) {
+      target.parentNode.insertBefore(element, target.nextSibling);
+    }
 
-  #ab-tiny-widget{
-  display: inline-block !important;
-  font-size: 15px !important;
-  vertical-align: 5px !important;
-}
-#ab-tiny-widget a{
-  text-decoration: underline;
-}
-#ab-tiny-widget a:hover{
-  text-decoration: none;
-}
-#ab-tiny-widget a ~ span {
-    display: none !important;
-}
-#ab-tiny-widget > a:nth-child(3) {
-    display: none !important;
-}
-.answerbase-widget h5, .answerbase-widget a{
-    font-weight: bold;
-}
-#abcta{
-  display:none;
-}
+    function loadCTAonMouseEvent() {
+      var mouseMoveEvent = new MouseEvent('mousemove', {
+        bubbles: true,
+        cancelable: true,
+        clientX: 100, // X position
+        clientY: 200, // Y position
+      });
+      document.dispatchEvent(mouseMoveEvent);
+    }
+  </script>
+  <style>
+      #product_just_stars{
+        display:inline-block;
+      }
+      #product_just_stars .SA__review_widget_item .SA__total_reviews .saReviewsJump {
+        font-size: 15px;
+        vertical-align: 2px;
+        text-decoration: underline;
+        color: #000;
+        border-right: 1px solid #000;
+      padding-right: 10px;
+      margin-right: 10px;
+      }
+      #SA_review_wrapper .SA__review_widget .SA__review_widget_item .SA__review_content .SA__review_bar {
+        margin-bottom: 0;
+      }
+      #SA_review_wrapper .SA__review_widget .SA__review_widget_item .SA__review_content .SA__review_num_ratings span {
+        vertical-align: 0px;
+      }
+      #SA_review_wrapper .SA__review_widget .SA__review_widget_item .SA__review_content .SA__review_num_ratings span:last-child {
+        vertical-align: 0px;
+      }
 
-@media screen and (max-width: 1120px) {
-		#product_just_stars{
-			display: block;
-		}
-		#product_just_stars .SA__review_widget_item .SA__total_reviews a{
-			border-right: 0px solid #000;
-			padding-right: 0px;
-			margin-right: 0px;
-		}
-		#ab-tiny-widget{
-			display: block;
-		}
-	}
-</style>
+      #SA_review_wrapper .SA__review_container{
+        max-width: none !important;
+        padding: 20px 0px !important;
+      }
 
-<br /><br />
+      #ab-tiny-widget{
+      display: inline-block !important;
+      font-size: 15px !important;
+      vertical-align: 5px !important;
+    }
+    #ab-tiny-widget a{
+      text-decoration: underline;
+    }
+    #ab-tiny-widget a:hover{
+      text-decoration: none;
+    }
+    #ab-tiny-widget a ~ span {
+        display: none !important;
+    }
+    #ab-tiny-widget > a:nth-child(3) {
+        display: none !important;
+    }
+    .answerbase-widget h5, .answerbase-widget a{
+        font-weight: bold;
+    }
+    #abcta{
+      display:none;
+    }
+
+    @media screen and (max-width: 1120px) {
+    		#product_just_stars{
+    			display: block;
+    		}
+    		#product_just_stars .SA__review_widget_item .SA__total_reviews a{
+    			border-right: 0px solid #000;
+    			padding-right: 0px;
+    			margin-right: 0px;
+    		}
+    		#ab-tiny-widget{
+    			display: block;
+    		}
+    	}
+  </style>
+
+  <br>
+  <br>
 </div>
 <!-- END Shopper Approved Product Page Code - sections/custom--shopper-approved-product.liquid -->
 
 {% if collection %}
   <div class="text-center page-content page-content--bottom">
     <div class="page-width">
-      <a href="{% if collection.handle == 'frontpage' %}/{% else %}{{ collection.url }}{% endif %}" class="btn return-link">
-        <svg aria-hidden="true" focusable="false" role="presentation" class="icon icon--wide icon-arrow-left" viewBox="0 0 50 15"><path d="M50 5.38v4.25H15V15L0 7.5 15 0v5.38z"/></svg> {{ 'products.general.collection_return' | t: collection: collection.title }}
+      <a
+        href="{% if collection.handle == 'frontpage' %}/{% else %}{{ collection.url }}{% endif %}"
+        class="btn return-link"
+      >
+        <svg
+          aria-hidden="true"
+          focusable="false"
+          role="presentation"
+          class="icon icon--wide icon-arrow-left"
+          viewBox="0 0 50 15"
+        >
+          <path d="M50 5.38v4.25H15V15L0 7.5 15 0v5.38z"/>
+        </svg>
+        {{ 'products.general.collection_return' | t: collection: collection.title }}
       </a>
     </div>
   </div>
 {% endif %}
 
-
-
 {% include 'product-schema' %}
 
 {% schema %}
-  {
-    "name": "Shopper approved",
-    "settings": []
-  }
+{
+  "name": "Shopper approved",
+  "settings": []
+}
 {% endschema %}
