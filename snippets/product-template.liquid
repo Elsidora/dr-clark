@@ -25,7 +25,8 @@
   endcase
 -%}
 
-<div id="ProductSection-{{ section_id }}"
+<div
+  id="ProductSection-{{ section_id }}"
   class="product-section"
   data-section-id="{{ section_id }}"
   data-section-type="product"
@@ -42,8 +43,8 @@
     data-incoming-inventory="true"
   {% endif %}
   data-history="{{ enableHistory }}"
-  data-modal="{{ isModal }}">
-
+  data-modal="{{ isModal }}"
+>
   {%- render 'product-template-variables', product: product, current_variant: current_variant -%}
 
   {%- capture product_header -%}
@@ -115,22 +116,19 @@
 
     {%- endif -%}
   {%- endcapture -%}
-  
 
   <div class="page-content page-content--product">
-      {%- if settings.show_breadcrumbs and isModal != true -%}
-        <div class='page-width breadcrumb-product'>
-          {%- render 'breadcrumbs' -%}
-        </div>
-      {%- endif -%}
+    {%- if settings.show_breadcrumbs and isModal != true -%}
+      <div class="page-width breadcrumb-product">
+        {%- render 'breadcrumbs' -%}
+      </div>
+    {%- endif -%}
     <div class="page-width">
-
       <div class="product-single__header--mobile medium-up--hide">
         {{ product_header }}
       </div>
 
       <div class="product-grid__container grid{% unless image_position == 'left' %} grid--product-images-right{% endunless %}{% if mobile_layout == 'partial' %} grid--product-images--partial{% endif %}">
-        
         {%- if image_position == 'left' -%}
           <div class="grid__item {{ product_image_width }} product-single__sticky">
             {%- render 'product-images',
@@ -149,7 +147,6 @@
         {%- endif -%}
 
         <div class="product-grid__content product-single__sticky grid__item {{ product_description_width }}">
-
           <div class="product-single__meta">
             <div class="product-single__header small--hide">
               {% comment %}
@@ -164,44 +161,42 @@
                   {{ product.title }}
                 </h2>
                 {% if product.url contains 'digestive-enzymes-700-mg-50-capsules' %}
-        <h2 class="h2 product-single__title test">
-          Digestive Enzymes, 700 mg
-        </h2>
+                  <h2 class="h2 product-single__title test">Digestive Enzymes, 700 mg</h2>
                 {% endif %}
               {% endif %}
 
               {%- if settings.vendor_enable or settings.sku_enable -%}
-      <div class="product-single__vendor-sku">
-      
-        {%- if settings.vendor_enable -%}
-          <span class="product-single__vendor">
-            {%- assign vendor_handle = product.vendor | handleize -%}
-            {%- if collections[vendor_handle] != empty -%}
-              <a href="{{ routes.collections_url }}/{{ collections[vendor_handle].handle }}">
-                {{ collections[vendor_handle].title }}
-              </a>
-            {%- else -%}
-              {{ product.vendor | link_to_vendor }}
-            {%- endif -%}
-          </span>
-        {%- endif -%}
+                <div class="product-single__vendor-sku">
+                  {%- if settings.vendor_enable -%}
+                    <span class="product-single__vendor">
+                      {%- assign vendor_handle = product.vendor | handleize -%}
+                      {%- if collections[vendor_handle] != empty -%}
+                        <a href="{{ routes.collections_url }}/{{ collections[vendor_handle].handle }}">
+                          {{ collections[vendor_handle].title }}
+                        </a>
+                      {%- else -%}
+                        {{ product.vendor | link_to_vendor }}
+                      {%- endif -%}
+                    </span>
+                  {%- endif -%}
 
-        {%- if settings.sku_enable -%}
-          <span data-sku id="Sku-{{ section_id }}" class="product-single__sku{% if current_variant.sku == blank %} hide{% endif %}">
-            SKU: <span data-sku-id>{{ current_variant.sku }}</span>
-          </span>
-        {%- endif -%}
-            
-    
-
-      </div>
-
-    {%- endif -%}
-              
+                  {%- if settings.sku_enable -%}
+                    <span
+                      data-sku
+                      id="Sku-{{ section_id }}"
+                      class="product-single__sku{% if current_variant.sku == blank %} hide{% endif %}"
+                    >
+                      SKU: <span data-sku-id>{{ current_variant.sku }}</span>
+                    </span>
+                  {%- endif -%}
+                </div>
+              {%- endif -%}
             </div>
 
             {%- if settings.inventory_enable or settings.inventory_transfers_enable -%}
-              {%- assign variants_with_inventory_tracking = product.variants | where: 'inventory_management', 'shopify' -%}
+              {%- assign variants_with_inventory_tracking = product.variants
+                | where: 'inventory_management', 'shopify'
+              -%}
 
               <script>
                 // Store inventory quantities in JS because they're no longer
@@ -230,7 +225,7 @@
                   data-section-id="{{ section_id }}"
                   class="hide js-product-inventory-data"
                   aria-hidden="true"
-                  >
+                >
                   {%- for variant in variants_with_inventory_tracking -%}
                     <div
                       class="js-variant-inventory-data"
@@ -238,8 +233,7 @@
                       data-quantity="{{ variant.inventory_quantity | default: 0 }}"
                       data-incoming="{{ variant.incoming | default: false }}"
                       data-date="{{ variant.next_incoming_date | date: format: 'date' }}"
-                    >
-                    </div>
+                    ></div>
                   {%- endfor -%}
                 </div>
               {%- endif -%}
@@ -251,39 +245,45 @@
                 scripts that cause slower load times and false statistics.
                 Quick view modals request these on-demand.
               {% endcomment %}
-              {%- render 'product-form',
-                section_id: section_id,
-                product: product,
-                current_variant: current_variant
-              -%}
+              {%- render 'product-form', section_id: section_id, product: product, current_variant: current_variant -%}
               <div data-rebuy-id="224487" data-rebuy-shopify-product-ids="{{ product.id }}"></div>
             {%- else -%}
               <div
                 id="ProductFormHolder-{{ section_id }}"
                 class="product-form-holder"
                 data-url="{{ product.url }}"
-                data-template="{{ product.template_suffix }}">
-                  {%- if product.options.size > 0 -%}
-                    {%- for i in (1..product.options.size) -%}
-                      <div class="placeholder-content" style="min-height: 86px; max-width: 66%;"></div>
-                    {%- endfor -%}
-                  {%- endif -%}
-                  <div class="placeholder-content" style="min-height: 86px;"></div>
-                </div>
+                data-template="{{ product.template_suffix }}"
+              >
+                {%- if product.options.size > 0 -%}
+                  {%- for i in (1..product.options.size) -%}
+                    <div class="placeholder-content" style="min-height: 86px; max-width: 66%;"></div>
+                  {%- endfor -%}
+                {%- endif -%}
+                <div class="placeholder-content" style="min-height: 86px;"></div>
+              </div>
             {%- endunless -%}
 
             {%- if settings.surface_pickup_enable -%}
-              <div id="StoreAvailabilityHolder-{{ section_id }}"
+              <div
+                id="StoreAvailabilityHolder-{{ section_id }}"
                 data-product-name="{{ product.title | escape }}"
                 data-base-url="{{ shop.url }}{{ routes.root_url }}"
-                ></div>
+              ></div>
             {%- endif -%}
 
             {%- if social -%}
-              {%- render 'social-sharing', share_title: product.title, share_permalink: product.url, share_image: product -%}
+              {%- render 'social-sharing',
+                share_title: product.title,
+                share_permalink: product.url,
+                share_image: product
+              -%}
             {%- endif -%}
             <div class="page-width--flush-small">
-             {%- render 'product-additional-content', product: product, section_id: section_id, description_style: description_style -%}
+              {%- render 'product-additional-content',
+                product: product,
+                section_id: section_id,
+                description_style: description_style
+              -%}
             </div>
           </div>
         </div>
@@ -305,39 +305,36 @@
           </div>
         {%- endunless -%}
       </div>
-      
     </div>
-
-    
   </div>
 </div>
 
 {% if product.url contains 'digestive-enzymes-700-mg-50-capsules' %}
   <script>
-  const productData = {
-    variants: [
-      {% for variant in product.variants %}
-      {
-        id: {{ variant.id }},
-        price: {{ variant.price }},
-        title: "{{ variant.title }}"
-      },
-      {% endfor %}
-    ]
-  };
-  const maxObj = productData.variants.reduce(function(max, obj) {
-  return obj.price > max.price? obj : max;
-  });
-  document.addEventListener('DOMContentLoaded', () => {
+      const productData = {
+        variants: [
+          {% for variant in product.variants %}
+          {
+            id: {{ variant.id }},
+            price: {{ variant.price }},
+            title: "{{ variant.title }}"
+          },
+          {% endfor %}
+        ]
+      };
+      const maxObj = productData.variants.reduce(function(max, obj) {
+      return obj.price > max.price? obj : max;
+      });
+      document.addEventListener('DOMContentLoaded', () => {
 
-  const options = document.querySelectorAll('.variant-input');
-  options.forEach(option => {
-    const valuePrice = option.querySelector('.variant__button_price').dataset.price;
-    
-    if (valuePrice == maxObj.price) {
-      option.classList.add('price-higher');
-    }
-  });
-});
-</script>
+      const options = document.querySelectorAll('.variant-input');
+      options.forEach(option => {
+        const valuePrice = option.querySelector('.variant__button_price').dataset.price;
+
+        if (valuePrice == maxObj.price) {
+          option.classList.add('price-higher');
+        }
+      });
+    });
+  </script>
 {% endif %}
