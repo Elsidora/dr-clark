@@ -604,24 +604,24 @@
       "toolbar": {
         "type": "toolbar",
         "blocks": {
+          "cda76a9a-3311-43ea-9449-fc47c21e559f": {
+            "type": "announcement",
+            "settings": {
+              "richtext": "<p>🔥 Black Friday Sale! Get 16% OFF with Code: BF16 🔥</p>",
+              "richtext_mobile": "<p>🔥 Black Friday Sale! 16% OFF Code: BF16 🔥</p>"
+            }
+          },
           "90f00bd0-94d1-44b6-b985-4fbeee199014": {
             "type": "announcement",
             "settings": {
               "richtext": "<p>🚚 Free domestic shipping on orders over $99 USD</p>",
               "richtext_mobile": "<p>🚚 Free domestic shipping on orders over $99 USD</p>"
             }
-          },
-          "cda76a9a-3311-43ea-9449-fc47c21e559f": {
-            "type": "announcement",
-            "settings": {
-              "richtext": "<p>🔥 Save 5% on all kits: use code KIT 🔥</p>",
-              "richtext_mobile": "<p>🔥 Save 5% on all kits: use code KIT 🔥</p>"
-            }
           }
         },
         "block_order": [
-          "90f00bd0-94d1-44b6-b985-4fbeee199014",
-          "cda76a9a-3311-43ea-9449-fc47c21e559f"
+          "cda76a9a-3311-43ea-9449-fc47c21e559f",
+          "90f00bd0-94d1-44b6-b985-4fbeee199014"
         ],
         "custom_css": [
           ".toolbar {background: #cbedad;}",
@@ -964,18 +964,8 @@
         "disabled": false,
         "settings": {}
       },
-      "pagefly-page-builder": {
-        "type": "shopify://apps/pagefly-page-builder/blocks/app-embed/83e179f7-59a0-4589-8c66-c0dddf959200",
-        "disabled": false,
-        "settings": {}
-      },
       "13672250894428551832": {
         "type": "shopify://apps/qikify-slide-cart/blocks/app-embed/39da5d6e-3e04-4687-bc69-e23fafb93294",
-        "disabled": false,
-        "settings": {}
-      },
-      "13951170544780599758": {
-        "type": "shopify://apps/tapita-seo-speed/blocks/app-embed/cd37ca7a-40ad-4fdc-afd3-768701482209",
         "disabled": false,
         "settings": {}
       },
