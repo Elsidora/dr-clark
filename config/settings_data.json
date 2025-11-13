@@ -964,11 +964,6 @@
         "disabled": false,
         "settings": {}
       },
-      "13672250894428551832": {
-        "type": "shopify://apps/qikify-slide-cart/blocks/app-embed/39da5d6e-3e04-4687-bc69-e23fafb93294",
-        "disabled": false,
-        "settings": {}
-      },
       "7924418359578431505": {
         "type": "shopify://apps/seoant-ai-seo/blocks/seoant-core/8e57283b-dcb0-4f7b-a947-fb5c57a0d59d",
         "disabled": false,
@@ -1002,6 +997,11 @@
       "8660026769530893754": {
         "type": "shopify://apps/synctrack-edd/blocks/omega-estimated-shipping-embed-app/054646a4-d5ab-4b85-b028-f3b169802e74",
         "disabled": false,
+        "settings": {}
+      },
+      "13672250894428551832": {
+        "type": "shopify://apps/qikify-slide-cart/blocks/app-embed/39da5d6e-3e04-4687-bc69-e23fafb93294",
+        "disabled": true,
         "settings": {}
       }
     }
