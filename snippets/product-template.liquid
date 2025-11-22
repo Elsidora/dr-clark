@@ -331,4 +331,32 @@
       });
     });
   </script>
+{% else %}
+  <script>
+      const productData = {
+        variants: [
+          {% for variant in product.variants %}
+          {
+            id: {{ variant.id }},
+            price: {{ variant.price }},
+            title: "{{ variant.title }}"
+          },
+          {% endfor %}
+        ]
+      };
+      const maxObj = productData.variants.reduce(function(max, obj) {
+      return obj.price > max.price? obj : max;
+      });
+      document.addEventListener('DOMContentLoaded', () => {
+
+      const options = document.querySelectorAll('.variant-input');
+      options.forEach(option => {
+        const valuePrice = option.querySelector('.variant__button_price').dataset.price;
+
+        if (valuePrice == maxObj.price) {
+          option.classList.add('price-higher');
+        }
+      });
+    });
+  </script>
 {% endif %}
