@@ -48,8 +48,6 @@
   {%- render 'product-template-variables', product: product, current_variant: current_variant -%}
 
   {%- capture product_header -%}
-    
-
     {%- if isModal -%}
       <p class="h2 product-single__title">
         {{ product.title }}
@@ -63,21 +61,19 @@
           Digestive Enzymes, 700 mg
         </h1>
       {% endif %}
-{% comment %}  
-  <div class="yotpo bottomLine"
-    data-appkey="ArbZxoYDCBtng6HJ515TVKnXabAKRbuqk6Piq2yK"
-    data-domain="{{shop.permanent_domain | escape }}"
-    data-product-id="{{ product.id }}"
-    data-product-models="{{ product.id }}"
-    data-name="{{ product.title | escape }}"
-    data-url="{{ shop.url }}{{ product.url }}"
-    data-image-url="{{ product.featured_image | product_img_url: 'large' |replace: '?', '%3F' | replace: '&','%26'}}"
-    data-description="{{ product.description | escape }}"
-    data-bread-crumbs="{% for tag in product.tags %}{{ tag | escape }};{% endfor %}">
-</div>
-{% endcomment %}
-
-
+      {% comment %}  
+        <div class="yotpo bottomLine"
+          data-appkey="ArbZxoYDCBtng6HJ515TVKnXabAKRbuqk6Piq2yK"
+          data-domain="{{shop.permanent_domain | escape }}"
+          data-product-id="{{ product.id }}"
+          data-product-models="{{ product.id }}"
+          data-name="{{ product.title | escape }}"
+          data-url="{{ shop.url }}{{ product.url }}"
+          data-image-url="{{ product.featured_image | product_img_url: 'large' |replace: '?', '%3F' | replace: '&','%26'}}"
+          data-description="{{ product.description | escape }}"
+          data-bread-crumbs="{% for tag in product.tags %}{{ tag | escape }};{% endfor %}">
+        </div>
+      {% endcomment %}
     {%- endif -%}
 
     {%- if settings.vendor_enable or settings.sku_enable -%}
