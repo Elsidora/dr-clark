@@ -23,6 +23,14 @@
   </style>
 {% endif %}
 
+{%- style -%}
+  .main-product-variants {
+    .variant-wrapper {
+      display: block;
+    }
+  }
+{%- endstyle -%}
+
 {%- liquid
   assign isModal = false
   if template == 'product.modal'
