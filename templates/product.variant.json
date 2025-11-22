@@ -10,7 +10,7 @@
 {
   "sections": {
     "prod-template": {
-      "type": "product-template",
+      "type": "product-template-variants",
       "settings": {
         "image_position": "left",
         "image_container_size": "medium",
