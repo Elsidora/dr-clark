@@ -78,7 +78,6 @@
 
     {%- if settings.vendor_enable or settings.sku_enable -%}
       <div class="product-single__vendor-sku">
-      
         {%- if settings.vendor_enable -%}
           <span class="product-single__vendor">
             {%- assign vendor_handle = product.vendor | handleize -%}
@@ -97,19 +96,18 @@
             SKU: <span data-sku-id>{{ current_variant.sku }}</span>
           </span>
         {%- endif -%}
-            
-    
-
       </div>
-<!--       <br> -->
-<!--   <div style="border:1px solid black;padding:8px;font-size:20px;"> <h5><strong>Dimensions:</strong></h5>
-    <div style="font-size:16px;">
-    <strong>Height:</strong> {{ product.metafields.big.height }}"&nbsp;|
-    <strong>Width:</strong> {{ product.metafields.big.width }}"&nbsp;|
-    <strong>Depth:</strong> {{ product.metafields.big.depth }}"
-    </div>
-  </div> -->
 
+      {% comment %}
+      <br>
+      <div style="border:1px solid black;padding:8px;font-size:20px;"> <h5><strong>Dimensions:</strong></h5>
+        <div style="font-size:16px;">
+          <strong>Height:</strong> {{ product.metafields.big.height }}"&nbsp;|
+          <strong>Width:</strong> {{ product.metafields.big.width }}"&nbsp;|
+          <strong>Depth:</strong> {{ product.metafields.big.depth }}"
+        </div>
+      </div>
+      {% endcomment %}
     {%- endif -%}
   {%- endcapture -%}
 
