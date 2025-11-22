@@ -65,9 +65,13 @@
 {%- unless shop.money_format contains 'money' or shop.money_format contains '.' -%}
   {%- if settings.superscript_decimals -%}
     {%- if shop.money_format contains '{{amount}}' or shop.money_format contains '{{ amount }}' -%}
+      {% # theme-check-disable LiquidHTMLSyntaxError %}
       {% capture format_price %}{{ format_price | replace: '.','<sup>' }}</sup>{% endcapture %}
+      {% # theme-check-enable LiquidHTMLSyntaxError %}
     {%- elsif shop.money_format contains '{{amount_with_comma_separator}}' or shop.money_format contains '{{ amount_with_comma_separator }}' -%}
+      {% # theme-check-disable LiquidHTMLSyntaxError %}
       {% capture format_price %}{{ format_price | replace: ',','<sup>' }}</sup>{% endcapture %}
+      {% # theme-check-enable LiquidHTMLSyntaxError %}
     {%- endif -%}
   {%- endif -%}
 {%- endunless -%}
