@@ -926,13 +926,33 @@
               "focal_point": "center center",
               "color_scheme": "none"
             }
+          },
+          "slide_BFjt6a": {
+            "type": "slide",
+            "disabled": true,
+            "settings": {
+              "top_subheading": "Black Friday Sale",
+              "title": "18% OFF STOREWIDE",
+              "title_size": 60,
+              "subheading": "Code: SAVE18",
+              "link": "",
+              "link_text": "Optional button",
+              "link_2": "",
+              "link_text_2": "",
+              "text_position": "left",
+              "image": "shopify://shop_images/Black_Friday.png",
+              "indent_image": false,
+              "focal_point": "center center",
+              "color_scheme": "none"
+            }
           }
         },
         "block_order": [
           "slide_ERDMeK",
           "slide_cgQarh",
           "slide_dXiLgg",
-          "slide_eQBg6r"
+          "slide_eQBg6r",
+          "slide_BFjt6a"
         ],
         "custom_css": [],
         "settings": {
@@ -966,11 +986,6 @@
       },
       "7924418359578431505": {
         "type": "shopify://apps/seoant-ai-seo/blocks/seoant-core/8e57283b-dcb0-4f7b-a947-fb5c57a0d59d",
-        "disabled": false,
-        "settings": {}
-      },
-      "21474836472147483647": {
-        "type": "shopify://apps/ecomposer-landing-page-builder/blocks/app-embed/a0fc26e1-7741-4773-8b27-39389b4fb4a0",
         "disabled": false,
         "settings": {}
       },
