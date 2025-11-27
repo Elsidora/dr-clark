@@ -471,7 +471,7 @@
       </script>
     {% endif %}
 
-    {% comment %} {% if template != 'index' %}
+    {% if template != 'index' %}
       <script>
         document.addEventListener('StartAsyncLoading', function (event) {
           setTimeout(function () {
@@ -496,7 +496,7 @@
       ></noscript>
       <!-- End Google Tag Manager (noscript) -->
       {
-    {% endif %} {% endcomment %}
+    {% endif %}
     <!-- Shopper Approved - layout/theme.liquid -->
     <script type="text/javascript">
       document.addEventListener('StartAsyncLoading', function (event) {
