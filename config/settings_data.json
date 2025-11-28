@@ -607,8 +607,8 @@
           "cda76a9a-3311-43ea-9449-fc47c21e559f": {
             "type": "announcement",
             "settings": {
-              "richtext": "<p>🔥 Black Friday Sale! Get 16% OFF with Code: BF16 🔥</p>",
-              "richtext_mobile": "<p>🔥 Black Friday Sale! 16% OFF Code: BF16 🔥</p>"
+              "richtext": "<p>🔥 Black Friday Sale! Get 18% OFF with Code: SAVE18 🔥</p>",
+              "richtext_mobile": "<p>🔥 Black Friday Sale! Get 18% OFF with Code: SAVE18 🔥</p>"
             }
           },
           "90f00bd0-94d1-44b6-b985-4fbeee199014": {
@@ -857,6 +857,7 @@
         "blocks": {
           "slide_ERDMeK": {
             "type": "slide",
+            "disabled": true,
             "settings": {
               "top_subheading": "",
               "title": "Loved by thousands!",
@@ -875,6 +876,7 @@
           },
           "slide_cgQarh": {
             "type": "slide",
+            "disabled": true,
             "settings": {
               "top_subheading": "",
               "title": "Top Sellers",
@@ -893,6 +895,7 @@
           },
           "slide_dXiLgg": {
             "type": "slide",
+            "disabled": true,
             "settings": {
               "top_subheading": "",
               "title": "Quick Video",
@@ -911,6 +914,7 @@
           },
           "slide_eQBg6r": {
             "type": "slide",
+            "disabled": true,
             "settings": {
               "top_subheading": "",
               "title": "The Original SynchroZap",
@@ -929,7 +933,6 @@
           },
           "slide_BFjt6a": {
             "type": "slide",
-            "disabled": true,
             "settings": {
               "top_subheading": "Black Friday Sale",
               "title": "18% OFF STOREWIDE",
