@@ -604,13 +604,6 @@
       "toolbar": {
         "type": "toolbar",
         "blocks": {
-          "cda76a9a-3311-43ea-9449-fc47c21e559f": {
-            "type": "announcement",
-            "settings": {
-              "richtext": "<p>🔥 Black Friday Sale! Get 18% OFF with Code: SAVE18 🔥</p>",
-              "richtext_mobile": "<p>🔥 Black Friday Sale! Get 18% OFF with Code: SAVE18 🔥</p>"
-            }
-          },
           "90f00bd0-94d1-44b6-b985-4fbeee199014": {
             "type": "announcement",
             "settings": {
@@ -620,7 +613,6 @@
           }
         },
         "block_order": [
-          "cda76a9a-3311-43ea-9449-fc47c21e559f",
           "90f00bd0-94d1-44b6-b985-4fbeee199014"
         ],
         "custom_css": [
