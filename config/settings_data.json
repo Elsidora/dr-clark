@@ -607,8 +607,8 @@
           "announcement_iwq9H8": {
             "type": "announcement",
             "settings": {
-              "richtext": "CLOSED Dec. 25th and Dec. 26th",
-              "richtext_mobile": "CLOSED Dec. 25th and Dec. 26th"
+              "richtext": "<p>CLOSED Dec. 25th and Dec. 26th</p>",
+              "richtext_mobile": "<p>CLOSED Dec. 25th and Dec. 26th</p>"
             }
           },
           "90f00bd0-94d1-44b6-b985-4fbeee199014": {
