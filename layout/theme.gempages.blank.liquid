@@ -1,0 +1,376 @@
+<!doctype html>
+<html class="js" lang="{{ request.locale.iso_code }}" dir="{{ settings.text_direction }}">
+  <!-- Twitter conversion tracking base code -->
+  {% if template != 'index' %}
+    <script>
+      document.addEventListener('StartAsyncLoading', function (event) {
+        !(function (e, t, n, s, u, a) {
+          e.twq ||
+            ((s = e.twq =
+              function () {
+                s.exe ? s.exe.apply(s, arguments) : s.queue.push(arguments);
+              }),
+            (s.version = '1.1'),
+            (s.queue = []),
+            (u = t.createElement(n)),
+            (u.async = !0),
+            (u.src = 'https://static.ads-twitter.com/uwt.js'),
+            (a = t.getElementsByTagName(n)[0]),
+            a.parentNode.insertBefore(u, a));
+        })(window, document, 'script');
+        twq('config', 'op3db');
+      });
+    </script>
+  {% endif %}
+  <!-- End Twitter conversion tracking base code -->
+  <head>
+    <!-- SEOAnt Speed Up Script -->
+    {%- if shop.metafields.seoantAppSiteSpeedUpV2.switch == 1 -%}{% include 'SEOAnt-SpeedUp' %}{%- endif -%}
+    <!-- /SEOAnt Speed Up Script -->
+
+    <!-- Google Tag Manager -->
+    <script>
+      (function (w, d, s, l, i) {
+        w[l] = w[l] || [];
+        w[l].push({ 'gtm.start': new Date().getTime(), event: 'gtm.js' });
+        var f = d.getElementsByTagName(s)[0],
+          j = d.createElement(s),
+          dl = l != 'dataLayer' ? '&l=' + l : '';
+        j.async = true;
+        j.src = 'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
+        f.parentNode.insertBefore(j, f);
+      })(window, document, 'script', 'dataLayer', 'GTM-N33LMD4');
+    </script>
+    <!-- End Google Tag Manager -->
+    {%- render 'ecom_header' -%}
+    {%- if content_for_header contains 'tapita-seo-script-tags' -%}{%- include 'tapita-seo-schema' -%}{%- endif -%}
+
+    <!-- Hotjar Tracking Code for https://drclarkstore.com/ -->
+    <script>
+      (function (h, o, t, j, a, r) {
+        h.hj =
+          h.hj ||
+          function () {
+            (h.hj.q = h.hj.q || []).push(arguments);
+          };
+        h._hjSettings = { hjid: 6415011, hjsv: 6 };
+        a = o.getElementsByTagName('head')[0];
+        r = o.createElement('script');
+        r.async = 1;
+        r.src = t + h._hjSettings.hjid + j + h._hjSettings.hjsv;
+        a.appendChild(r);
+      })(window, document, 'https://static.hotjar.com/c/hotjar-', '.js?sv=');
+    </script>
+
+    <!-- Added by AVADA SEO Suite -->
+    {% include 'avada-seo' %}
+    <!-- /Added by AVADA SEO Suite -->
+    {% if template != 'index' %}
+      <script>
+        window.Shopify = window.Shopify || {theme: {id: {{ theme.id }}, role: '{{ theme.role }}' } };
+        window._template = {
+            directory: "{{ template.directory }}",
+            name: "{{ template.name }}",
+            suffix: "{{ template.suffix }}"
+        };
+      </script>
+      <script
+        type="module"
+        blocking="render"
+        fetchpriority="high"
+        data-mysrc="https://cdn.intelligems.io/esm/ccd9cfb9f51b/bundle.js"
+        defer
+      ></script>
+
+      {% render 'visually_io_sdk' %}
+
+      <!-- Global Site Tag (gtag.js) - Google AdWords: 1072534059 -->
+      <script>
+        document.addEventListener('StartAsyncLoading', function (event) {
+          var resource = document.createElement('script');
+          resource.async = 'true';
+          resource.src = 'https://www.googletagmanager.com/gtag/js?id=AW-1072534059';
+          var script = document.getElementsByTagName('script')[0];
+          script.parentNode.insertBefore(resource, script);
+
+          window.dataLayer = window.dataLayer || [];
+          function gtag() {
+            dataLayer.push(arguments);
+          }
+          gtag('js', new Date());
+          gtag('config', 'AW-1072534059', { send_page_view: false });
+        });
+      </script>
+
+      <!-- Google Tag Manager -->
+      <script defer>
+        document.addEventListener('StartAsyncLoading', function (event) {
+          (function (w, d, s, l, i) {
+            w[l] = w[l] || [];
+            w[l].push({ 'gtm.start': new Date().getTime(), event: 'gtm.js' });
+            var f = d.getElementsByTagName(s)[0],
+              j = d.createElement(s),
+              dl = l != 'dataLayer' ? '&l=' + l : '';
+            j.async = true;
+            j.src = 'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
+            f.parentNode.insertBefore(j, f);
+          })(window, document, 'script', 'dataLayer', 'GTM-N33LMD4');
+        });
+      </script>
+      <!-- End Google Tag Manager -->
+    {% endif %}
+    <!-- Start webmaster_asad_site-verification-code -->
+    <meta name="google-site-verification" content="t-8-8PpDCfDCDM5YRqsfJRdH_1y_X5AXra7nv4o-E68">
+    <!-- End webmaster_asad_site-verification-code -->
+
+    <meta name="google-site-verification" content="TWNQSLOCq4TEeFtAWueQDCXdK_ox_dotRZV7gQPu2UQ">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="theme-color" content="{{ settings.color_button }}">
+    <meta
+      property="og:title"
+      content="Dr. Clark Store | The Leader In Pure Vitamins and Supplements"
+      class="classyunicodedone"
+    >
+    <meta
+      property="og:description"
+      content="The ORIGINAL Dr. Hulda Clark manufacturer. Shop now for potent herbal cleanses and pure dietary supplements. Free shipping on orders over $99."
+      class="classyunicodedone"
+    >
+    <meta
+      property="og:image"
+      content="https://cdn.shopify.com/s/files/1/0573/9000/6443/files/Dr_Clark_LOGO_2.png?v=1628707661"
+      class="classyunicodedone"
+    >
+    <meta property="og:image:type" content="image/png" class="classyunicodedone">
+    <meta property="og:image:width" content="100" class="classyunicodedone">
+    <meta property="og:image:height" content="100" class="classyunicodedone">
+
+    <!-- Shopper Approved verification meta tag -->
+    <meta name="sa_verification" content="XP371uc1H5mqPX52khL2TVo9RIGlwK6T">
+
+    {% if template != 'index' %}
+      <link rel="canonical" href="{{ canonical_url }}">
+
+      {% comment %}
+        <link rel="preload" as="style" href="{{ 'theme.css' | asset_url }}">
+        <link rel="preload" as="script" href="{{ 'theme.min.js' | asset_url }}">
+      {% endcomment %}
+
+      <link rel="preconnect" href="https://cdn.shopify.com">
+      <link rel="preconnect" href="https://fonts.shopifycdn.com">
+      <link rel="dns-prefetch" href="https://productreviews.shopifycdn.com" defer>
+      <link rel="dns-prefetch" href="https://ajax.googleapis.com" defer>
+      <link rel="dns-prefetch" href="https://maps.googleapis.com" defer>
+      <link rel="dns-prefetch" href="https://maps.gstatic.com" defer>
+    {% endif %}
+
+    {%- if settings.favicon != blank -%}
+      <link rel="shortcut icon" href="{{ settings.favicon | img_url: '32x32' }}" type="image/png">
+    {%- endif -%}
+    {%- render 'seo-title' -%}
+    {%- if page_description -%}
+      <meta name="description" content="{{ page_description | escape }}">
+    {%- endif -%}
+    {%- render 'social-meta-tags' -%}
+    {%- render 'preload-assets' -%}
+    {%- render 'font-face' -%}
+    {{ 'theme.css' | asset_url | stylesheet_tag }}
+    {%- render 'css-variables' -%}
+    {%- liquid
+      assign enableSuperScript = false
+      unless shop.money_format contains 'money' or shop.money_format contains '.'
+        if settings.superscript_decimals
+          if shop.money_format contains '{{amount}}' or shop.money_format contains '{{ amount }}'
+            assign enableSuperScript = true
+          elsif shop.money_format contains '{{amount_with_comma_separator}}' or shop.money_format contains '{{ amount_with_comma_separator }}'
+            assign enableSuperScript = true
+          endif
+        endif
+      endunless
+    -%}
+    <script>
+      //document.documentElement.className = document.documentElement.className.replace('no-js', 'js');
+
+      window.theme = window.theme || {};
+      theme.routes = {
+        home: "{{ routes.root_url }}",
+        collections: "{{ routes.collections_url }}",
+        cart: "{{ routes.cart_url | append: '.js' }}",
+        cartPage: "{{ routes.cart_url }}",
+        cartAdd: "{{ routes.cart_add_url | append: '.js' }}",
+        cartChange: "{{ routes.cart_change_url | append: '.js' }}",
+        search: "{{ routes.search_url }}"
+      };
+      theme.strings = {
+        soldOut: {{ 'products.product.sold_out' | t | json }},
+        unavailable: {{ 'products.product.unavailable' | t | json }},
+        stockLabel: {{ 'products.product.stock_label' | t: count: '[count]' | json }},
+        willNotShipUntil: {{ 'products.product.will_not_ship_until' | t: date: '[date]' | json }},
+        willBeInStockAfter: {{ 'products.product.will_be_in_stock_after' | t: date: '[date]' | json }},
+        waitingForStock: {{ 'products.product.waiting_for_stock' | t | json }},
+        savePrice: {{ 'products.general.save_html' | t: saved_amount: '[saved_amount]' | json }},
+        cartEmpty: {{ 'cart.general.empty' | t | json }},
+        cartTermsConfirmation: {{ 'cart.general.terms_confirm' | t | json }},
+        searchCollections: {{ 'general.search.collections' | t | json }},
+        searchPages: {{ 'general.search.pages' | t | json }},
+        searchArticles: {{ 'general.search.articles' | t | json }}
+      };
+      theme.settings = {
+        dynamicVariantsEnable: true,
+        dynamicVariantType: {{ settings.variant_type | json }},
+        cartType: {{ settings.cart_type | json }},
+        isCustomerTemplate: {% if request.page_type contains 'customers/' %}true{% else %}false{% endif %},
+        moneyFormat: {{ shop.money_format | json }},
+        saveType: {{ settings.product_save_type | json }},
+        recentlyViewedEnabled: false,
+        productImageSize: {{ settings.product_grid_image_size | json }},
+        productImageCover: {{ settings.product_grid_image_fill }},
+        predictiveSearch: {{ settings.predictive_search_enabled }},
+        predictiveSearchType: {{ settings.search_type | json }},
+        inventoryThreshold: {{ settings.inventory_threshold }},
+        superScriptSetting: {{ settings.superscript_decimals }},
+        superScriptPrice: {{ enableSuperScript }},
+        quickView: {{ settings.quick_shop_enable }},
+        quickAdd: {{ settings.quick_add_enable }},
+        themeName: 'Expanse',
+        themeVersion: "1.0.2"
+      };
+    </script>
+    <!-- UET tag -->
+    <script>
+      // write or paste code here
+      document.addEventListener('StartAsyncLoading', function (event) {
+        (function (w, d, t, r, u) {
+          var f, n, i;
+          (w[u] = w[u] || []),
+            (f = function () {
+              var o = { ti: '28000053', tm: 'shpfy_ui' };
+              (o.q = w[u]), (w[u] = new UET(o)), w[u].push('pageLoad');
+            }),
+            (n = d.createElement(t)),
+            (n.src = r),
+            (n.async = 1),
+            (n.onload = n.onreadystatechange =
+              function () {
+                var s = this.readyState;
+                (s && s !== 'loaded' && s !== 'complete') || (f(), (n.onload = n.onreadystatechange = null));
+              }),
+            (i = d.getElementsByTagName(t)[0]),
+            i.parentNode.insertBefore(n, i);
+        })(window, document, 'script', '//bat.bing.com/bat.js', 'uetq');
+      });
+    </script>
+    <!-- UET tag -->
+
+    {% capture MyJsFunc %}load', function(){}{% endcapture %}
+    {% capture MyJsFunc2 %}document.addEventListener('StartAsyncLoading',function(event){asyncLoad();});if(window.attachEvent){% endcapture %}
+    {% capture MyJsFunc3 %}document.addEventListener('StartAsyncLoading',function(event){prefetchAssets();});{% endcapture %}
+    {% if template contains 'index'
+      or template contains 'product'
+      or template contains 'collection'
+      or page.url contains 'pages'
+      or blog.url contains 'blogs'
+    %}
+      {{
+        content_for_header
+        | replace: "load', asyncLoad", MyJsFunc
+        | replace: 'if(window.attachEvent)', MyJsFunc2
+        | replace: 'defer="defer" src="//', 'defer="defer" data-src="//'
+        | replace: 'DOMContentLoaded', 'StartPreviewBarLoading'
+        | replace: "addEventListener('load', prefetchAssets);", MyJsFunc3
+        | replace: 'src="/checkouts/internal/preloads.js', 'data-src="/checkouts/internal/preloads.js'
+        | replace: 'src="https://shop.app/checkouts', 'data-src="https://shop.app/checkouts'
+        | replace: "src='https://cdn.shopify.com/shopifycloud/preview-bar/preview-bar-modules.js'",
+          "data-src='https://cdn.shopify.com/shopifycloud/preview-bar/preview-bar-modules.js'"
+      }}
+    {% else %}
+      {{ content_for_header }}
+    {% endif %}
+
+    <script>
+      window.lazySizesConfig = window.lazySizesConfig || {};
+      window.lazySizesConfig.loadMode = 1;
+      window.lazySizesConfig.expand = 100;
+      window.lazySizesConfig.loadHidden = false;
+    </script>
+
+    <script src="{{ 'vendor-scripts-v0.js' | asset_url }}" defer></script>
+    <script src="{{ 'theme.min.js' | asset_url }}" defer></script>
+    {% if template != 'index' %}
+      {%- if request.page_type contains 'customers/' -%}
+        <script src="{{ 'shopify_common.js' | shopify_asset_url }}" defer></script>
+      {%- endif -%}
+      {% include 'pagefly-header' %}
+    {%- endif -%}
+    {% render 'rapid-search-settings' %}
+    {% render 'loadify_loader' %}
+    <!-- Meta Pixel Code -->
+    <script defer>
+      document.addEventListener('StartAsyncLoading', function (event) {
+        !(function (f, b, e, v, n, t, s) {
+          if (f.fbq) return;
+          n = f.fbq = function () {
+            n.callMethod ? n.callMethod.apply(n, arguments) : n.queue.push(arguments);
+          };
+          if (!f._fbq) f._fbq = n;
+          n.push = n;
+          n.loaded = !0;
+          n.version = '2.0';
+          n.queue = [];
+          t = b.createElement(e);
+          t.async = !0;
+          t.src = v;
+          s = b.getElementsByTagName(e)[0];
+          s.parentNode.insertBefore(t, s);
+        })(window, document, 'script', 'https://connect.facebook.net/en_US/fbevents.js');
+        fbq('init', '523285838328010');
+        fbq('track', 'PageView');
+      });
+    </script>
+    {% if template != 'index' %}
+      <noscript
+        ><img
+          height="1"
+          width="1"
+          style="display:none"
+          src="https://www.facebook.com/tr?id=523285838328010&ev=PageView&noscript=1"
+      ></noscript>
+      <!-- End Meta Pixel Code -->
+      {% render 'analyzify-product-datalayer.liquid' %}
+    {% endif %}
+    {% include 'pagefly-app-header' %}
+  </head>
+  <body
+    class="template-{{ template | replace: '.', ' ' | truncatewords: 1, '' | handle }}{% if request.path == '/challenge' %} template-challange{% endif %}"
+    data-button_style="{{ settings.button_style }}"
+    data-edges="{{ settings.roundness }}"
+    data-type_header_capitalize="{{ settings.type_header_capitalize }}"
+    data-swatch_style="{{ settings.swatch_style }}"
+    data-grid-style="{{ settings.product_grid_style }}"
+  ><main class="main-content" id="MainContent">
+        {{ content_for_layout }}
+        {% if template == 'collection' %}
+          <div class="page-width collection-width">
+            {% if collection.description.size > 700 %}
+              <div class="collection-description-width">
+                <div class="collection-description-short">
+                  {{ collection.description | truncate: 500, '. . . ' -}}
+                  <button class="readmore"><strong>Show More &#62;</strong></button>
+                </div>
+                <div class="collection-description-full" style="display:none;">
+                  {{ collection.description }}
+                  <br>
+                  <button class="readless"><strong>&#60; Show Less</strong></button>
+                </div>
+              </div>
+            {% else %}
+              <div class="collection-description-width">
+                {{ collection.description }}
+              </div>
+            {% endif %}
+          </div>
+        {% endif %}
+      </main></body>
+</html>
