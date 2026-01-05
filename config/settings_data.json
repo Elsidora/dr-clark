@@ -606,6 +606,7 @@
         "blocks": {
           "announcement_iwq9H8": {
             "type": "announcement",
+            "disabled": true,
             "settings": {
               "richtext": "<p>CLOSED Jan. 1st and Jan. 2nd. Next-Day & 2nd Day delivery service not available.</p>",
               "richtext_mobile": "<p>CLOSED Jan. 1st and Jan. 2nd. Next-Day & 2nd Day delivery service not available.</p>"
