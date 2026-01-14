@@ -1,4 +1,4 @@
-{% section 'product-template' %}
+{% include 'product-content.zipifypages', contentprt: 'header' %}{% section 'product-template' %}
 {% section 'product-recommendations' %}
 {% section 'vendor-products' %}
 {% section 'recently-viewed' %}
@@ -12,3 +12,4 @@
     </div>
   </div>
 {% endif %}
+{% include 'product-content.zipifypages', contentprt: 'footer' %}

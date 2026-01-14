@@ -9,6 +9,7 @@
  */
 {
   "order": [
+    "zp-product-header-content",
     "prod-template",
     "1751637867659147c5",
     "prod-shopper-approved",
@@ -17,9 +18,14 @@
     "prod-recently",
     "175163786518daba71",
     "prod-scripts",
-    "175266624230ac650d"
+    "175266624230ac650d",
+    "zp-product-footer-content"
   ],
   "sections": {
+    "zp-product-header-content": {
+      "type": "product-header-content-zipifypages",
+      "settings": {}
+    },
     "175163786518daba71": {
       "settings": {},
       "type": "apps"
@@ -101,6 +107,10 @@
         "show_section": true
       },
       "type": "vendor-products"
+    },
+    "zp-product-footer-content": {
+      "type": "product-footer-content-zipifypages",
+      "settings": {}
     }
   }
 }

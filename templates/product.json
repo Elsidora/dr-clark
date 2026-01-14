@@ -9,6 +9,10 @@
  */
 {
   "sections": {
+    "zp-product-header-content": {
+      "type": "product-header-content-zipifypages",
+      "settings": {}
+    },
     "prod-template": {
       "type": "product-template",
       "settings": {
@@ -90,9 +94,14 @@
         "rebuy_personalization_engine_rebuy_widget_eUFUmh"
       ],
       "settings": {}
+    },
+    "zp-product-footer-content": {
+      "type": "product-footer-content-zipifypages",
+      "settings": {}
     }
   },
   "order": [
+    "zp-product-header-content",
     "prod-template",
     "1751637867659147c5",
     "prod-shopper-approved",
@@ -101,6 +110,7 @@
     "prod-recently",
     "175163786518daba71",
     "prod-scripts",
-    "175266624230ac650d"
+    "175266624230ac650d",
+    "zp-product-footer-content"
   ]
 }
