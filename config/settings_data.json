@@ -1002,6 +1002,11 @@
         "type": "shopify://apps/rebuy-personalization-engine/blocks/rebuy-global-embed/a26ae9b9-933b-40bf-bbc6-bf1220bbc4dc",
         "disabled": false,
         "settings": {}
+      },
+      "5099416060181051451": {
+        "type": "shopify://apps/interlinks-link-manager/blocks/app-embed/d91ba15e-f408-4d77-bec4-18d567dd889f",
+        "disabled": false,
+        "settings": {}
       }
     }
   },
