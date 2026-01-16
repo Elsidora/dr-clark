@@ -53,7 +53,7 @@
     "superscript_decimals": true,
     "product_grid_style": "grey-round",
     "product_grid_image_margin": 5,
-    "collection_grid_shape": "circle",
+    "collection_grid_shape": "square",
     "collection_grid_image": "collection",
     "collection_grid_image_margin": 13,
     "vendor_enable": false,
@@ -202,6 +202,13 @@
       "1499789718857": {
         "type": "featured-collections",
         "blocks": {
+          "collection_3Li9T8": {
+            "type": "collection",
+            "settings": {
+              "collection": "",
+              "title": ""
+            }
+          },
           "deff6d8f-5200-4686-b6aa-bcfff90ddeef": {
             "type": "collection",
             "settings": {
@@ -254,6 +261,7 @@
           }
         },
         "block_order": [
+          "collection_3Li9T8",
           "deff6d8f-5200-4686-b6aa-bcfff90ddeef",
           "1499789718857-0",
           "1499789718857-1",
