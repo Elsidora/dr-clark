@@ -710,7 +710,7 @@
         ],
         "settings": {
           "show_newsletter": true,
-          "newsletter_richtext": "<p>Join the Dr. Clark Store newsletter for product news and discounts, plus get 10% off your purchase.</p>",
+          "newsletter_richtext": "<h3>Our Commitment to Excellence</h3><h6>Our commitment to manufacturing excellence is reflected in every product we create. We are cGMP (Current Good Manufacturing Practice) certified, ensuring that our facilities, processes, and quality control systems meet the strictest regulatory standards set by the FDA and industry leaders. Beyond standard compliance, we go the extra mile by performing comprehensive HPTLC (High Performance Thin Layer Chromatography) identity testing on every product—a rigorous analytical technique that few other laboratories perform. This advanced testing confirms the authentic identity and purity of each ingredient at the molecular level. Additionally, every batch of raw materials undergoes stringent testing for pathogenic contamination, heavy metals, and other potential contaminants before entering our manufacturing process. We test not only finished products but also all incoming raw materials to ensure nothing compromises the integrity of what reaches your hands. Your trust in our supplements is backed by science, transparency, and an unwavering dedication to the highest standards of purity and quality.</h6><h4>Join the Dr. Clark Store newsletter for product news and discounts, plus get 10% off your purchase.<br/><br/></h4>",
           "show_copyright": true,
           "copyright_text": "All prices are in USD. Prices are subject to change without notice.",
           "policies_menu": ""
@@ -969,6 +969,37 @@
           "style": "arrows",
           "autoplay": true,
           "autoplay_speed": 8
+        }
+      },
+      "section_blog": {
+        "type": "section_blog",
+        "settings": {
+          "custom_id": "",
+          "displayFor": "display--both",
+          "layout": "default",
+          "nomargin": false,
+          "scopedCSS": "",
+          "height": 0,
+          "padding": 0,
+          "backgroundColor": "rgba(0,0,0,0)",
+          "backgroundPosition": "middle",
+          "backgroundFilter": "none",
+          "backdropIntensity": 50,
+          "parallax": false,
+          "backgroundPattern": false,
+          "overlayOpacity": 0,
+          "overlayColor": "#000000",
+          "contentColor": "rgba(0,0,0,0)",
+          "horizontalAlignment": "center",
+          "verticalAlignment": "middle",
+          "heading": "Check out this section's heading",
+          "headingColor": "rgba(0,0,0,0)",
+          "subheading": "THIS IS A SUBHEADING",
+          "subheadingColor": "rgba(0,0,0,0)",
+          "subheadingPosition": "above",
+          "headingAlignment": "center",
+          "blog": "",
+          "maxCards": 3
         }
       }
     },
