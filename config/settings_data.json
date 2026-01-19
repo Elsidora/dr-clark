@@ -851,10 +851,28 @@
               "width": "100%",
               "alignment": "center"
             }
+          },
+          "html_JHXVte": {
+            "type": "html",
+            "settings": {
+              "code": "<h2>Our Commitment to Excellence</h2><p></p>",
+              "width": "100%",
+              "alignment": "center"
+            }
+          },
+          "html_69xzEy": {
+            "type": "html",
+            "settings": {
+              "code": "We understand that when you choose a supplement, you're making an investment in your health—which is why we never compromise on quality or purity. Our commitment to manufacturing excellence is reflected in every product we create. We are cGMP (Current Good Manufacturing Practice) certified, ensuring that our facilities, processes, and quality control systems meet the strictest regulatory standards set by the FDA and industry leaders. Beyond standard compliance, we go the extra mile by performing comprehensive HPTLC (High Performance Thin Layer Chromatography) identity testing on every product—a rigorous analytical technique that few other laboratories perform. This advanced testing confirms the authentic identity and purity of each ingredient at the molecular level. Additionally, every batch of raw materials undergoes stringent testing for pathogenic contamination, heavy metals, and other potential contaminants before entering our manufacturing process. We test not only finished products but also all incoming raw materials to ensure nothing compromises the integrity of what reaches your hands. Your trust in our supplements is backed by science, transparency, and an unwavering dedication to the highest standards of purity and quality.",
+              "width": "100%",
+              "alignment": "center"
+            }
           }
         },
         "block_order": [
-          "215364d7-970c-462c-92ea-5dc4ccde496f-166976387692dbd1ab-1"
+          "215364d7-970c-462c-92ea-5dc4ccde496f-166976387692dbd1ab-1",
+          "html_JHXVte",
+          "html_69xzEy"
         ],
         "settings": {
           "full_width": false,
