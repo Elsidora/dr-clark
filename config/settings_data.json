@@ -204,6 +204,7 @@
         "blocks": {
           "collection_3Li9T8": {
             "type": "collection",
+            "disabled": true,
             "settings": {
               "collection": "",
               "title": ""
