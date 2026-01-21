@@ -1,66 +1,82 @@
 {%- paginate customer.orders by 20 -%}
+  <div class="page-width page-content">
+    <div id="appstle-subscription-manage-subscription-button-placeholder">
+      <a href="apps/subscriptions">
+        {% comment %}
+          <svg width="45" height="45" viewBox="0 0 45 45" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M12.325 4.47325H16.2876V3.12714C16.2876 1.68167 17.4694 0.5 18.915 0.5C20.3606 0.5 21.5423 1.68167 21.5423 3.12714V4.47325H25.505L25.5032 3.12714C25.5032 1.68167 26.6849 0.5 28.1305 0.5C29.5761 0.5 30.7579 1.68167 30.7579 3.12714V4.47325H32.8937C35.3349 4.47325 37.3298 6.468 37.3298 8.90901V24.3919C37.3298 24.7117 37.0696 24.9719 36.7497 24.9719C36.4299 24.9719 36.1697 24.7117 36.1697 24.3919V13.0576H1.66007V35.4209C1.66007 37.2223 3.13635 38.6967 4.93608 38.6967H24.9285C25.2483 38.6967 25.5085 38.9569 25.5085 39.2767C25.5085 39.5965 25.2483 39.8567 24.9285 39.8567H4.93608C2.49489 39.8567 0.5 37.862 0.5 35.4209V8.91132C0.5 6.47031 2.49489 4.47556 4.93608 4.47556H7.07192V3.12765C7.07192 1.68218 8.25368 0.500509 9.69925 0.500509C11.1448 0.500509 12.3266 1.68218 12.3266 3.12765L12.325 4.47325ZM32.4547 40.5267H35.0911V41.8709C35.0911 42.1907 35.3513 42.4509 35.6711 42.4509C35.991 42.4509 36.2512 42.1907 36.2512 41.8709V40.5267H36.7499C38.2461 40.5267 39.4694 39.3052 39.4694 37.8074C39.4694 36.3131 38.2443 35.0881 36.7463 35.0881H36.253V31.9713H38.8893C39.2092 31.9713 39.4694 31.7111 39.4694 31.3913C39.4694 31.0715 39.2092 30.8113 38.8893 30.8113H36.253V29.4671C36.253 29.1472 35.9928 28.8871 35.6729 28.8871C35.3531 28.8871 35.0929 29.1472 35.0929 29.4671V30.8113H34.5942C33.098 30.8113 31.8747 32.0327 31.8747 33.5306C31.8747 35.0267 33.0962 36.2499 34.5942 36.2499H35.0929V39.3667H32.4566C32.1367 39.3667 31.8765 39.6269 31.8765 39.9467C31.8747 40.2665 32.1349 40.5267 32.4547 40.5267ZM36.2512 39.3667C36.8655 39.3667 37.348 39.41 37.8503 38.9095C38.8369 37.923 38.125 36.2517 36.7463 36.2517H36.253V39.3667L36.2512 39.3667ZM34.5942 35.0899H35.0929V31.9731C34.4786 31.9731 33.9961 31.9297 33.4956 32.4302C32.5035 33.4222 33.2281 35.0899 34.5942 35.0899ZM35.6711 26.8436C30.796 26.8436 26.8423 30.7969 26.8423 35.6718C26.8423 40.5466 30.7959 44.5 35.6711 44.5C40.5482 44.5 44.5 40.5466 44.5 35.6699C44.5 30.7951 40.5482 26.8436 35.6711 26.8436ZM41.094 30.2495C38.0998 27.2555 33.2426 27.2555 30.2487 30.2495C27.2549 33.2434 27.2546 38.1003 30.2487 41.0939C33.2429 44.0879 38.0983 44.0879 41.094 41.0939C44.09 38.0982 44.09 33.2431 41.094 30.2495ZM17.7118 17.9322C17.3251 18.1472 17.3143 18.711 17.7064 18.9368L19.5007 19.9722C19.9488 20.2595 20.4168 19.9234 20.4168 19.4988V19.1591C23.8121 19.8583 26.3129 22.8631 26.3129 26.4026C26.3129 30.4879 23.0007 33.7997 18.9153 33.7997C14.0346 33.7997 10.5185 29.1636 11.7688 24.4872C11.852 24.1782 11.6677 23.8602 11.3587 23.779C11.0497 23.6958 10.7316 23.8801 10.6485 24.1891C9.19933 29.6023 13.2722 34.9596 18.9135 34.9596C23.6406 34.9596 27.4713 31.1291 27.4713 26.4024C27.4713 22.2214 24.4573 18.6908 20.415 17.9771V17.3718C20.415 16.9309 19.9289 16.6509 19.5459 16.8713L17.7118 17.9322ZM16.2879 5.63305H12.3253V6.97916C12.3253 8.42463 11.1435 9.6063 9.69792 9.6063C8.25234 9.6063 7.07058 8.42463 7.07058 6.97916V5.63305H4.93655C3.13682 5.63305 1.66053 7.10923 1.66053 8.90882V11.8955H36.1702V8.91063C36.1702 7.10923 34.6939 5.63485 32.8942 5.63485H30.7583V6.98096C30.7583 8.42643 29.5766 9.6081 28.131 9.6081C26.6854 9.6081 25.5036 8.42643 25.5036 6.98096V5.63485H21.541V6.98096C21.541 8.42643 20.3592 9.6081 18.9136 9.6081C17.4681 9.6081 16.2863 8.42643 16.2863 6.98096L16.2879 5.63305ZM28.131 1.66165C27.3251 1.66165 26.6637 2.32295 26.6637 3.12881V6.98096C26.6637 8.2656 28.234 8.9486 29.1645 8.01629C29.4302 7.75068 29.5964 7.38389 29.5964 6.98096V3.12881C29.5982 2.32295 28.9369 1.66165 28.131 1.66165ZM9.69981 1.66165C8.8939 1.66165 8.23255 2.32295 8.23255 3.12881V6.98096C8.23255 8.2656 9.80278 8.9486 10.7334 8.01629C10.999 7.75068 11.1652 7.38389 11.1652 6.98096V3.12881C11.1652 2.32295 10.5039 1.66165 9.69981 1.66165ZM18.9154 1.66165C18.1095 1.66165 17.4481 2.32295 17.4481 3.12881V6.98096C17.4481 8.2656 19.0184 8.9486 19.9489 8.01629C20.2146 7.75068 20.3808 7.38389 20.3808 6.98096V3.12881C20.3826 2.32295 19.7213 1.66165 18.9154 1.66165Z" fill="black" stroke="black"/>
+          </svg>
+        {% endcomment %}
 
-<div class="page-width page-content">
-  <header class="section-header section-header--with-link">
-    <h1 class="section-header__title">{{ 'customer.account.title' | t }}</h1>
-    <a href="{{ routes.account_logout_url }}" class="section-header__link">{{ 'layout.customer.log_out'| t }}</a>
-  </header>
+        <span> Manage Subscription </span>
+      </a>
+    </div>
 
-  <div class="grid">
+    <header class="section-header section-header--with-link">
+      <h1 class="section-header__title">{{ 'customer.account.title' | t }}</h1>
+      <a href="{{ routes.account_logout_url }}" class="section-header__link">{{ 'layout.customer.log_out' | t }}</a>
+    </header>
 
-    <div class="grid__item medium-up--two-thirds">
-      <h2>{{ 'customer.orders.title' | t }}</h2>
+    <div class="grid">
+      <div class="grid__item medium-up--two-thirds">
+        <h2>{{ 'customer.orders.title' | t }}</h2>
 
-      {%- if customer.orders.size != 0 -%}
-
-        <table class="table--responsive table--small-text">
-          <thead>
-            <tr>
-              <th>{{ 'customer.orders.order_number' | t }}</th>
-              <th>{{ 'customer.orders.date' | t }}</th>
-              <th>{{ 'customer.orders.payment_status' | t }}</th>
-              <th>{{ 'customer.orders.fulfillment_status' | t }}</th>
-              <th>{{ 'customer.orders.total' | t }}</th>
-            </tr>
-          </thead>
-          <tbody>
-            {%- for order in customer.orders -%}
-              <tr class="table__section">
-                <td data-label="{{ 'customer.orders.order_number' | t }}">{{ order.name | link_to: order.customer_url }}</td>
-                <td data-label="{{ 'customer.orders.date' | t }}">{{ order.created_at | time_tag: format: 'date' }}</td>
-                <td data-label="{{ 'customer.orders.payment_status' | t }}">{{ order.financial_status_label }}</td>
-                <td data-label="{{ 'customer.orders.fulfillment_status' | t }}">{{ order.fulfillment_status_label }}</td>
-                <td data-label="{{ 'customer.orders.total' | t }}">{{ order.total_price | money }}</td>
+        {%- if customer.orders.size != 0 -%}
+          <table class="table--responsive table--small-text">
+            <thead>
+              <tr>
+                <th>{{ 'customer.orders.order_number' | t }}</th>
+                <th>{{ 'customer.orders.date' | t }}</th>
+                <th>{{ 'customer.orders.payment_status' | t }}</th>
+                <th>{{ 'customer.orders.fulfillment_status' | t }}</th>
+                <th>{{ 'customer.orders.total' | t }}</th>
               </tr>
-            {%- endfor -%}
-          </tbody>
-        </table>
+            </thead>
+            <tbody>
+              {%- for order in customer.orders -%}
+                <tr class="table__section">
+                  <td data-label="{{ 'customer.orders.order_number' | t }}">
+                    {{ order.name | link_to: order.customer_url }}
+                  </td>
+                  <td data-label="{{ 'customer.orders.date' | t }}">
+                    {{ order.created_at | time_tag: format: 'date' }}
+                  </td>
+                  <td data-label="{{ 'customer.orders.payment_status' | t }}">{{ order.financial_status_label }}</td>
+                  <td data-label="{{ 'customer.orders.fulfillment_status' | t }}">
+                    {{ order.fulfillment_status_label }}
+                  </td>
+                  <td data-label="{{ 'customer.orders.total' | t }}">{{ order.total_price | money }}</td>
+                </tr>
+              {%- endfor -%}
+            </tbody>
+          </table>
 
-        <hr class="hr--clear">
+          <hr class="hr--clear">
 
-      {%- else -%}
+        {%- else -%}
+          <p>{{ 'customer.orders.none' | t }}</p>
+        {%- endif -%}
+      </div>
 
-        <p>{{ 'customer.orders.none' | t }}</p>
+      <div class="grid__item medium-up--one-third">
+        <h3>{{ 'customer.account.details' | t }}</h3>
 
-      {%- endif -%}
+        <p class="h5">{{ customer.name }}</p>
+
+        {{ customer.default_address | format_address }}
+
+        <p>
+          <a href="{{ routes.account_addresses_url }}" class="text-link">
+            {{- 'customer.account.view_addresses' | t }} ({{ customer.addresses_count }})</a
+          >
+        </p>
+      </div>
     </div>
 
-    <div class="grid__item medium-up--one-third">
-      <h3>{{ 'customer.account.details' | t }}</h3>
-
-      <p class="h5">{{ customer.name }}</p>
-
-      {{ customer.default_address | format_address }}
-
-      <p><a href="{{ routes.account_addresses_url }}" class="text-link">{{ 'customer.account.view_addresses' | t }} ({{ customer.addresses_count }})</a></p>
-    </div>
-
+    {%- liquid
+      if paginate.pages > 1
+        render 'pagination', paginate: paginate
+      endif
+    -%}
   </div>
-
-  {%- liquid
-    if paginate.pages > 1
-      render 'pagination', paginate: paginate
-    endif
-  -%}
-</div>
 {%- endpaginate -%}
