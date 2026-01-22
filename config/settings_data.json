@@ -852,32 +852,14 @@
               "width": "100%",
               "alignment": "center"
             }
-          },
-          "html_JHXVte": {
-            "type": "html",
-            "settings": {
-              "code": "",
-              "width": "100%",
-              "alignment": "center"
-            }
-          },
-          "html_69xzEy": {
-            "type": "html",
-            "settings": {
-              "code": "",
-              "width": "100%",
-              "alignment": "center"
-            }
           }
         },
         "block_order": [
-          "215364d7-970c-462c-92ea-5dc4ccde496f-166976387692dbd1ab-1",
-          "html_JHXVte",
-          "html_69xzEy"
+          "215364d7-970c-462c-92ea-5dc4ccde496f-166976387692dbd1ab-1"
         ],
         "settings": {
           "full_width": false,
-          "space_around": true
+          "space_around": false
         }
       },
       "161789469679fffe6b": {
