@@ -24,6 +24,8 @@
   {% endif %}
   <!-- End Twitter conversion tracking base code -->
   <head>
+  {% render 'abboost-redirect' %}
+
     <!-- SEOAnt Speed Up Script -->
     {%- if shop.metafields.seoantAppSiteSpeedUpV2.switch == 1 -%}{% include 'SEOAnt-SpeedUp' %}{%- endif -%}
     <!-- /SEOAnt Speed Up Script -->
