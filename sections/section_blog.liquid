@@ -106,7 +106,7 @@ class="{% render 'common-class', section: section, class: 'row section__columns'
     {% assign blog_handles = "news" %}
     
     {% assign blog_list = blog_handles | split: ';' | sort: 'date' %}
-    {% assign sortedpost = [''] %}
+    {% assign sortedpost = renamed_variable_empty %}
     {% for blog_handle in blog_list  %}
     {% assign sortedpost = sortedpost | concat: blogs[blog_handle].articles %}
 
@@ -415,3 +415,13 @@ class="{% render 'common-class', section: section, class: 'row section__columns'
     ]
 }
 {% endschema %}
+{% comment %}
+
+This file has been rewritten to preserve the original behavior.
+
+---
+Changes:
+- from: "{% assign sortedpost = [''] %}"
+  to: "{% assign sortedpost = renamed_variable_empty %}"
+  position: 2504..2552
+{% endcomment %}
